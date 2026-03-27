@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur animé</title>
+    <style>
+        #counter {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="counter">0</div>
+
+    <script>
+        // Fonction pour animer le compteur de 1 à 25
+        function animateCounter(start, end, duration) {
+            let current = start;
+            const increment = (end - start) / (duration / 100);
+            const counterElement = document.getElementById('counter');
+
+            const interval = setInterval(() => {
+                current += increment;
+                counterElement.textContent = Math.floor(current);
+
+                if (current >= end) {
+                    clearInterval(interval);
+                    counterElement.textContent = end;
+                }
+            }, 100);
+        }
+
+        // Appel de la fonction avec les paramètres souhaités
+        animateCounter(1, 25, 2500); // de 1 à 25 en 2.5 secondes (2500ms)
+    </script>
+</body>
+</html>
