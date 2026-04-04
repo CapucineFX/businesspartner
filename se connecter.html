@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Title -->
+    <title>Article-1</title>
+  
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Favicon -->
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+        
+  </head>
+  <body>
+    <header id="header" class="w-100" style="z-index: 1; background-color: #fff;">
+      <nav class="navbar navbar-expand-md navbar-dark" >
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/img/Logo-Business-Partners.svg" class="ml-2" ></a>
+
+            <div class="navbar-toggler ">
+              
+                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+           
+          </div>
+          
+            <div class="collapse navbar-collapse text-dark" id="navbarCollapse">
+              <div class="col-12 ml-2">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100 text-primary">
+              
+                  <li class="nav-item">
+                    <a class="nav-link" href="./a-propos.html">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./recrutement.html">Recrutement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#contact">Nous contacter</a>
+                  </li>
+                  <li class="nav-item d-lg-block d-none">
+                    <div class="dropdown">
+                      <a href="./index.html" id="dropdownMenuButton">
+                          <img src="./assets/img/france.png" class="avatar-circle w-15 avatar avatar-xs" alt="drapeau de la france, bleu, blanc, rouge">
+                      </a>
+                      <div class="dropdown-content" id="dropdownContent">
+                        <a href="./EN/index.html" id="dropdownMenuButton">
+                          <img src="./assets/img/united-kingdom.png" class="avatar-circle w-15 avatar avatar-xs" alt="drapeau de l'angleterre sur fond bleu avec ses croix rouge">
+                      </a>
+                      </div>
+                  </div>
+                </li>
+                  <li class="nav-item d-lg-block d-none">
+                    <a href="./page404.html" class="btn-primary btn btn-rounded mx-3">Mon Espace personnel</a>
+                  </li>
+            
+                
+                </ul>
+              </div>
+             
+       
+            </div>
+          </div>
+        </nav>
+  </header>
+
+    <main id="content" role="main">
+<div class="space-top-3">
+</div>
+
+<div class="container space-5">
+  <div class="text-center">
+    <img src="./assets/img/404.png" class="img-fluid w-50">
+  </div>
+
+</div>
+
+    </main>
+ 
+    <footer class="bg-primary footer space-3">
+      <div class="container">
+        <div class="d-md-flex">
+          <div class="col-md-4">
+            <img src="./assets/img/Groupe 615.svg" class="w-50">
+        
+           
+          </div>
+        
+          <div class="col-md-4 text-light">
+            <h5 class="text-underline">Pages</h5>
+            <ul class="list-unstyled">
+            <li class="list-unstyled-item"> <a class="text-white" href="./index.html">Accueil</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="./a-propos.html">A propos</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="./recrutement.html">Recrutement</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="./page404.html">Mon Espace Partenaire</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-4 text-light">
+            <h5 class="text-underline">Contactez-nous</h5>
+            <ul class="list-unstyled">
+            <li class="list-unstyled-item"><img src="./assets/img/pin.png"> 11 avenue de l’île St-Martin,
+              92737 Nanterre </li>
+              <li class="list-unstyled-item"><a class="text-white" href="tel:+33 (0)1 56 83 79 50"><img src="./assets/img/smartphone.png"> +33 (0)1 56 83 79 50</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="mailto:mail@business-partners.fr"><img src="./assets/img/email.png"> mail@business-partners.fr</a></li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+
+  <!-- JS Implementing Plugins -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/typed/typed.min.js"></script>
+
+   
+    <script>
+     
+
+        let header = document.getElementById('header');
+    let timer;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                header.classList.add('header-color');
+            },100);
+        } else {
+            clearTimeout(timer);
+            header.classList.remove('header-color');
+        }
+    });
+      </script>
+
+  </body>
+</html>

@@ -146,7 +146,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #00519f;
   /*min-width: 160px;*/
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -408,7 +408,7 @@
   color: var(--primary);
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: var(--primary);
+  color: var(--light);
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
@@ -577,7 +577,7 @@ body {
 
 /* Les Basiques  */
 header {
-  background-color: var(--soft-primary);
+  background-color: var(--primary);
   position: fixed;
   width: 100%;
   top: 0;
