@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Favicon -->
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Optimisez la gestion de vos équipements IT</h1>
+    <p>Une solution simple, transparente et responsable pour vos ressources technologiques.</p>
+    <a href="#" class="btn">Prendre rendez-vous</a>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <p>+200 entreprises accompagnées • 95% de satisfaction • Impact environnemental réduit</p>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+
+    <div class="feature">
+      <h3>Accompagnement</h3>
+      <p>Une collaboration à chaque étape de votre projet.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Transparence</h3>
+      <p>Des conditions claires et sans surprise.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Réactivité</h3>
+      <p>Des délais adaptés à vos enjeux.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video">
+  <div class="container">
+    <video autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Prêt à simplifier votre gestion IT ?</h2>
+  <a href="#" class="btn">Nous contacter</a>
+</section>
+
+
+ <!-- JS Implementing Plugins -->
+
+    <script src="./assets/js/dot.js"></script>
+ <script src="./assets/js/dropbox.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/rotation.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+    header.classList.add("header-color");
+}, 5000);
+
+
+    window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 50) {
+        header.classList.add("header-color");
+    } else {
+        header.classList.remove("header-color");
+    }
+});
+    
+
+});
+
+function toggleNavbar() {
+    var navbarCollapse = document.getElementById('navbarCollapse');
+    navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
+}
+
+ 
+
+    </script>
+
+  </body>
+</html>
