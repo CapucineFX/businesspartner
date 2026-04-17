@@ -527,7 +527,9 @@ header.header-color .navbar-brand img {
   transition: box-shadow 0.15s ease-in-out;
 }
 
-
+.navbar .navbar-brand img {
+    filter: brightness(0) invert(1); /* logo blanc si PNG noir */
+}
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("../svg/menu.png");
