@@ -99,15 +99,44 @@
 
 }
 
+/* Top bar */
+.top-bar {
+    background: var(--primary);
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
+}
 
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.top-bar a:hover {
+    color: #ffc107;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 28px;
+    color: #111 !important;
+}
+
+.nav-link {
+    color: #111 !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -1913,7 +1942,8 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: overlay;
+
 }
 .carousel-inner::after {
   display: block;
