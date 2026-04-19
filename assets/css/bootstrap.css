@@ -468,15 +468,13 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-.nav.navbar-dark .navbar-nav .nav-link
+.nav.navbar-dark .navbar-nav 
  {
     color: var(--primary);
  }
 
  /* HEADER PAR DÉFAUT (transparent) */
-.navbar .nav-link {
-    color: #ffffff; /* texte blanc */
-}
+
 .btn-soft-primary {
     background-color: var(--soft-primary);
     color: var(--primary);
