@@ -50,7 +50,7 @@
 
 .navbar a:hover {
  font-weight: 700;
-color: var(--primary);
+color: var(--secondary);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -127,6 +127,10 @@ color: var(--primary);
     font-weight: bold;
     font-size: 28px;
     color: #111 !important;
+}
+
+.nav-link:active{
+    color: #ffc107 !important;
 }
 
 .nav-link {
@@ -226,7 +230,7 @@ color: var(--primary);
     flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
-    display: none;
+    display: block;
   }
 }
 @media (min-width: 876px) {
@@ -235,7 +239,22 @@ color: var(--primary);
     background: transparent;
   }
     .navbar-light{
-     filter: brightness(1) invert(0); /* logo blanc si PNG noir */
+     filter: none;
+  }
+  header.header-color .navbar-brand img{
+    filter: none;
+  }
+
+ header.header-color .nav-link{
+  text-transform: none;
+     color: var(--primary);
+  }
+
+  .navbar a {
+    display: block;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
   }
   .nav-item {
     border: 0;
@@ -438,6 +457,7 @@ color: var(--primary);
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
   font-weight: bold;
+  color: var(--secondary);
 }
 
 
