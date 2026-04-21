@@ -19,17 +19,19 @@
     <link rel="stylesheet" href="./assets/css/carousel.css">
 
   </head>
-      <header id="header" class="w-100 navbar-dark" style="z-index: 1;">
+  
+   
+  <body>
+ <header id="header" class="w-100 header-color-light" style="z-index: 1;">
  <div class="top-bar">
     <div class="mx-3 d-flex justify-content-between align-items-center">
         <div>
             📞 01 56 83 79 50
         </div>
         <div class="d-flex align-items-center">
-             <strong class="text-light">Vous êtes:</strong>
-            <a class="active" href="./se connecter.html"><strong>Partenaires</strong></a>
+             <strong class="nav-link text-light">Vous êtes:</strong>
             <a href="./se connecter.html">Clients</a>
-        
+          <a href="./se connecter.html"><strong>Partenaires</strong></a>
         </div>
     </div>
 </div>
@@ -45,23 +47,23 @@
            
           </div>
           
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse text-dark" id="navbarCollapse">
               <div class="col-12 ml-2">
              
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100">
-               <li class="nav-item">
-                   <a class="nav-link" href="./index2.html">Page d'accueil V1</a>
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100 text-primary">
+              <li class="nav-item">
+                   <a class="nav-link active" href="./index2.html">Page d'accueil V1</a>
                   </li>
                   <li class="nav-item">
-                   <a class="nav-link active" href="./index.html">Page d'accueil V2</a>
+                   <a class="nav-link" href="./index.html">Page d'accueil V2</a>
                   </li>
-                 <li class="nav-item">
+                   <li class="nav-item">
                     <a class="nav-link" href="./a-propos.html">A propos</a>
                   </li>
                    <li class="nav-item">
                     <a class="nav-link" href="./recrutement.html">Recrutement</a>
                   </li>
-                    
+                     
                   
                   <li class="nav-item d-lg-block d-none">
                     <div class="dropdown">
@@ -72,6 +74,7 @@
             
                   </div>
                 </li>
+            
                 
                 </ul>
               </div>
@@ -83,29 +86,29 @@
   </header>
     
 
-  <body>
-
-<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+<main id="content" role="main">
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
 
   <div class="carousel-inner">
 
     <!-- SLIDE 1 -->
-    <div class="carousel-item active" style="background-image: url(./assets/banniere/1.svg);">
-      <div class="overlay"></div>
+    <div class="carousel-item active" style="background: linear-gradient(rgba(0,40,80,0.8), rgba(0,40,80,0.8)), url('./assets/banniere/1.svg') center/cover;"
+>
+
       <div class="carousel-caption">
        <div class="container">
-         <div class="d-flex align-items justify-content-center text-center">
-          <div class="d-block text-center card h-auto ">
+         <div class="d-flex h-100 align-items-center justify-content-center text-center">
+          <div class="d-block text-center h-auto ">
           <div class="card-body">
-        <h1 class="text-primary bold-0" style="font-weight: 100;">Boostez</h1>
-        <h1 class="text-primary">vos activités grâce au leasing</h1>
+        <h1 class="text-light bold-0" style="font-weight: 100;">Boostez</h1>
+        <h1 class="text-light">vos activités grâce au leasing</h1>
        
         <svg width="300" height="10" >
         <line x1="0" y1="5" x2="300" y2="5" class="d-flex justify-content-center"
         stroke="#FFD700"
         stroke-width="3" />
         </svg>
-        <p class="TextLight text-uppercase" style="font-size: 20px; font-weight: 100;">Générez plus de chiffre d’affaires sans risque financier</p>
+        <p class="text-light text-uppercase" style="font-size: 20px; font-weight: 100;">Générez plus de chiffre d’affaires sans risque financier</p>
    
     
         </div>
@@ -133,6 +136,7 @@
 
   </div>
 </div>
+    
     
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
