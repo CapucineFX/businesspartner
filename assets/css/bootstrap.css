@@ -233,14 +233,13 @@ color: var(--primary);
 
   .navbar{
     background: transparent;
-   
- 
+  }
+    .navbar-light{
+     filter: brightness(1) invert(0); /* logo blanc si PNG noir */
   }
   .nav-item {
     border: 0;
 }
-
-
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
