@@ -50,7 +50,7 @@
 
 .navbar a:hover {
  font-weight: 700;
-  color: var(--primary);
+color: var(--primary);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -463,14 +463,14 @@
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--primary);
+  color: var(--light);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .nav.navbar-dark .navbar-nav 
  {
-    color: var(--primary);
+    color: var(--light);
  }
 
  /* HEADER PAR DÉFAUT (transparent) */
@@ -481,6 +481,10 @@
 }
 .navbar .navbar-brand img {
     filter: brightness(0) invert(1); /* logo blanc si PNG noir */
+}
+
+.navbar .navbar-brand-light img {
+    filter: brightness(1) invert(0); /* logo blanc si PNG noir */
 }
 header.header-color .nav-link {
     color: var(--primary); /* texte noir */
@@ -628,7 +632,6 @@ body {
 
 /* Les Basiques  */
 header {
-  background-color: var(-primary);
   position: fixed;
   width: 100%;
   top: 0;
@@ -1762,7 +1765,6 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -1808,11 +1810,13 @@ textarea.form-control-lg {
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
+
 .btn-secondary:hover {
-  color: var(--light);
+  color: #fff;
   background-color: var(--primary);
   border-color: var(--primary);
 }
+
 .btn-light {
   color: #000;
   background-color: #f8f9fa;
@@ -2009,7 +2013,8 @@ textarea.form-control-lg {
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 0;
+  z-index: 5;
+  top: 50px;
   bottom: 0;
   z-index: 1;
   display: flex;
