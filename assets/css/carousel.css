@@ -1,11 +1,10 @@
 
     .carousel-item {
-      height: 50vh;
-      min-height: 600px;
+      height: auto;
+      min-height: 650px;
       background-size: cover;
       background-position: center;
       position: relative;
-      top: 5vh;
       z-index: auto;
 
     }
