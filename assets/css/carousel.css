@@ -1,11 +1,15 @@
 
     .carousel-item {
-      height: auto;
-      min-height: 650px;
+      height: 520px;
+      min-height: 100%;
+      padding: auto;
       background-size: cover;
       background-position: center;
       position: relative;
       z-index: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
     }
 
