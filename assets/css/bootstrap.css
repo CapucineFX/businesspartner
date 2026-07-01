@@ -1757,6 +1757,112 @@ iframe {
 }
 
 
+  .legal-header .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:.8rem;
+    color:#9fb6d6;
+    font-weight:600;
+  }
+  
+
+  .legal-nav{
+    position:sticky;
+    top:1.5rem;
+  }
+  .legal-nav .nav-link{
+    color:var(--bp-muted);
+    font-size:.92rem;
+    padding:.4rem .2rem;
+    border: 2px solid transparent;
+    border-left-color:var(--soft-primary);
+    padding-left:.9rem;
+  }
+  .legal-nav .nav-link:hover,
+  .legal-nav .nav-link.active{
+    color:var(--primary);
+    border-left-color:var(--secondary);
+    background:transparent;
+  }
+  section.legal-section{
+    padding-top:.5rem;
+    padding-bottom:1.75rem;
+    margin-bottom:.25rem;
+    border-bottom:1px solid var(--primary);
+  }
+  section.legal-section:last-of-type{
+    border-bottom:none;
+    padding-bottom:0;
+    margin-bottom:0;
+  }
+  .legal-section .num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:2rem;
+    height:2rem;
+    background:var(--soft-primary);
+    color:var(--primary);
+    font-weight:700;
+    font-size:.9rem;
+    border-radius:.4rem;
+    margin-right:.65rem;
+  }
+  .legal-section h2{
+    font-size:1.15rem;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    margin-bottom:1rem;
+    color:var(--dark);
+  }
+  .legal-section p, .legal-section li{
+    color:var(--dark);
+    line-height:1.7;
+  }
+  .info-table{
+    width:100%;
+    margin-bottom:0;
+  }
+  .info-table th{
+    width:38%;
+    color:var(--primary);
+    font-weight:600;
+    font-size:.9rem;
+    vertical-align:top;
+    padding:.45rem 0;
+    border:none;
+  }
+  .info-table td{
+    padding:.45rem 0;
+    border:none;
+  }
+  .info-table tr{
+    border-bottom:1px solid var(--primary);
+  }
+  .rgpd-box{
+    background:var(--light);
+    border-radius:.5rem;
+    padding:1.25rem 1.4rem;
+    margin-top:1rem;
+  }
+  .rgpd-box ul{
+    margin-bottom:.75rem;
+  }
+  .contact-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    background:#fff;
+    border:1px solid var(--bp-border);
+    border-radius:2rem;
+    padding:.4rem 1rem;
+    font-size:.92rem;
+    color:var(--bp-blue);
+    font-weight:600;
+    text-decoration:none;
+  }
+
 
 .form-label {
   margin-bottom: 0.5rem;

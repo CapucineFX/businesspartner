@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales - Business Partners</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bp-navy:#12233c;
+    --bp-blue:#1f5fa8;
+    --bp-blue-light:#eaf2fb;
+    --bp-text:#2c3440;
+    --bp-muted:#6b7684;
+    --bp-border:#e4e8ee;
+  }
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--bp-text);
+    background:#f7f8fa;
+  }
+  .legal-header{
+    background:var(--bp-navy);
+    color:#fff;
+    padding:3rem 0 2.25rem;
+  }
+  .legal-header .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:.8rem;
+    color:#9fb6d6;
+    font-weight:600;
+  }
+  .legal-header h1{
+    font-weight:700;
+    margin-top:.4rem;
+    margin-bottom:0;
+  }
+  .legal-card{
+    background:#fff;
+    border:1px solid var(--bp-border);
+    border-radius:.6rem;
+    padding:2.25rem 2.25rem 2rem;
+  }
+  .legal-nav{
+    position:sticky;
+    top:1.5rem;
+  }
+  .legal-nav .nav-link{
+    color:var(--bp-muted);
+    font-size:.92rem;
+    padding:.4rem .2rem;
+    border-left:2px solid transparent;
+    padding-left:.9rem;
+  }
+  .legal-nav .nav-link:hover,
+  .legal-nav .nav-link.active{
+    color:var(--bp-blue);
+    border-left-color:var(--bp-blue);
+    background:transparent;
+  }
+  section.legal-section{
+    padding-top:.5rem;
+    padding-bottom:1.75rem;
+    margin-bottom:.25rem;
+    border-bottom:1px solid var(--bp-border);
+  }
+  section.legal-section:last-of-type{
+    border-bottom:none;
+    padding-bottom:0;
+    margin-bottom:0;
+  }
+  .legal-section .num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:2rem;
+    height:2rem;
+    background:var(--bp-blue-light);
+    color:var(--bp-blue);
+    font-weight:700;
+    font-size:.9rem;
+    border-radius:.4rem;
+    margin-right:.65rem;
+  }
+  .legal-section h2{
+    font-size:1.15rem;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    margin-bottom:1rem;
+    color:var(--bp-navy);
+  }
+  .legal-section p, .legal-section li{
+    color:var(--bp-text);
+    line-height:1.7;
+  }
+  .info-table{
+    width:100%;
+    margin-bottom:0;
+  }
+  .info-table th{
+    width:38%;
+    color:var(--bp-muted);
+    font-weight:600;
+    font-size:.9rem;
+    vertical-align:top;
+    padding:.45rem 0;
+    border:none;
+  }
+  .info-table td{
+    padding:.45rem 0;
+    border:none;
+  }
+  .info-table tr{
+    border-bottom:1px solid var(--bp-border);
+  }
+  .rgpd-box{
+    background:var(--bp-blue-light);
+    border-radius:.5rem;
+    padding:1.25rem 1.4rem;
+    margin-top:1rem;
+  }
+  .rgpd-box ul{
+    margin-bottom:.75rem;
+  }
+  .contact-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    background:#fff;
+    border:1px solid var(--bp-border);
+    border-radius:2rem;
+    padding:.4rem 1rem;
+    font-size:.92rem;
+    color:var(--bp-blue);
+    font-weight:600;
+    text-decoration:none;
+  }
+  .legal-footer{
+    color:var(--bp-muted);
+    font-size:.85rem;
+    padding:2rem 0 3rem;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<header class="legal-header">
+  <div class="container">
+    <div class="eyebrow">Business Partners</div>
+    <h1>Mentions légales</h1>
+  </div>
+</header>
+
+<div class="container my-4 my-md-5">
+  <div class="row g-4 g-lg-5">
+
+    <!-- Nav -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <nav class="legal-nav nav flex-column" id="legal-toc">
+        <a class="nav-link" href="#editeur">1. Éditeur du site</a>
+        <a class="nav-link" href="#conception">2. Conception et réalisation</a>
+        <a class="nav-link" href="#hebergement">3. Hébergement</a>
+        <a class="nav-link" href="#propriete">4. Propriété intellectuelle</a>
+        <a class="nav-link" href="#responsabilite">5. Responsabilité</a>
+        <a class="nav-link" href="#rgpd">6. Données personnelles (RGPD)</a>
+        <a class="nav-link" href="#cookies">7. Cookies</a>
+        <a class="nav-link" href="#droit">8. Droit applicable</a>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="col-lg-9">
+      <div class="legal-card">
+
+        <section class="legal-section" id="editeur">
+          <h2><span class="num">1</span>Éditeur du site</h2>
+          <p>Le site <a href="https://business-partners.fr" target="_blank" rel="noopener">business-partners.fr</a> est édité par :</p>
+          <table class="info-table">
+            <tr><th>Raison sociale</th><td>Business Partners</td></tr>
+            <tr><th>SIREN</th><td>393 313 697</td></tr>
+            <tr><th>Forme juridique</th><td>SAS (Société par Actions Simplifiée)</td></tr>
+            <tr><th>Adresse</th><td>11 avenue de l'Île Saint-Martin, 92000 Nanterre, France</td></tr>
+            <tr><th>Email</th><td><a href="mailto:mail@business-partners.fr">mail@business-partners.fr</a></td></tr>
+            <tr><th>Téléphone</th><td>+33 (0)1 56 83 79 50</td></tr>
+            <tr><th>Directeur de la publication</th><td>Business Partners</td></tr>
+          </table>
+        </section>
+
+        <section class="legal-section" id="conception">
+          <h2><span class="num">2</span>Conception et réalisation du site</h2>
+          <p>Le site a été conçu et réalisé par :</p>
+          <table class="info-table">
+            <tr><th>Nom</th><td>Capucine Fauroux</td></tr>
+            <tr><th>Statut</th><td>Entrepreneur individuel (auto-entreprise)</td></tr>
+            <tr><th>SIREN</th><td>928 880 079</td></tr>
+          </table>
+        </section>
+
+        <section class="legal-section" id="hebergement">
+          <h2><span class="num">3</span>Hébergement</h2>
+          <p>Le site est hébergé par :</p>
+          <table class="info-table">
+            <tr><th>Hébergeur</th><td>GitHub Pages (GitHub, Inc.)</td></tr>
+            <tr><th>Adresse</th><td>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</td></tr>
+            <tr><th>Site</th><td><a href="https://pages.github.com/" target="_blank" rel="noopener">pages.github.com</a></td></tr>
+          </table>
+        </section>
+
+        <section class="legal-section" id="propriete">
+          <h2><span class="num">4</span>Propriété intellectuelle</h2>
+          <p>L'ensemble des contenus présents sur le site (textes, images, graphismes, logo, structure et code) est protégé par le droit de la propriété intellectuelle.</p>
+          <p>Sauf mention contraire, ces contenus sont la propriété de Business Partners.</p>
+          <p class="mb-0">Toute reproduction, modification ou exploitation sans autorisation est interdite.</p>
+        </section>
+
+        <section class="legal-section" id="responsabilite">
+          <h2><span class="num">5</span>Responsabilité</h2>
+          <p>Business Partners s'efforce de fournir des informations fiables et mises à jour. Toutefois, des erreurs ou omissions peuvent exister.</p>
+          <p class="mb-0">L'utilisateur reste responsable de l'usage qu'il fait des informations présentes sur le site.</p>
+        </section>
+
+        <section class="legal-section" id="rgpd">
+          <h2><span class="num">6</span>Données personnelles (RGPD)</h2>
+          <p>Les données personnelles éventuellement collectées via le site (formulaire de contact, email, etc.) sont traitées uniquement par Business Partners.</p>
+          <p>Ces données ne sont ni revendues ni transmises à des tiers.</p>
+          <div class="rgpd-box">
+            <p class="mb-2">Conformément au RGPD, les utilisateurs disposent des droits suivants :</p>
+            <ul>
+              <li>Accès</li>
+              <li>Rectification</li>
+              <li>Suppression</li>
+              <li>Opposition</li>
+            </ul>
+            <a class="contact-pill" href="mailto:mail@business-partners.fr">📩 mail@business-partners.fr</a>
+          </div>
+        </section>
+
+        <section class="legal-section" id="cookies">
+          <h2><span class="num">7</span>Cookies</h2>
+          <p>Le site peut utiliser des cookies afin d'améliorer l'expérience utilisateur et mesurer l'audience.</p>
+          <p class="mb-0">L'utilisateur peut les désactiver via les paramètres de son navigateur.</p>
+        </section>
+
+        <section class="legal-section" id="droit">
+          <h2><span class="num">8</span>Droit applicable</h2>
+          <p class="mb-0">Le site est soumis au droit français.</p>
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="legal-footer">
+  &copy; <span id="year"></span> Business Partners — Tous droits réservés
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scrollspy simple pour surligner le lien actif
+  const sections = document.querySelectorAll('section.legal-section');
+  const links = document.querySelectorAll('#legal-toc .nav-link');
+  const setActive = () => {
+    let current = sections[0];
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 120) current = sec;
+    });
+    links.forEach(l => l.classList.remove('active'));
+    const active = document.querySelector(`#legal-toc .nav-link[href="#${current.id}"]`);
+    if (active) active.classList.add('active');
+  };
+  window.addEventListener('scroll', setActive);
+  setActive();
+</script>
+
+</body>
+</html>
