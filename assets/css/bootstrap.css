@@ -253,7 +253,7 @@ color: var(--secondary);
     .navbar-light{
      filter: none;
   }
-  header.header-color .navbar-brand img{
+  header .navbar-brand img{
     filter: none;
   }
 
