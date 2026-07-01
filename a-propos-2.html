@@ -23,17 +23,19 @@
   
    
   <body>
-  <header id="header" class="w-100 header-color-light" style="z-index: 1;">
+     <header id="header" class="w-100 header-color-light" style="z-index: 1;">
 
       <nav class="navbar navbar-expand-md navbar-dark" >
           <div class="container-fluid ">
-            <a class="navbar-brand" href="./index.html"><img src="./assets/img/Logo-Business-Partners.svg" class="ml-2" ></a>
+            <a class="navbar-brand"  href="./index3.html"><img src="./assets/img/Logo-Business-Partners.svg"></a>
 
-            <div class="navbar-toggler ">
+            <div class="navbar-toggler mr-2">
               
                   <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
                       <span class="navbar-toggler-icon"></span>
                   </button>
+
+                
            
           </div>
           
@@ -41,19 +43,18 @@
               <div class="col-12 ml-2">
              
                 <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100 text-primary">
-        
-                  
-                  <li class="nav-item d-lg-block d-none">
-                    <div class="dropdown">
-                     <a href="./se connecter.html" class="btn-secondary text-light btn btn-rounded mx-3">Espace Partenaire</a>
 
-                     
+                  <li class="nav-item">
+                   <a class="nav-link active" href="./a-propos-2.html">Découvrir qui nous sommes</a>
+                  </li>
                   
-            
+                  <li class="nav-item">
+                    <div class="dropdown">
+                     <a href="./se connecter.html" class="nav-link btn-secondary btn-sm text-light btn btn-rounded mx-3">Espace Partenaire</a>
+
                   </div>
                 </li>
-            
-                
+
                 </ul>
               </div>
              
@@ -62,20 +63,19 @@
           </div>
         </nav>
   </header>
-
-
+    
+    
     <main>
 
       <div class="position relative bg-light space-top-5 bg-img" style="background: linear-gradient(rgba(0,40,80,0.8), rgba(0,40,80,0.8)), url('./assets/banniere/aboutus.jpg') top/cover;">
 
         <div class="container space-top-5">
-           <div class="w-50 text-light">
+           <div class="col-lg-7 col-12 text-light">
 
  <h1 class="text-light">Votre Partenaire de Confiance pour la Croissance et la Transformation </h1>      
  <br>
  <p>Simplifiez-vous la vie avec Business Partners, en vous assurant de disposer des équipements nécessaires a votre croissance et un retour sur investissement durable. Et mettez en place des solutions écoresponsables ! </p>
 
-      <a href="#contact" class="btn btn-secondary px-4 py-2 mt-4 rounded-2 shadow-sm ">Nous Contacter</a>
 
        </div>
         </div>
@@ -83,9 +83,22 @@
 </div>
 
             <!-- 2. SECTION QUI SOMMES-NOUS ? -->
-            <div class="py-5 px-4 px-md-5 bg-white" id="about-content">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-7">
+            <div class="bg-white space-4" id="about-content">
+
+              <div class="container">
+
+
+
+                <div class="d-flex">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-flex">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                </div>
+                    <div class="d-lg-flex d-block align-items-center justify-content-between">
+                    <div class="col-lg-6 col-12 mx-lg-2 mx-0">
                         <h2 class="fw-bold text-uppercase mb-4 position-relative" style="letter-spacing: 1px;">
                             Qui Sommes-Nous ?
                         </h2>
@@ -95,13 +108,11 @@
                         <p class="text-muted mb-4">
                             Notre objectif fondamental est de maximiser la flexibilité et la réactivité de vos investissements, tout en sécurisant vos relations à long terme. Nous bâtissons des infrastructures fiables, adaptées aux réalités de l'industrie, du médical et du numérique.
                         </p>
-                        <a href="#contact" class="btn btn-primary px-4 py-2 rounded-2 ">
-                            Nous Contacter
-                        </a>
+                   
                     </div>
                     
                     <!-- Image illustration équipe (Format arrondi sur l'image) -->
-                    <div class="col-lg-5 text-center">
+                    <div class="col-lg-5 col-12 mx-lg-2 mx-0 text-center">
                         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070" 
                              alt="Équipe Business Partners" 
                              class="img-fluid rounded-4 shadow-sm" 
@@ -109,68 +120,10 @@
                     </div>
                 </div>
               </div>
-
-         
-  <div class="space-3" id="section 4">
-      <div class="container">
-    
-            <!-- Titre de la section -->
-        <h2 class="fw-bold section-title mb-5 text-center" >
-          Cofinançons vos projets
-        </h2>
-                    <div class="bg-light bg-opacity-10 p-4 rounded-4">
-                                              <form>
-                     
-                              <div class="mb-2">
-                                  <label>Nom</label>
-                              <input type="text" class="mb-2 form-control" placeholder="Nom de famille">
-                              
-
-                            
-                                  <label>Prénom</label>
-                              <input type="text" class="mb-2 form-control" placeholder="Votre Prénom">
-                       
-                              <label>Email professionnel</label>
-                              <input type="email" class="mb-2 form-control" placeholder="Email">
-
-                          
-                            <label>Type de projet</label>
-                            <select class="mb-2 form-select " aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+            
+              </div>
 
 
-                           </select>
-
-
-                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">Pour Vous</label>
-
-                     
-                           </div>
-
-                            <div class="form-check">
-                                   <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">Pour vos clients</label>
-
-                            </div>
-                             
-                            <a href="#" class="btn btn-secondary mx-auto d-flex justify-content-center col-auto btn-rounded">DEMANDER UN CONSEIL</a>
-
-                            </div>
-
-                         
-
-                        </form>
-               
-        </div>
-     
-                  
-     </div>
-    </div>  
             <!-- SECTION : POURQUOI NOUS CHOISIR -->
 <div class="space-4 bg-white text-center">
     <div class="container text-primary">
@@ -181,11 +134,11 @@
         </h2>
 
         <!-- Grille des 3 atouts -->
-        <div class="row  justify-content-center mb-5">
+        <div class="d-lg-flex d-block justify-content-center mb-5">
           
             <!-- Atout 1 : Expertise Sectorielle -->
            
-            <div class="card col-lg-4 text-primary">
+            <div class="card col-lg-4 col-12 mx-lg-3 mx-0 text-primary">
            
                
       
@@ -205,7 +158,7 @@
             </div>
 
             <!-- Atout 2 : Approche Personnalisée -->
-            <div class="card col-lg-4 text-primary">
+            <div class="card col-lg-4 col-12 mx-lg-3 mx-0 text-primary">
                 <div class="mb-3">
                     <!-- Icône Profil / Conseil (Dorée) -->
                     <i class="bi bi-person-badge-fill h1 text-accent-gold"></i>
@@ -230,52 +183,43 @@
 
         </div>
 
-        <!-- Bouton CTA de la section -->
-        <div class="mt-4">
-            <a href="./se connecter.html" class="btn btn-secondary px-5 py-2.5 rounded-2  shadow-sm" style="font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px;">
-                Nous Contacter
-            </a>
-        </div>
 
     </div>
   </div>
     </main>
 
     
-  <footer class="bg-primary footer space-3">
-    <div class="container">
-      <div class="d-md-flex">
-        <div class="col-md-4">
-          <img src="./assets/img/Groupe 615.svg" class="w-50">
-      
-         
-        </div>
-      
-        <div class="col-md-4 text-light">
-          <h5 class="text-underline">Pages</h5>
-          <ul class="list-unstyled">
-          <li class="list-unstyled-item"> <a class="text-white" href="./index.html">Accueil</a></li>
-            <li class="list-unstyled-item"><a class="text-white" href="./a-propos.html">A propos</a></li>
-            <li class="list-unstyled-item"><a class="text-white" href="./recrutement.html">Recrutement</a></li>
-          <li class="list-unstyled-item"><a class="text-white" href="./page404.html">Mon Espace Partenaire</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-4 text-light">
-        <h5 class="text-underline">Contactez-nous</h5>
-        <ul class="list-unstyled">
-        <li class="list-unstyled-item"><img src="./assets/img/pin.png"> 11 avenue de l’île St-Martin,
-          92737 Nanterre </li>
-          <li class="list-unstyled-item"><a class="text-white" href="tel:+33 (0)1 56 83 79 50"><img src="./assets/img/smartphone.png"> +33 (0)1 56 83 79 50</a></li>
-          <li class="list-unstyled-item"><a class="text-white" href="mailto:mail@business-partners.fr"><img src="./assets/img/email.png"> mail@business-partners.fr</a></li>
+ <footer class="bg-primary footer space-3">
+      <div class="container">
+        <div class="d-md-flex">
+          <div class="col-md-4">
+            <img src="./assets/img/Groupe 615.svg" class="w-50">
         
-        </ul>
+           
+          </div>
+        
+          <div class="col-md-4 text-light">
+            <h5 class="text-underline">Pages</h5>
+            <ul class="list-unstyled">
+            <li class="list-unstyled-item"> <a class="text-white" href="./index.html">Mentions légales</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="./a-propos.html">Conditions générales</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-4 text-light">
+            <h5 class="text-underline">Contactez-nous</h5>
+            <ul class="list-unstyled">
+            <li class="list-unstyled-item"><img src="./assets/img/pin.png"> 11 avenue de l’île St-Martin,
+              92737 Nanterre </li>
+              <li class="list-unstyled-item"><a class="text-white" href="tel:+33 (0)1 56 83 79 50"><img src="./assets/img/smartphone.png"> +33 (0)1 56 83 79 50</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="mailto:mail@business-partners.fr"><img src="./assets/img/email.png"> mail@business-partners.fr</a></li>
+            
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-</footer>
-
+    
+    </footer>
  <!-- JS Implementing Plugins -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
