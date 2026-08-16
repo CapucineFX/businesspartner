@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qu'est-ce que le leasing ? | Business Partners</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #002060;
+  --navy-md: #003087;
+  --blue:    #1A56C4;
+  --gold:    #F0A500;
+  --orange:  #EA8C3A;
+  --white:   #FFFFFF;
+  --off:     #F7F8FC;
+  --gray:    #6B7280;
+  --dark:    #0D1B3E;
+  --text:    #1C2A4A;
+  --radius:  10px;
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'Inter', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 72px;
+  background: rgba(0,32,96,0.95); backdrop-filter: blur(12px);
+}
+.nav-logo { font-family: var(--font-display); font-size: 1.25rem; color: var(--white); }
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--white); }
+.nav-cta { background: var(--orange); color: var(--white) !important; padding: 8px 20px; border-radius: 6px; font-weight: 600 !important; }
+.nav-a11y { background: none; border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.7); font-size: 0.72rem; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+body.hc { filter: contrast(1.6) grayscale(0.15); }
+
+/* ─── HERO LEASING ─── */
+.hero-leasing {
+  min-height: 60vh; background: var(--dark);
+  display: flex; align-items: center;
+  padding: 120px 5vw 80px; position: relative; overflow: hidden;
+}
+.hero-leasing::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(26,86,196,0.2) 0%, transparent 60%);
+}
+
+/* Animated lines */
+.lines { position: absolute; inset: 0; overflow: hidden; }
+.line {
+  position: absolute; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(26,86,196,0.3), transparent);
+  animation: scanline 4s linear infinite;
+}
+.line:nth-child(1) { top: 20%; animation-delay: 0s; }
+.line:nth-child(2) { top: 45%; animation-delay: -1.5s; }
+.line:nth-child(3) { top: 70%; animation-delay: -3s; }
+@keyframes scanline { 0% { transform: scaleX(0) translateX(-100%); } 50% { transform: scaleX(1) translateX(0); } 100% { transform: scaleX(0) translateX(100%); } }
+
+.hero-leasing-inner { position: relative; z-index: 1; max-width: 700px; }
+.hero-leasing-inner .eyebrow {
+  display: inline-flex; gap: 8px; align-items: center;
+  color: var(--gold); font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  margin-bottom: 1.25rem;
+  opacity: 0; animation: fadeUp 0.6s 0.2s forwards;
+}
+.hero-leasing-inner h1 {
+  font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 4rem);
+  color: var(--white); line-height: 1.05; letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+  opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
+}
+.hero-leasing-inner h1 em { color: var(--gold); font-style: normal; }
+.hero-leasing-inner p {
+  font-size: 1.05rem; color: rgba(255,255,255,0.6); line-height: 1.7;
+  opacity: 0; animation: fadeUp 0.7s 0.6s forwards;
+}
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+
+/* Big definition callout */
+.definition {
+  background: var(--off); border-left: 4px solid var(--gold);
+  padding: 2rem 2.5rem; border-radius: 0 12px 12px 0; margin: 3rem 0;
+  font-size: 1.1rem; color: var(--navy); line-height: 1.8; font-weight: 400;
+}
+.definition strong { color: var(--blue); }
+
+/* SECTION utility */
+section { padding: 80px 5vw; }
+.container { max-width: 1100px; margin: 0 auto; }
+.section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--orange); display: block; margin-bottom: 0.5rem; }
+.section-title { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 1rem; }
+.section-title .hl { color: var(--blue); }
+.section-sub { font-size: 0.95rem; color: var(--gray); line-height: 1.7; max-width: 580px; margin-bottom: 3rem; }
+
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── HOW IT WORKS ─── */
+.s-how { background: var(--white); }
+.how-timeline { position: relative; max-width: 780px; }
+.how-timeline::before {
+  content: ''; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--blue), var(--orange));
+}
+.how-step {
+  display: flex; gap: 2rem; margin-bottom: 2.5rem;
+  padding-left: 0; position: relative;
+}
+.how-step:last-child { margin-bottom: 0; }
+.step-dot {
+  flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%;
+  background: var(--white); border: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 1rem; color: var(--navy); font-weight: 800;
+  position: relative; z-index: 1; transition: background 0.3s, color 0.3s;
+  flex-direction: column;
+}
+.how-step:hover .step-dot { background: var(--gold); }
+.step-body {
+  padding: 1.25rem 1.5rem; border-radius: 12px;
+  border: 1px solid #E5E9F2; flex: 1;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  background: var(--white);
+}
+.how-step:hover .step-body { border-color: var(--blue); box-shadow: 0 6px 24px rgba(26,86,196,0.1); transform: translateX(6px); }
+.step-body h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+.step-body p { font-size: 0.82rem; color: var(--gray); line-height: 1.65; }
+.step-tag {
+  display: inline-block; margin-top: 0.6rem;
+  background: rgba(26,86,196,0.08); color: var(--blue);
+  font-size: 0.7rem; font-weight: 600; padding: 2px 10px; border-radius: 20px;
+}
+
+/* ─── AVANTAGES ─── */
+.s-avantages { background: var(--off); }
+.avantages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.av-card {
+  background: var(--white); border-radius: 14px; padding: 2rem;
+  border: 1px solid #E5E9F2;
+  transition: transform 0.3s cubic-bezier(0.34,1.4,0.64,1), box-shadow 0.3s, border-color 0.3s;
+  position: relative; overflow: hidden;
+}
+.av-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gold); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.av-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,32,96,0.12); border-color: var(--blue); }
+.av-card:hover::before { transform: scaleX(1); }
+.av-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+.av-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+.av-card p { font-size: 0.8rem; color: var(--gray); line-height: 1.65; }
+
+/* ─── VS ACHAT ─── */
+.s-vs { background: var(--white); }
+.vs-table-wrap { overflow-x: auto; margin-top: 2rem; }
+.vs-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.07); font-size: 0.83rem; }
+.vs-table th { padding: 14px 20px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.vs-table .th-crit { background: #E8EDF5; color: var(--navy); width: 40%; }
+.vs-table .th-achat { background: #4A5568; color: var(--white); }
+.vs-table .th-leasing { background: var(--navy); color: var(--white); }
+.vs-table td { padding: 12px 20px; border-bottom: 1px solid #F0F3FA; vertical-align: middle; }
+.vs-table tr:last-child td { border-bottom: none; }
+.vs-table .td-crit { font-weight: 500; color: var(--text); background: var(--white); }
+.vs-table .td-achat { background: #FAFAFA; color: #888; }
+.vs-table .td-leasing { background: #F0F4FF; color: var(--blue); font-weight: 500; }
+.vs-table tr:hover .td-crit { background: #F5F7FF; }
+.ic-g { color: #1a7a4a; } .ic-r { color: #ddd; }
+
+/* ─── LEXIQUE ─── */
+.s-lexique { background: var(--off); }
+.lexique-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.lex-item {
+  border-radius: 12px; border: 1px solid #E5E9F2; padding: 1.5rem;
+  background: var(--white); transition: border-color 0.2s, box-shadow 0.2s;
+}
+.lex-item:hover { border-color: var(--gold); box-shadow: 0 4px 16px rgba(240,165,0,0.1); }
+.lex-term { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--orange); margin-bottom: 0.4rem; }
+.lex-item h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+.lex-item p { font-size: 0.8rem; color: var(--gray); line-height: 1.65; }
+
+/* ─── FAQ ─── */
+.s-faq { background: var(--white); }
+.faq-list { max-width: 780px; }
+.faq-item { border-bottom: 1px solid #E5E9F2; }
+.faq-q {
+  padding: 1.25rem 0; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 600; font-size: 0.92rem; color: var(--navy);
+}
+.faq-arrow { color: var(--blue); transition: transform 0.3s; }
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; font-size: 0.83rem; color: var(--gray); line-height: 1.75; }
+.faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.25rem; }
+
+/* ─── CTA ─── */
+.s-cta-leasing {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d3475 100%);
+  padding: 80px 5vw; position: relative; overflow: hidden;
+}
+.s-cta-leasing::before {
+  content: ''; position: absolute; top:-100px; right:-80px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: var(--gold); opacity: 0.07; filter: blur(60px);
+}
+.cta-inner { max-width: 700px; position: relative; z-index:1; }
+.cta-inner h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.6rem); color: var(--white); margin-bottom: 1rem; }
+.cta-inner p { color: rgba(255,255,255,0.6); font-size: 1rem; margin-bottom: 2rem; line-height: 1.7; }
+.cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary { background: var(--orange); color: var(--white); padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(234,140,58,0.35); display: inline-block; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(234,140,58,0.45); }
+.btn-ghost { border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.8); padding: 14px 32px; border-radius: 8px; font-weight: 500; font-size: 0.88rem; transition: background 0.2s; display: inline-block; }
+.btn-ghost:hover { background: rgba(255,255,255,0.08); }
+
+/* Footer minimal */
+.footer-min { background: var(--dark); padding: 32px 5vw; display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 1rem; }
+.footer-min .logo { font-family: var(--font-display); color: var(--white); font-size: 1rem; }
+.footer-min .logo span { color: var(--gold); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .avantages-grid { grid-template-columns: 1fr 1fr; }
+  .lexique-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .avantages-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Business<span>Partners</span></a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="#">Nos Solutions</a>
+    <a href="leasing.html" class="active">Le Leasing</a>
+    <a href="#">Partenaires</a>
+    <a href="#">Contact</a>
+    <a href="index.html#contact" class="nav-cta">Financer mon projet</a>
+  </div>
+  <button class="nav-a11y" onclick="document.body.classList.toggle('hc')">👁 Contraste</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero-leasing">
+  <div class="lines"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+  <div class="hero-leasing-inner">
+    <div class="eyebrow">Guide complet · Leasing B2B</div>
+    <h1>Qu'est-ce que<br>le <em>leasing</em> ?</h1>
+    <p>Tout comprendre sur la location financière : définition, avantages, fonctionnement et différences avec l'achat classique.</p>
+  </div>
+</div>
+
+<!-- DÉFINITION -->
+<section style="background:var(--white); padding: 64px 5vw 0;">
+  <div class="container">
+    <div class="definition reveal">
+      Le leasing (ou <strong>location financière</strong>) est une solution permettant à une entreprise d'<strong>utiliser un équipement sans l'acheter</strong>. Un organisme financier — ici Business Partners — acquiert le bien et le met à votre disposition contre le versement d'un <strong>loyer mensuel fixe</strong>, sur une durée déterminée. À l'échéance, vous choisissez : restituer, renouveler, ou racheter.
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="s-how">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Le fonctionnement</span>
+      <h2 class="section-title">Comment ça <span class="hl">marche</span> concrètement ?</h2>
+      <p class="section-sub">En 4 étapes simples, du besoin identifié à l'équipement opérationnel.</p>
+    </div>
+    <div class="how-timeline">
+      <div class="how-step reveal">
+        <div class="step-dot">1</div>
+        <div class="step-body">
+          <h3>Vous identifiez votre besoin</h3>
+          <p>Vous choisissez l'équipement et le fournisseur. Informatique, médical, industriel, automobile — tout actif professionnel est éligible. Vous gardez le libre choix de votre matériel.</p>
+          <span class="step-tag">Libre choix du matériel</span>
+        </div>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-dot">2</div>
+        <div class="step-body">
+          <h3>Business Partners finance et achète le bien</h3>
+          <p>Nous acquérons l'équipement auprès de votre fournisseur. Vous ne déboursez rien. L'analyse de dossier et la réponse de financement interviennent en moins de 24h.</p>
+          <span class="step-tag">Réponse &lt; 24h</span>
+        </div>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-dot">3</div>
+        <div class="step-body">
+          <h3>Vous utilisez et payez un loyer mensuel</h3>
+          <p>Vous disposez de l'équipement immédiatement. Les loyers sont fixes, prévisibles, et entièrement déductibles fiscalement. La TVA est récupérable à chaque échéance.</p>
+          <span class="step-tag">Loyers 100% déductibles</span>
+        </div>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-dot">4</div>
+        <div class="step-body">
+          <h3>À la fin du contrat, vous décidez</h3>
+          <p>Trois options s'offrent à vous : restituer le bien (zéro risque d'obsolescence), renouveler le contrat avec des équipements plus récents, ou racheter le bien à sa valeur résiduelle.</p>
+          <span class="step-tag">3 options de fin de contrat</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVANTAGES -->
+<section class="s-avantages">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Pourquoi choisir le leasing</span>
+      <h2 class="section-title">6 avantages <span class="hl">concrets</span></h2>
+      <p class="section-sub">La location financière transforme un investissement lourd en charge opérationnelle maîtrisée.</p>
+    </div>
+    <div class="avantages-grid">
+      <div class="av-card reveal">
+        <span class="av-icon">💰</span>
+        <h3>Trésorerie préservée</h3>
+        <p>Aucune avance de capital. Vos liquidités restent disponibles pour votre cœur de métier, votre stock ou vos opportunités de croissance.</p>
+      </div>
+      <div class="av-card reveal">
+        <span class="av-icon">📊</span>
+        <h3>Fiscalité optimisée</h3>
+        <p>Les loyers sont charges d'exploitation déductibles à 100%. La TVA est récupérable. Résultat : votre impôt sur les sociétés diminue.</p>
+      </div>
+      <div class="av-card reveal">
+        <span class="av-icon">⚡</span>
+        <h3>Décision rapide</h3>
+        <p>Réponse de financement en moins de 24h. Vos projets ne sont plus freinés par des délais bancaires ou des comités de crédit interminables.</p>
+      </div>
+      <div class="av-card reveal">
+        <span class="av-icon">🔄</span>
+        <h3>Zéro obsolescence</h3>
+        <p>À chaque fin de contrat, renouvelez vos équipements. Vous accédez toujours aux technologies les plus récentes sans subir la dépréciation.</p>
+      </div>
+      <div class="av-card reveal">
+        <span class="av-icon">🎯</span>
+        <h3>Budget maîtrisé</h3>
+        <p>Des mensualités fixes sur toute la durée du contrat. Pas de mauvaise surprise : vous budgétisez avec précision, sans dépense imprévue.</p>
+      </div>
+      <div class="av-card reveal">
+        <span class="av-icon">🌍</span>
+        <h3>Démarche RSE</h3>
+        <p>En fin de contrat, les équipements sont reconditionnés ou recyclés. Le leasing favorise l'économie circulaire et réduit votre empreinte carbone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VS ACHAT -->
+<section class="s-vs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Comparaison</span>
+      <h2 class="section-title">Leasing vs <span class="hl">Achat classique</span></h2>
+      <p class="section-sub">Pourquoi de plus en plus d'entreprises choisissent la location financière plutôt que l'investissement direct ?</p>
+    </div>
+    <div class="vs-table-wrap reveal">
+      <table class="vs-table">
+        <thead>
+          <tr>
+            <th class="th-crit">Critère</th>
+            <th class="th-achat">Achat</th>
+            <th class="th-leasing">Leasing BP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="td-crit">Impact trésorerie</td><td class="td-achat">Capital immobilisé</td><td class="td-leasing">Loyers mensuels fixes</td></tr>
+          <tr><td class="td-crit">Déductibilité fiscale</td><td class="td-achat">Amortissement seul</td><td class="td-leasing">100% en charges</td></tr>
+          <tr><td class="td-crit">Risque d'obsolescence</td><td class="td-achat"><span class="ic-r">✕ Supporté par l'entreprise</span></td><td class="td-leasing"><span class="ic-g">✓ Éliminé</span></td></tr>
+          <tr><td class="td-crit">Délai d'acquisition</td><td class="td-achat">Semaines (validation budget)</td><td class="td-leasing">< 24h</td></tr>
+          <tr><td class="td-crit">Flexibilité fin de vie</td><td class="td-achat">Revente complexe</td><td class="td-leasing">3 options claires</td></tr>
+          <tr><td class="td-crit">Visibilité budgétaire</td><td class="td-achat">Coûts variables (maintenance)</td><td class="td-leasing">Mensualité fixe tout inclus</td></tr>
+          <tr><td class="td-crit">Impact bilan</td><td class="td-achat">Actif au bilan</td><td class="td-leasing">Hors-bilan possible</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- LEXIQUE -->
+<section class="s-lexique">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Lexique</span>
+      <h2 class="section-title">Les termes <span class="hl">à connaître</span></h2>
+    </div>
+    <div class="lexique-grid">
+      <div class="lex-item reveal">
+        <div class="lex-term">Définition</div>
+        <h3>Location financière (leasing)</h3>
+        <p>Contrat par lequel un bailleur met un bien à disposition d'un locataire contre des loyers. Le locataire n'est pas propriétaire pendant la durée du contrat.</p>
+      </div>
+      <div class="lex-item reveal">
+        <div class="lex-term">Définition</div>
+        <h3>Crédit-bail</h3>
+        <p>Variante du leasing incluant une promesse de vente à terme à un prix convenu. Le locataire peut devenir propriétaire à la fin du contrat (option d'achat).</p>
+      </div>
+      <div class="lex-item reveal">
+        <div class="lex-term">Terme clé</div>
+        <h3>Valeur résiduelle</h3>
+        <p>Prix auquel le locataire peut racheter le bien à la fin du contrat. Fixée contractuellement dès le départ, souvent symbolique pour le matériel IT.</p>
+      </div>
+      <div class="lex-item reveal">
+        <div class="lex-term">Terme clé</div>
+        <h3>Leaseback</h3>
+        <p>Technique consistant à vendre un équipement déjà possédé à un bailleur, puis à le lui louer. Permet de récupérer des liquidités immédiatement.</p>
+      </div>
+      <div class="lex-item reveal">
+        <div class="lex-term">Terme clé</div>
+        <h3>Neutralité constructeur</h3>
+        <p>Le bailleur ne favorise aucune marque. Vous choisissez librement le fournisseur et l'équipement qui correspond à votre besoin réel.</p>
+      </div>
+      <div class="lex-item reveal">
+        <div class="lex-term">Terme clé</div>
+        <h3>Gestion de parc</h3>
+        <p>Suivi centralisé de l'ensemble des équipements sous contrat : dates d'échéance, renouvellements, états. Business Partners propose un service dédié.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="s-faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Questions fréquentes</span>
+      <h2 class="section-title">Vos questions, <span class="hl">nos réponses</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q">Quelle est la durée minimale d'un contrat de leasing ? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Les contrats de leasing s'étendent généralement de 24 à 60 mois. La durée est calée sur la durée de vie utile du bien : 24-36 mois pour l'informatique, 48-60 mois pour les équipements industriels ou médicaux.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Le leasing est-il réservé aux grandes entreprises ? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Non. Le leasing est particulièrement adapté aux PME et ETI car il permet d'accéder à des équipements de qualité professionnelle sans mobiliser un capital important. Business Partners travaille avec toutes les tailles d'entreprises.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Peut-on louer du logiciel (SaaS) en leasing ? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Oui. La location financière peut inclure les licences logicielles, les prestations de maintenance et même des services associés. C'est ce qu'on appelle le "bundled leasing" ou leasing global de solution.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Que se passe-t-il si j'ai besoin de l'équipement plus tôt que prévu ? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Des clauses de résiliation anticipée peuvent être prévues dans le contrat. Elles impliquent généralement des indemnités. Business Partners étudie chaque situation au cas par cas pour trouver la solution la plus adaptée.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Le leasing est-il possible pour du matériel d'occasion ? <span class="faq-arrow">▾</span></div>
+        <div class="faq-a">Oui, notamment via le leaseback ou le leasing de matériel reconditionné. C'est une option intéressante pour réduire les coûts tout en bénéficiant des avantages fiscaux du leasing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="s-cta-leasing">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2>Vous avez un projet à financer ?</h2>
+      <p>Nos experts structurent votre solution de leasing en moins de 24h — sans engagement initial. Parlons de votre projet.</p>
+      <div class="cta-actions">
+        <a href="index.html#contact" class="btn-primary">Financer mon projet →</a>
+        <a href="index.html" class="btn-ghost">Retour à l'accueil</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer-min">
+  <div class="logo">Business<span>Partners</span> — Expert Leasing B2B</div>
+  <span>© 2025 Business Partners® · Nanterre · France</span>
+</div>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 70);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

@@ -8,23 +8,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-
-
-
-
-
- :root {
-  --primary: #00519F;
-  --soft-primary: #CFE2F3;
-  --secondary: #F4A51D;
-  --dark: #3F3D56;
-  --light: #F9F9F9;
-  --grey: #D4D4D4;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-}
-
 *,
 *::before,
 *::after {
@@ -32,11 +15,26 @@
 }
 
 
-
+p {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+font-size: small;
+}
 
 
 /* menu */
 
+/* ═══════════════════════════════════
+   NAV
+═══════════════════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw;
+  height: 72px;
+  background: rgba(0,32,96,0.92);
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
 
 .navbar {
   position: relative;
@@ -249,7 +247,7 @@ color: var(--secondary);
   .navbar{
     background: transparent;
   }
-    .navbar-light{
+  .navbar-light{
      filter: none;
   }
   header .navbar-brand img{
@@ -299,30 +297,6 @@ color: var(--secondary);
 
 }
 
-.section-wrap { padding: 2rem 1rem; font-family: sans-serif; }
-.section-inner { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; }
-.col-table { flex: 0 0 60%; max-width: 60%; }
-.col-form  { flex: 0 0 36%; max-width: 36%; }
-
-.section-title {
-  text-align: center;
-  color: #003087;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
-  margin-bottom: 1.5rem;
-}
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 50px; height: 3px;
-  background: #FFD700;
-  border-radius: 2px;
-  transition: width 0.4s ease;
-}
-.section-title:hover::after { width: 50%; }
 
 /* TABLE */
 table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.82rem; }
@@ -938,22 +912,7 @@ hr {
 hr:not([size]) {
   height: 1px;
 }
-.section-title {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 60px; height: 3px;
-  background: #FFD700;
-  border-radius: 2px;
-  transition: width 0.4s ease;
-}
-.section-title:hover::after { width: 100%; }
+
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
