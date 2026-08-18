@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leasing Industrie & Agriculture | Business Partners</title>
+<meta name="description" content="Business Partners finance vos équipements industriels et agricoles en leasing : robotique, machines de production, matériel agricole. Réponse en moins de 24h, en France, en Europe et au Royaume-Uni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F3A; --ink:#1B2733; --muted:#5B6675; --bg:#F3F5F8; --white:#FFFFFF; --border:#E2E6EC;
+  --accent:#B8651A; --accent-soft:#FBEEE0; --accent-ink:#FFFFFF;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);margin:0;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1140px;margin:0 auto;padding:0 24px;}
+img{max-width:100%;display:block;}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1140px;margin:0 auto;}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem;color:var(--navy);display:flex;align-items:center;gap:8px;}
+.logo::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block;}
+nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0;align-items:center;flex-wrap:wrap;}
+nav a{font-size:.92rem;font-weight:500;color:var(--muted);}
+nav a:hover, nav a.active{color:var(--navy);}
+nav a.active{color:var(--accent);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:999px;font-weight:600;font-size:.88rem;white-space:nowrap;}
+.btn-primary{background:var(--accent);color:var(--accent-ink);}
+.btn-primary:hover{opacity:.9;}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff;}
+.btn-ghost:hover{border-color:#fff;}
+.btn-ghost-light{border:1px solid var(--border);color:var(--navy);}
+
+/* hero */
+.hero{background:var(--navy);padding:76px 0 0;color:#fff;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.35;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--accent);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
+.hero h1{color:#fff;font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.08;max-width:16ch;position:relative;}
+.hero p.lead{color:#C9D3E0;max-width:56ch;margin-top:18px;font-size:1.08rem;position:relative;}
+.hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;position:relative;}
+.ledger{margin-top:56px;border-top:1px solid rgba(255,255,255,.15);display:grid;grid-template-columns:repeat(4,1fr);position:relative;}
+.ledger div{padding:22px 20px;border-left:1px solid rgba(255,255,255,.12);}
+.ledger div:first-child{border-left:none;}
+.ledger .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--accent);}
+.ledger .label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-top:4px;}
+
+/* sections */
+section{padding:78px 0;}
+.alt{background:var(--bg);}
+.section-head{max-width:680px;margin-bottom:44px;}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.kicker::before{content:"";width:22px;height:1px;background:var(--accent);}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:12px;}
+.section-head p{color:var(--muted);font-size:1.02rem;}
+
+.grid{display:grid;gap:20px;}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:26px;}
+.card .ic{font-size:1.6rem;margin-bottom:14px;display:inline-block;}
+.card h3{font-size:1.02rem;margin-bottom:8px;font-weight:600;}
+.card p{color:var(--muted);font-size:.92rem;margin:0;}
+
+.equip-cat{margin-bottom:30px;}
+.equip-cat h4{font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.equip-cat h4::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--accent);display:inline-block;}
+.chips{display:flex;flex-wrap:wrap;gap:10px;}
+.chip{border:1px solid var(--border);border-radius:999px;padding:7px 16px;font-size:.85rem;background:#fff;transition:.15s;}
+.chip:hover{border-color:var(--accent);color:var(--accent);}
+
+.process{display:flex;flex-direction:column;gap:0;}
+.step{display:grid;grid-template-columns:70px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--border);}
+.step:last-child{border-bottom:1px solid var(--border);}
+.step .n{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--accent);}
+.step h3{font-size:1.08rem;margin-bottom:8px;}
+.step p{color:var(--muted);margin:0 0 10px;}
+.tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:6px;letter-spacing:.03em;}
+
+table{width:100%;border-collapse:collapse;margin-top:10px;background:#fff;}
+th,td{padding:14px 16px;text-align:left;font-size:.92rem;border-bottom:1px solid var(--border);}
+thead th{background:var(--navy);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;}
+tbody tr:nth-child(even){background:var(--bg);}
+td.win{color:var(--accent);font-weight:600;}
+th.bp{background:var(--accent);}
+
+details{border-bottom:1px solid var(--border);padding:18px 0;}
+summary{cursor:pointer;font-weight:600;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:1rem;}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";font-family:'IBM Plex Mono',monospace;color:var(--accent);font-size:1.2rem;}
+details[open] summary::after{content:"–";}
+details p{color:var(--muted);margin-top:12px;}
+
+.cross{border-top:1px solid var(--border);}
+.cross-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+.cross-card{border:1px solid var(--border);border-radius:12px;padding:20px;transition:.15s;}
+.cross-card:hover{border-color:var(--accent);transform:translateY(-2px);}
+.cross-card .ic{font-size:1.4rem;}
+.cross-card h4{font-size:.95rem;margin:10px 0 4px;font-weight:600;}
+.cross-card span{color:var(--muted);font-size:.82rem;}
+
+.cta-banner{background:var(--navy);color:#fff;text-align:center;padding:70px 0;}
+.cta-banner h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:10px;}
+.cta-banner p{color:#C9D3E0;margin-bottom:28px;}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+footer{background:var(--navy);color:#C9D3E0;padding:56px 0 28px;font-size:.9rem;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;}
+.foot-grid h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+.foot-grid a{display:block;color:#C9D3E0;margin-bottom:8px;}
+.foot-grid a:hover{color:var(--accent);}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:20px;font-size:.8rem;color:#8291A6;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+@media(max-width:760px){
+  .ledger{grid-template-columns:repeat(2,1fr);}
+  .ledger div:nth-child(3){border-left:none;}
+  .foot-grid{grid-template-columns:1fr;}
+  .step{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">BusinessPartners</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="informatique.html">Informatique</a></li>
+        <li><a href="medical.html">Médical</a></li>
+        <li><a href="industrie.html" class="active">Industrie</a></li>
+        <li><a href="automobile.html">Automobile</a></li>
+        <li><a href="leasing.html">Le Leasing</a></li>
+        <li><a href="index.html#contact" class="btn btn-primary">Financer mon projet</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Leasing Industrie &amp; Agriculture</span>
+      <h1>Équipez vos lignes et vos exploitations, sans peser sur votre trésorerie.</h1>
+      <p class="lead">Robotique, machines de production, matériel agricole : Business Partners finance vos outils de production sans immobiliser votre capital, avec une réponse en moins de 24h.</p>
+      <div class="hero-ctas">
+        <a href="index.html#contact" class="btn btn-primary">Financer mon équipement →</a>
+        <a href="leasing.html" class="btn btn-ghost">Comprendre le leasing</a>
+      </div>
+      <div class="ledger">
+        <div><div class="num">36-60</div><div class="label">Mois, durée type industrie</div></div>
+        <div><div class="num">&lt;24h</div><div class="label">Réponse de financement</div></div>
+        <div><div class="num">100%</div><div class="label">Loyers déductibles</div></div>
+        <div><div class="num">EU+UK</div><div class="label">Couverture géographique</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Qui accompagnons-nous</div>
+        <h2>Une solution pour chaque outil de production</h2>
+        <p>De l'atelier à l'exploitation agricole, nos offres s'adaptent aux cycles de production et aux saisonnalités de votre activité.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card"><span class="ic">🏭</span><h3>Industriels &amp; manufacturiers</h3><p>Financez vos lignes d'assemblage et votre parc robotique sans ralentir votre production.</p></div>
+        <div class="card"><span class="ic">🌾</span><h3>Exploitations &amp; coopératives agricoles</h3><p>Adaptez vos loyers à la saisonnalité de votre activité pour équiper tracteurs et matériel d'irrigation.</p></div>
+        <div class="card"><span class="ic">🔧</span><h3>PME de production &amp; sous-traitants</h3><p>Accédez à des machines-outils performantes sans mobiliser votre fonds de roulement.</p></div>
+        <div class="card"><span class="ic">📦</span><h3>Logistique &amp; entrepôts</h3><p>Équipez vos sites de manutention et de conditionnement au rythme de votre croissance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Ce que nous finançons</div>
+        <h2>De l'atelier au champ, un seul contrat</h2>
+        <p>Machines, robotique et équipements agricoles peuvent être regroupés dans une même offre de leasing.</p>
+      </div>
+      <div class="equip-cat">
+        <h4>Industrie &amp; production</h4>
+        <div class="chips">
+          <span class="chip">Bras robots &amp; robots mobiles (AGV/AMR)</span><span class="chip">Lignes d'assemblage</span><span class="chip">Machines-outils</span><span class="chip">Impression 3D</span><span class="chip">Emballage &amp; conditionnement</span><span class="chip">Manutention &amp; logistique</span>
+        </div>
+      </div>
+      <div class="equip-cat">
+        <h4>Agriculture &amp; énergie</h4>
+        <div class="chips">
+          <span class="chip">Tracteurs &amp; moissonneuses</span><span class="chip">Matériel d'irrigation</span><span class="chip">Efficacité énergétique &amp; primes CEE</span><span class="chip">Équipements CHR</span>
+        </div>
+      </div>
+      <a href="index.html#contact" class="btn btn-ghost-light" style="border:1px solid var(--border);">Étudier mon projet industriel →</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Pourquoi la location industrielle</div>
+        <h2>Six raisons de louer plutôt qu'acheter</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><span class="ic">💰</span><h3>Trésorerie préservée</h3><p>Aucune avance de capital : vos liquidités restent disponibles pour votre exploitation.</p></div>
+        <div class="card"><span class="ic">⚡</span><h3>Productivité immédiate</h3><p>Le matériel est opérationnel dès la livraison, sans attendre un cycle d'investissement complet.</p></div>
+        <div class="card"><span class="ic">📊</span><h3>Fiscalité optimisée</h3><p>Loyers 100% déductibles, TVA récupérable à chaque échéance.</p></div>
+        <div class="card"><span class="ic">🔄</span><h3>Renouvellement continu</h3><p>Restez équipé des technologies de production les plus performantes du marché.</p></div>
+        <div class="card"><span class="ic">🌱</span><h3>Primes CEE &amp; efficacité énergétique</h3><p>Un accompagnement dédié pour vos projets liés aux certificats d'économie d'énergie.</p></div>
+        <div class="card"><span class="ic">♻️</span><h3>Économie circulaire</h3><p>Reconditionnement et recyclage du matériel en fin de contrat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Comment ça marche</div>
+        <h2>De l'expression de besoin à la mise en production</h2>
+      </div>
+      <div class="process">
+        <div class="step"><div class="n">01</div><div><h3>Vous choisissez votre équipement</h3><p>Machine, robot ou matériel agricole : vous gardez le libre choix du fournisseur et du modèle.</p><span class="tag">Neutralité constructeur</span></div></div>
+        <div class="step"><div class="n">02</div><div><h3>Business Partners finance l'acquisition</h3><p>Nous achetons l'équipement auprès de votre fournisseur. Réponse en moins de 24h.</p><span class="tag">Réponse &lt;24h</span></div></div>
+        <div class="step"><div class="n">03</div><div><h3>Vous produisez et payez un loyer fixe</h3><p>Des loyers modulables selon votre saisonnalité, intégralement déductibles fiscalement.</p><span class="tag">Loyers modulables</span></div></div>
+        <div class="step"><div class="n">04</div><div><h3>Fin de contrat, vous décidez</h3><p>Restituez, renouvelez avec un équipement plus récent, ou rachetez à la valeur résiduelle.</p><span class="tag">3 options</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Comparatif</div>
+        <h2>Achat, leasing bancaire, Business Partners</h2>
+      </div>
+      <table>
+        <thead><tr><th>Critère</th><th>Achat</th><th>Leasing bancaire</th><th class="bp">Business Partners</th></tr></thead>
+        <tbody>
+          <tr><td>Impact trésorerie</td><td>Capital immobilisé</td><td>Loyers fixes</td><td class="win">Loyers fixes, sans apport</td></tr>
+          <tr><td>Adaptation à la saisonnalité</td><td>✕</td><td>Rarement</td><td class="win">Loyers modulables</td></tr>
+          <tr><td>Accompagnement primes CEE</td><td>✕</td><td>✕</td><td class="win">✓✓ dédié</td></tr>
+          <tr><td>Matériel d'occasion / leaseback</td><td>✕</td><td>✕</td><td class="win">✓✓ disponible</td></tr>
+          <tr><td>Délai de réponse</td><td>Semaines</td><td>Plusieurs jours</td><td class="win">&lt; 24h</td></tr>
+          <tr><td>Couverture géographique</td><td>—</td><td>France</td><td class="win">France, Europe, UK</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Questions fréquentes</div>
+        <h2>Le leasing industriel &amp; agricole en détail</h2>
+      </div>
+      <details><summary>Les loyers peuvent-ils suivre la saisonnalité agricole ?</summary><p>Oui. Nos contrats peuvent prévoir des loyers progressifs ou modulés selon les périodes de récolte et de trésorerie de votre exploitation.</p></details>
+      <details><summary>Quelle est la durée type d'un contrat industriel ?</summary><p>Entre 36 et 60 mois selon la nature de l'équipement, calée sur sa durée de vie utile réelle.</p></details>
+      <details><summary>Le leasing de matériel reconditionné est-il possible ?</summary><p>Oui, notamment via le leaseback, qui permet de dégager de la trésorerie sur du matériel déjà possédé tout en continuant à l'utiliser.</p></details>
+      <details><summary>Accompagnez-vous les primes CEE ?</summary><p>Oui, nous disposons d'une offre dédiée à l'efficacité énergétique et aux certificats d'économie d'énergie.</p></details>
+      <details><summary>Peut-on financer de la robotique industrielle ?</summary><p>Oui, bras robots, robots mobiles autonomes et lignes d'assemblage complètes entrent dans notre périmètre de financement.</p></details>
+      <details><summary>Le leasing agricole est-il réservé aux grandes exploitations ?</summary><p>Non, les coopératives comme les exploitations individuelles peuvent y accéder, quelle que soit leur taille.</p></details>
+      <details><summary>Intervenez-vous hors de France ?</summary><p>Oui, sur l'ensemble de l'Union Européenne et au Royaume-Uni, avec une bonne maîtrise des cadres réglementaires locaux.</p></details>
+      <details><summary>Quel est l'avantage fiscal du leasing industriel ?</summary><p>Les loyers sont 100% déductibles du résultat imposable et la TVA est récupérable à chaque échéance.</p></details>
+    </div>
+  </section>
+
+  <section class="cross">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:24px;">
+        <div class="kicker">Au-delà de l'industrie</div>
+        <h2>Nos autres domaines de financement</h2>
+      </div>
+      <div class="cross-grid">
+        <a href="informatique.html" class="cross-card"><span class="ic">💻</span><h4>Informatique &amp; IT</h4><span>PC, serveurs, réseau, téléphonie</span></a>
+        <a href="medical.html" class="cross-card"><span class="ic">🏥</span><h4>Médical &amp; Santé</h4><span>Imagerie, bloc opératoire, EHPAD</span></a>
+        <a href="automobile.html" class="cross-card"><span class="ic">🚗</span><h4>Automobile</h4><span>Flottes utilitaires, mobilité électrique</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Prêt à équiper votre production ?</h2>
+      <p>Réponse structurée en moins de 24h, sans engagement initial.</p>
+      <div class="cta-row">
+        <a href="index.html#contact" class="btn btn-primary">Financer mon projet →</a>
+        <a href="index.html" class="btn btn-ghost">Retour à l'accueil</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:#fff;">BusinessPartners</div>
+        <p style="color:#8291A6;margin-top:14px;max-width:34ch;">Expert du leasing B2B depuis plus de 30 ans. France, Europe, Royaume-Uni.</p>
+        <p style="color:#8291A6;margin-top:14px;">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <a href="informatique.html">Leasing Informatique</a>
+        <a href="medical.html">Leasing Médical</a>
+        <a href="industrie.html">Leasing Industriel</a>
+        <a href="automobile.html">Leasing Automobile</a>
+      </div>
+      <div>
+        <h4>Entreprise</h4>
+        <a href="index.html">À propos</a>
+        <a href="leasing.html">Le Leasing</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Business Partners® Leasing B2B — France · Europe · UK</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
