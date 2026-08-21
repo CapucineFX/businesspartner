@@ -41,26 +41,44 @@
 
 
 <body>
-
 <!-- NAV -->
-<nav>
- 
-  <div class="nav-logo">Business<span>Partners</span></div>
-  <div class="nav-links">
-     <a href="./index.html">Accueil V1</a>
-    <a href="leasing.html">Vos Besoins</a>
-    <a href="./informatique.html">Nos Solutions</a>
-    <a href="./home.html">Home</a>
-    <a href="./connect copy.html" class="nav-cta">Financer mon projet</a>
+<header id="header">
+  
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+      <div class="nav-logo navbar-nav"><a href="index.html" class="logo">BusinessPartners</a></div>
+    
+            <div class="navbar-toggler mr-2">
+              
+                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                
+           
+          </div>
+    <div class="collapse navbar-collapse " id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="informatique.html">Informatique</a></li>
+        <li class="nav-item"><a class="nav-link" href="medical.html">Médical</a></li>
+        <li class="nav-item"><a class="nav-link" href="industrie.html">Industrie</a></li>
+        <li class="nav-item"><a class="nav-link" href="automobile.html">Automobile</a></li>
+        <li class="nav-item"><a class="nav-link" href="leasing.html">Le Leasing</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="btn btn-primary">Financer mon projet</a></li>
+      </ul>
+    </div>
+    </div>
+    
+    </nav>
   </div>
-  <button class="nav-a11y" onclick="document.body.classList.toggle('hc')" title="Contraste élevé">👁 Contraste</button>
+</header>
 
-
-</nav>
+  
 
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero-home">
 
 <div class="container-fluid">
     <div class="hero-inner">
@@ -146,7 +164,7 @@
       <div class="secteur-img" >
         <img src="./assets/img/informatique.png" id="secteur informatique et innovation">
       </div>
-      <div class="secteur-body mt-2">
+      <div class="secteur-body">
         <h3> 💻 Informatique &amp; Télécoms</h3>
         <p>Des équipements (classiques ou intégrés), avec les logiciels et prestations applicatives.</p>
       </div>
@@ -155,7 +173,7 @@
      <div class="secteur-img" >
         <img src="./assets/img/2-2.png" id="secteur médicale et innovation">
       </div>      
-      <div class="secteur-body mt-2">
+      <div class="secteur-body">
 
         
         <h3>🏥 Médical &amp; Santé</h3>
@@ -167,7 +185,7 @@
       <div class="secteur-img" >
         <img class="img-fluid radius-top d-lg-block d-none card-img-top" src="./assets/img/secteur/industrie.png" id="secteur indutrie et innovation">
       </div>      
-      <div class="secteur-body mt-2">
+      <div class="secteur-body">
         <h3>⚙️ Industrie</h3>
         <p>Parcs robotiques : bras robots, robots mobiles autonomes, lignes d'assemblage et machines de production.</p>                    
       </div>
@@ -176,7 +194,7 @@
      <div class="secteur-img" >
         <img src="./assets/img/4.png" id="secteur automobile et innovation">
       </div>
-         <div class="secteur-body mt-2">
+         <div class="secteur-body">
         <h3>🚗 Mécanique &amp; Automobile</h3>
         <p>Dans le secteur industriel, des machines-outils y compris l’impressions 3D</p>
       </div>
