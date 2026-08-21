@@ -43,10 +43,32 @@
 .step .n-informatique{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--informatique);}
 /*medical*/
 .eyebrow-medical{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--medical);color:var(--medical);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
+.btn-medical{background:var(--medical);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;} 
+.kicker-medical{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--medical);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.ledger-num-medical{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--medical);} 
+.equip-cat-medical h4::before{content: ""; width: 7px; height: 7px;border-radius: 2px;background: var(--medical);display: inline-block;}  
+.tag-medical{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--medical-soft);color:var(--medical);padding:4px 10px;border-radius:6px;letter-spacing:.03em;}  
+.bp-medical{background:var(--medical);} 
+.step .n-medical{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--medical);}  
 /*industrie*/
 .eyebrow-industrie{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--industrie);color:var(--industrie);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
+.btn-industrie{background:var(--industrie);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;} 
+.kicker-industrie{font-family:'IBM Plex Mono',monospace;font-size :.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--industrie);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.ledger-num-industrie{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--industrie);} 
+.equip-cat-industrie h4::before{content: ""; width: 7px; height: 7px;border-radius: 2px;background: var(--industrie);display: inline-block;}  
+.tag-industrie{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--industrie-soft);color:var(--industrie);padding:4px 10px;border-radius:6px;letter-spacing:.03em;}  
+.bp-industrie{background:var(--industrie);}
+.step .n-industrie{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--industrie);}  
 /*automobile*/
 .eyebrow-automobile{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--automobile);color:var(--automobile);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
+.btn-automobile{background:var(--automobile);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;} 
+.kicker-automobile{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--automobile);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.ledger-num-automobile{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--automobile);} 
+.equip-cat-automobile h4::before{content: ""; width: 7px; height: 7px;border-radius: 2px;background: var(--automobile);display: inline-block;}  
+.tag-automobile{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--automobile-soft);color:var(--automobile);padding:4px 10px;border-radius:6px;letter-spacing:.03em;} 
+.bp-automobile{background:var(--automobile);} 
+.step .n-automobile{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--automobile);}  
+
 
 
 
