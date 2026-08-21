@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leasing Informatique & IT | Business Partners</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+/* ── SOL PAGE SHARED ── */
+.sol-hero {
+  min-height: 100vh; background: var(--dark);
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; padding: 100px 5vw 60px; gap: 4rem;
+  position: relative; overflow: hidden;
+}
+.sol-hero::before {
+  content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse at 60% 40%, rgba(26,86,196,0.2) 0%, transparent 60%);
+}
+.sol-hero-grid {
+  position:absolute; inset:0;
+  background-image: linear-gradient(rgba(26,86,196,0.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(26,86,196,0.06) 1px,transparent 1px);
+  background-size: 56px 56px; animation: gridDrift 20s linear infinite;
+}
+@keyframes gridDrift{to{background-position:56px 56px;}}
+
+.sol-hero-text { position:relative; z-index:1; }
+.sol-hero-text .eyebrow {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(240,165,0,0.1); border:1px solid rgba(240,165,0,0.28);
+  color:var(--gold); font-size:0.68rem; font-weight:700;
+  text-transform:uppercase; letter-spacing:0.1em;
+  padding:5px 14px; border-radius:20px; margin-bottom:1.5rem;
+  opacity:0; animation:fadeUp 0.6s 0.2s forwards;
+}
+.sol-hero-text h1 {
+  font-family:var(--font-d); font-size:clamp(2rem,3.8vw,3.2rem);
+  color:#fff; line-height:1.06; letter-spacing:-0.02em; margin-bottom:1.25rem;
+  opacity:0; animation:fadeUp 0.7s 0.4s forwards;
+}
+.sol-hero-text h1 em { color:var(--gold); font-style:normal; }
+.sol-hero-text p {
+  font-size:1rem; color:rgba(255,255,255,0.58); line-height:1.75;
+  margin-bottom:2rem; opacity:0; animation:fadeUp 0.7s 0.6s forwards;
+}
+.sol-hero-text .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; opacity:0; animation:fadeUp 0.7s 0.8s forwards; }
+
+.sol-hero-visual { position:relative; z-index:1; }
+.sol-hero-img {
+  border-radius:16px; overflow:hidden; position:relative;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg,#001845,#1A56C4);
+  display:flex; align-items:center; justify-content:center;
+  font-size:6rem;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+}
+.sol-hero-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:16px; }
+/* Floating badge */
+.hero-badge {
+  position:absolute; bottom:-16px; left:-16px;
+  background:#fff; border-radius:12px; padding:12px 16px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.15);
+  display:flex; align-items:center; gap:10px;
+  font-family:var(--font-b);
+}
+.hero-badge .b-icon { font-size:1.5rem; }
+.hero-badge .b-num { font-family:var(--font-d); font-size:1.4rem; color:var(--navy); line-height:1; }
+.hero-badge .b-lbl { font-size:0.7rem; color:var(--gray); }
+
+/* ── BANNER (flex alternée) ── */
+.banner-section { padding:72px 5vw; }
+.banner-section:nth-child(even) { background:var(--off); }
+.banner { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+.banner.reverse { direction:rtl; }
+.banner.reverse > * { direction:ltr; }
+.banner-img {
+  border-radius:14px; overflow:hidden; position:relative;
+  aspect-ratio:16/9; background:linear-gradient(135deg,var(--navy),var(--blue));
+  display:flex; align-items:center; justify-content:center; font-size:5rem;
+  box-shadow:0 12px 40px rgba(0,32,96,0.15);
+}
+.banner-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.banner-text { }
+.banner-text .section-label { margin-bottom:0.5rem; }
+.banner-text h2 { font-family:var(--font-d); font-size:clamp(1.5rem,2.8vw,2.2rem); color:var(--navy); letter-spacing:-0.02em; line-height:1.1; margin-bottom:1rem; }
+.banner-text h2 .hl { color:var(--blue); }
+.banner-text p { font-size:0.9rem; color:var(--gray); line-height:1.75; margin-bottom:1.5rem; }
+
+/* Equipment list */
+.eq-list { display:flex; flex-direction:column; gap:0.75rem; }
+.eq-item {
+  display:flex; align-items:flex-start; gap:12px;
+  padding:1rem 1.25rem; border-radius:10px;
+  background:var(--white); border:1px solid var(--border);
+  transition:border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.banner-section:nth-child(even) .eq-item { background:var(--white); }
+.eq-item:hover { border-color:var(--blue); box-shadow:0 4px 16px rgba(26,86,196,0.1); transform:translateX(4px); }
+.eq-icon { font-size:1.3rem; flex-shrink:0; margin-top:2px; }
+.eq-body h4 { font-size:0.85rem; font-weight:700; color:var(--navy); margin-bottom:2px; }
+.eq-body p { font-size:0.78rem; color:var(--gray); line-height:1.55; }
+
+/* ── AVANTAGES GRID ── */
+.s-avantages { padding:88px 5vw; background:var(--navy); }
+.adv-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:2.5rem; }
+.adv-card {
+  background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);
+  border-radius:14px; padding:1.75rem; position:relative; overflow:hidden;
+  transition:background 0.3s, transform 0.3s, border-color 0.3s;
+}
+.adv-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.4s;
+}
+.adv-card:hover { background:rgba(255,255,255,0.09); transform:translateY(-4px); border-color:rgba(255,255,255,0.2); }
+.adv-card:hover::before { transform:scaleX(1); }
+.adv-icon { font-size:1.8rem; margin-bottom:1rem; display:block; }
+.adv-card h3 { font-size:0.92rem; font-weight:700; color:#fff; margin-bottom:0.5rem; }
+.adv-card p { font-size:0.8rem; color:rgba(255,255,255,0.55); line-height:1.65; }
+
+/* ── CTA BAND ── */
+.s-cta-sol {
+  background:linear-gradient(135deg,var(--blue),var(--navy));
+  padding:72px 5vw; text-align:center; position:relative; overflow:hidden;
+}
+.s-cta-sol::before { content:''; position:absolute; top:-80px; right:-80px; width:350px; height:350px; border-radius:50%; background:var(--gold); opacity:0.07; filter:blur(60px); }
+.s-cta-sol h2 { font-family:var(--font-d); font-size:clamp(1.7rem,3vw,2.5rem); color:#fff; margin-bottom:1rem; }
+.s-cta-sol p { color:rgba(255,255,255,0.6); font-size:0.95rem; margin-bottom:2rem; }
+.cta-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+
+@media(max-width:860px){
+  .sol-hero { grid-template-columns:1fr; min-height:auto; }
+  .sol-hero-visual { display:none; }
+  .banner { grid-template-columns:1fr; }
+  .banner.reverse { direction:ltr; }
+  .adv-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:540px){ .adv-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<nav class="bp-nav">
+  <a href="index.html" class="nav-logo">Business<span>Partners</span></a>
+  <div class="nav-desktop">
+    <div class="has-drop">
+      <span class="nl drop-trigger active">Nos Solutions</span>
+      <div class="dropdown">
+        <div class="d-label">Par secteur</div>
+        <a href="sol-informatique.html"><span class="d-icon">💻</span>Informatique & Télécoms</a>
+        <a href="sol-medical.html"><span class="d-icon">🏥</span>Médical & Santé</a>
+        <a href="sol-industrie.html"><span class="d-icon">⚙️</span>Industrie & Robotique</a>
+        <div class="sep"></div>
+        <div class="d-label">Vous êtes</div>
+        <a href="vos-besoins.html"><span class="d-icon">🤝</span>Vendeur / Distributeur</a>
+      </div>
+    </div>
+    <a href="leasing.html" class="nl">Le Leasing</a>
+    <a href="partenaires.html" class="nl">Partenaires</a>
+    <div class="has-drop">
+      <span class="nl drop-trigger">À propos</span>
+      <div class="dropdown">
+        <a href="a-propos.html"><span class="d-icon">🏢</span>Qui sommes-nous ?</a>
+        <a href="a-propos.html#rejoindre"><span class="d-icon">💼</span>Nous rejoindre</a>
+        <a href="a-propos.html#rse"><span class="d-icon">🌿</span>Démarche RSE</a>
+      </div>
+    </div>
+    <a href="contact.html" class="nl">Contact</a>
+    <a href="contact.html" class="nl nav-cta">Financer mon projet</a>
+  </div>
+  <div class="nav-right">
+    <button class="cm-toggle"><span class="cm-dot"></span><span class="cm-icon">👁</span><span class="cm-label">Contraste</span></button>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <div class="mobile-section">
+    <div class="mobile-section-label">Nos Solutions</div>
+    <a href="sol-informatique.html">💻 Informatique & Télécoms</a>
+    <a href="sol-medical.html">🏥 Médical & Santé</a>
+    <a href="sol-industrie.html">⚙️ Industrie & Robotique</a>
+    <a href="vos-besoins.html">🤝 Pour les vendeurs</a>
+  </div>
+  <div class="mobile-section">
+    <div class="mobile-section-label">Navigation</div>
+    <a href="leasing.html">📖 Le Leasing</a>
+    <a href="partenaires.html">🤝 Partenaires</a>
+    <a href="a-propos.html">🏢 À propos</a>
+    <a href="contact.html">📍 Contact</a>
+  </div>
+  <a href="contact.html" class="m-cta">Financer mon projet →</a>
+</div>
+
+<!-- HERO -->
+<section class="sol-hero">
+  <div class="sol-hero-grid"></div>
+  <div class="sol-hero-text">
+    <div class="eyebrow">💻 Nos Solutions · Informatique & IT</div>
+    <h1>Leasing <em>Informatique & IT</em> : Financez vos équipements, logiciels et infrastructures</h1>
+    <p>Digitalisez votre entreprise tout en préservant votre trésorerie grâce à un financement global incluant matériel, software et services.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-p">Obtenir un financement →</a>
+      <a href="leasing.html" class="btn-ghost-w">Comprendre le leasing</a>
+    </div>
+  </div>
+  <div class="sol-hero-visual">
+    <div class="sol-hero-img">💻
+      <div class="hero-badge">
+        <div class="b-icon">⚡</div>
+        <div><div class="b-num">&lt;24h</div><div class="b-lbl">Réponse de financement</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER 1 : Parc informatique -->
+<div class="banner-section">
+  <div class="banner reveal">
+    <div class="banner-img" style="background:linear-gradient(135deg,#001845,#1A56C4);">🖥️</div>
+    <div class="banner-text">
+      <span class="section-label">Équipements financés · 01</span>
+      <h2>Parc <span class="hl">Informatique</span> utilisateurs</h2>
+      <p>Du poste unique au parc de plusieurs centaines de machines, Business Partners finance la totalité de vos terminaux en une solution locative unique avec un loyer mensuel fixe.</p>
+      <div class="eq-list">
+        <div class="eq-item">
+          <div class="eq-icon">💻</div>
+          <div class="eq-body"><h4>Postes de travail</h4><p>PC fixes, laptops, ultrabooks — toutes marques, tous OS.</p></div>
+        </div>
+        <div class="eq-item">
+          <div class="eq-icon">🍎</div>
+          <div class="eq-body"><h4>Mac & Apple Business</h4><p>Gamme complète Apple avec DEP et gestion MDM intégrée.</p></div>
+        </div>
+        <div class="eq-item">
+          <div class="eq-icon">📱</div>
+          <div class="eq-body"><h4>Tablettes & Terminaux mobiles</h4><p>iPad, Android pro, scanners mobiles et terminaux durcis.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER 2 : Infrastructures (reverse) -->
+<div class="banner-section">
+  <div class="banner reverse reveal">
+    <div class="banner-img" style="background:linear-gradient(135deg,#0a2a60,#2d6ac4);">🖧</div>
+    <div class="banner-text">
+      <span class="section-label">Équipements financés · 02</span>
+      <h2>Infrastructures <span class="hl">& Réseaux</span></h2>
+      <p>Des serveurs jusqu'à la cybersécurité, nous finançons l'intégralité de votre infrastructure IT avec ou sans les prestations d'intégration.</p>
+      <div class="eq-list">
+        <div class="eq-item">
+          <div class="eq-icon">🖥️</div>
+          <div class="eq-body"><h4>Serveurs & Stockage</h4><p>Serveurs physiques, NAS, SAN, et environnements hyperconvergés.</p></div>
+        </div>
+        <div class="eq-item">
+          <div class="eq-icon">☁️</div>
+          <div class="eq-body"><h4>Cloud & Virtualisation</h4><p>Infrastructure hybride, équipements de stockage Cloud et baies.</p></div>
+        </div>
+        <div class="eq-item">
+          <div class="eq-icon">🔒</div>
+          <div class="eq-body"><h4>Cybersécurité</h4><p>Firewalls, solutions EDR, équipements réseau et SOC matériels.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER 3 : Logiciels & As-A-Service -->
+<div class="banner-section">
+  <div class="banner reveal">
+    <div class="banner-img" style="background:linear-gradient(135deg,#001a50,#0d3a8a);">📦</div>
+    <div class="banner-text">
+      <span class="section-label">Équipements financés · 03</span>
+      <h2>Logiciels & Services <span class="hl">As-A-Service</span></h2>
+      <p>Business Partners est l'un des rares acteurs à intégrer les licences et services dans le loyer, transformant vos CAPEX logiciels en OPEX fluides.</p>
+      <div class="eq-list">
+        <div class="eq-item">
+          <div class="eq-icon">📋</div>
+          <div class="eq-body"><h4>Licences & ERP</h4><p>Microsoft 365, Adobe, SAP, Salesforce — intégrés dans la mensualité.</p></div>
+        </div>
+        <div class="eq-item">
+          <div class="eq-icon">🔧</div>
+          <div class="eq-body"><h4>Intégration & Déploiement</h4><p>Prestations de mise en service, migration et formation utilisateurs incluses.</p></div>
+        </div>
+        <div class="eq-item">
+          <div class="eq-icon">🛡️</div>
+          <div class="eq-body"><h4>Maintenance & Support</h4><p>Contrats de maintenance et niveaux de service inclus dans le loyer.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AVANTAGES IT -->
+<section class="s-avantages">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="section-label" style="color:rgba(240,165,0,0.8)">Vos avantages IT</span>
+      <h2 class="section-title" style="color:#fff">Pourquoi les DSI choisissent <span style="color:var(--gold)">Business Partners</span></h2>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <span class="adv-icon">🔄</span>
+        <h3>Éliminez l'obsolescence</h3>
+        <p>Renouvelez vos postes tous les 2 à 4 ans sans réinvestissement brutal. Vos équipes travaillent toujours sur du matériel récent et performant.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-icon">🧾</span>
+        <h3>Facture unique</h3>
+        <p>Regroupez matériel, abonnements logiciels et assistance dans une seule mensualité prévisible. Fini les dizaines de factures fournisseurs.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-icon">💰</span>
+        <h3>CAPEX → OPEX</span></h3>
+        <p>Transformez un investissement lourd en charge d'exploitation déductible. Votre bilan s'allège, votre trésorerie reste disponible.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-icon">⚡</span>
+        <h3>Réponse en moins de 24h</h3>
+        <p>Vos projets de déploiement ne sont plus bloqués en attente de validation budgétaire. Dossier étudié et répondu en une journée.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-icon">🌍</span>
+        <h3>Multi-sites & Multi-pays</h3>
+        <p>Un contrat-cadre pour financer vos équipements en France, en Europe et au Royaume-Uni. Idéal pour les groupes avec plusieurs entités.</p>
+      </div>
+      <div class="adv-card reveal">
+        <span class="adv-icon">♻️</span>
+        <h3>Seconde vie des équipements</h3>
+        <p>En fin de contrat, Business Partners organise le reconditionnement ou le recyclage certifié RGPD de vos équipements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="s-cta-sol">
+  <div class="reveal">
+    <h2>Votre projet informatique mérite une réponse rapide</h2>
+    <p>Déposez votre dossier — nos ingénieurs financiers vous rappellent sous 24h.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-p">Demander un financement →</a>
+      <a href="leasing.html" class="btn-ghost-w">En savoir plus sur le leasing</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bp-footer">
+  <div class="footer-brand">
+    <div class="f-logo">Business<span>Partners</span></div>
+    <p>Expert du leasing B2B depuis plus de 30 ans. France · Union Européenne · Suisse · Royaume-Uni.</p>
+    <div class="f-contact">
+      <a href="tel:+33156837950">📞 +33 (0)1 56 83 79 50</a>
+      <a href="mailto:mail@business-partners.fr">✉️ mail@business-partners.fr</a>
+    </div>
+  </div>
+  <div class="footer-col"><h4>Solutions</h4><a href="sol-informatique.html">Leasing Informatique</a><a href="sol-medical.html">Leasing Médical</a><a href="sol-industrie.html">Leasing Industriel</a></div>
+  <div class="footer-col"><h4>Ressources</h4><a href="leasing.html">Qu'est-ce que le leasing ?</a><a href="vos-besoins.html">Pour les vendeurs</a><a href="partenaires.html">Partenaires</a></div>
+  <div class="footer-col"><h4>Entreprise</h4><a href="a-propos.html">Qui sommes-nous ?</a><a href="contact.html">Contact</a><a href="#">Mentions légales</a></div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 Business Partners®</span>
+  <div class="fb-links"><a href="#">Mentions légales</a><a href="#">RGPD</a><a href="#">LinkedIn</a></div>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>

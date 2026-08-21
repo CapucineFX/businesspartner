@@ -5,256 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Qu'est-ce que le leasing ? | Business Partners</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --navy:    #002060;
-  --navy-md: #003087;
-  --blue:    #1A56C4;
-  --gold:    #F0A500;
-  --orange:  #EA8C3A;
-  --white:   #FFFFFF;
-  --off:     #F7F8FC;
-  --gray:    #6B7280;
-  --dark:    #0D1B3E;
-  --text:    #1C2A4A;
-  --radius:  10px;
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'Inter', sans-serif;
-}
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; }
-a { text-decoration: none; color: inherit; }
+<link href="./assets/css/style.css" rel="stylesheet">
+<link href="./assets/css/bootstrap.css" rel="stylesheet">
 
-/* NAV */
-nav {
-  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 5vw; height: 72px;
-  background: rgba(0,32,96,0.95); backdrop-filter: blur(12px);
-}
-.nav-logo { font-family: var(--font-display); font-size: 1.25rem; color: var(--white); }
-.nav-logo span { color: var(--gold); }
-.nav-links { display: flex; gap: 2rem; align-items: center; }
-.nav-links a { font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.06em; transition: color 0.2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--white); }
-.nav-cta { background: var(--orange); color: var(--white) !important; padding: 8px 20px; border-radius: 6px; font-weight: 600 !important; }
-.nav-a11y { background: none; border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.7); font-size: 0.72rem; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
-body.hc { filter: contrast(1.6) grayscale(0.15); }
-
-/* ─── HERO LEASING ─── */
-.hero-leasing {
-  min-height: 60vh; background: var(--dark);
-  display: flex; align-items: center;
-  padding: 120px 5vw 80px; position: relative; overflow: hidden;
-}
-.hero-leasing::before {
-  content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(26,86,196,0.2) 0%, transparent 60%);
-}
-
-/* Animated lines */
-.lines { position: absolute; inset: 0; overflow: hidden; }
-.line {
-  position: absolute; left: 0; right: 0; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(26,86,196,0.3), transparent);
-  animation: scanline 4s linear infinite;
-}
-.line:nth-child(1) { top: 20%; animation-delay: 0s; }
-.line:nth-child(2) { top: 45%; animation-delay: -1.5s; }
-.line:nth-child(3) { top: 70%; animation-delay: -3s; }
-@keyframes scanline { 0% { transform: scaleX(0) translateX(-100%); } 50% { transform: scaleX(1) translateX(0); } 100% { transform: scaleX(0) translateX(100%); } }
-
-.hero-leasing-inner { position: relative; z-index: 1; max-width: 700px; }
-.hero-leasing-inner .eyebrow {
-  display: inline-flex; gap: 8px; align-items: center;
-  color: var(--gold); font-size: 0.72rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.12em;
-  margin-bottom: 1.25rem;
-  opacity: 0; animation: fadeUp 0.6s 0.2s forwards;
-}
-.hero-leasing-inner h1 {
-  font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 4rem);
-  color: var(--white); line-height: 1.05; letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
-  opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
-}
-.hero-leasing-inner h1 em { color: var(--gold); font-style: normal; }
-.hero-leasing-inner p {
-  font-size: 1.05rem; color: rgba(255,255,255,0.6); line-height: 1.7;
-  opacity: 0; animation: fadeUp 0.7s 0.6s forwards;
-}
-@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-
-/* Big definition callout */
-.definition {
-  background: var(--off); border-left: 4px solid var(--gold);
-  padding: 2rem 2.5rem; border-radius: 0 12px 12px 0; margin: 3rem 0;
-  font-size: 1.1rem; color: var(--navy); line-height: 1.8; font-weight: 400;
-}
-.definition strong { color: var(--blue); }
-
-/* SECTION utility */
-section { padding: 80px 5vw; }
-.container { max-width: 1100px; margin: 0 auto; }
-.section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--orange); display: block; margin-bottom: 0.5rem; }
-.section-title { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 1rem; }
-.section-title .hl { color: var(--blue); }
-.section-sub { font-size: 0.95rem; color: var(--gray); line-height: 1.7; max-width: 580px; margin-bottom: 3rem; }
-
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-
-/* ─── HOW IT WORKS ─── */
-.s-how { background: var(--white); }
-.how-timeline { position: relative; max-width: 780px; }
-.how-timeline::before {
-  content: ''; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px;
-  background: linear-gradient(to bottom, var(--gold), var(--blue), var(--orange));
-}
-.how-step {
-  display: flex; gap: 2rem; margin-bottom: 2.5rem;
-  padding-left: 0; position: relative;
-}
-.how-step:last-child { margin-bottom: 0; }
-.step-dot {
-  flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%;
-  background: var(--white); border: 2px solid var(--gold);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display); font-size: 1rem; color: var(--navy); font-weight: 800;
-  position: relative; z-index: 1; transition: background 0.3s, color 0.3s;
-  flex-direction: column;
-}
-.how-step:hover .step-dot { background: var(--gold); }
-.step-body {
-  padding: 1.25rem 1.5rem; border-radius: 12px;
-  border: 1px solid #E5E9F2; flex: 1;
-  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-  background: var(--white);
-}
-.how-step:hover .step-body { border-color: var(--blue); box-shadow: 0 6px 24px rgba(26,86,196,0.1); transform: translateX(6px); }
-.step-body h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
-.step-body p { font-size: 0.82rem; color: var(--gray); line-height: 1.65; }
-.step-tag {
-  display: inline-block; margin-top: 0.6rem;
-  background: rgba(26,86,196,0.08); color: var(--blue);
-  font-size: 0.7rem; font-weight: 600; padding: 2px 10px; border-radius: 20px;
-}
-
-/* ─── AVANTAGES ─── */
-.s-avantages { background: var(--off); }
-.avantages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.av-card {
-  background: var(--white); border-radius: 14px; padding: 2rem;
-  border: 1px solid #E5E9F2;
-  transition: transform 0.3s cubic-bezier(0.34,1.4,0.64,1), box-shadow 0.3s, border-color 0.3s;
-  position: relative; overflow: hidden;
-}
-.av-card::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: var(--gold); transform: scaleX(0); transform-origin: left;
-  transition: transform 0.4s ease;
-}
-.av-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,32,96,0.12); border-color: var(--blue); }
-.av-card:hover::before { transform: scaleX(1); }
-.av-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
-.av-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
-.av-card p { font-size: 0.8rem; color: var(--gray); line-height: 1.65; }
-
-/* ─── VS ACHAT ─── */
-.s-vs { background: var(--white); }
-.vs-table-wrap { overflow-x: auto; margin-top: 2rem; }
-.vs-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.07); font-size: 0.83rem; }
-.vs-table th { padding: 14px 20px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-.vs-table .th-crit { background: #E8EDF5; color: var(--navy); width: 40%; }
-.vs-table .th-achat { background: #4A5568; color: var(--white); }
-.vs-table .th-leasing { background: var(--navy); color: var(--white); }
-.vs-table td { padding: 12px 20px; border-bottom: 1px solid #F0F3FA; vertical-align: middle; }
-.vs-table tr:last-child td { border-bottom: none; }
-.vs-table .td-crit { font-weight: 500; color: var(--text); background: var(--white); }
-.vs-table .td-achat { background: #FAFAFA; color: #888; }
-.vs-table .td-leasing { background: #F0F4FF; color: var(--blue); font-weight: 500; }
-.vs-table tr:hover .td-crit { background: #F5F7FF; }
-.ic-g { color: #1a7a4a; } .ic-r { color: #ddd; }
-
-/* ─── LEXIQUE ─── */
-.s-lexique { background: var(--off); }
-.lexique-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-.lex-item {
-  border-radius: 12px; border: 1px solid #E5E9F2; padding: 1.5rem;
-  background: var(--white); transition: border-color 0.2s, box-shadow 0.2s;
-}
-.lex-item:hover { border-color: var(--gold); box-shadow: 0 4px 16px rgba(240,165,0,0.1); }
-.lex-term { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--orange); margin-bottom: 0.4rem; }
-.lex-item h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
-.lex-item p { font-size: 0.8rem; color: var(--gray); line-height: 1.65; }
-
-/* ─── FAQ ─── */
-.s-faq { background: var(--white); }
-.faq-list { max-width: 780px; }
-.faq-item { border-bottom: 1px solid #E5E9F2; }
-.faq-q {
-  padding: 1.25rem 0; cursor: pointer;
-  display: flex; justify-content: space-between; align-items: center;
-  font-weight: 600; font-size: 0.92rem; color: var(--navy);
-}
-.faq-arrow { color: var(--blue); transition: transform 0.3s; }
-.faq-item.open .faq-arrow { transform: rotate(180deg); }
-.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; font-size: 0.83rem; color: var(--gray); line-height: 1.75; }
-.faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.25rem; }
-
-/* ─── CTA ─── */
-.s-cta-leasing {
-  background: linear-gradient(135deg, var(--navy) 0%, #0d3475 100%);
-  padding: 80px 5vw; position: relative; overflow: hidden;
-}
-.s-cta-leasing::before {
-  content: ''; position: absolute; top:-100px; right:-80px;
-  width: 400px; height: 400px; border-radius: 50%;
-  background: var(--gold); opacity: 0.07; filter: blur(60px);
-}
-.cta-inner { max-width: 700px; position: relative; z-index:1; }
-.cta-inner h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.6rem); color: var(--white); margin-bottom: 1rem; }
-.cta-inner p { color: rgba(255,255,255,0.6); font-size: 1rem; margin-bottom: 2rem; line-height: 1.7; }
-.cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary { background: var(--orange); color: var(--white); padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(234,140,58,0.35); display: inline-block; }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(234,140,58,0.45); }
-.btn-ghost { border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.8); padding: 14px 32px; border-radius: 8px; font-weight: 500; font-size: 0.88rem; transition: background 0.2s; display: inline-block; }
-.btn-ghost:hover { background: rgba(255,255,255,0.08); }
-
-/* Footer minimal */
-.footer-min { background: var(--dark); padding: 32px 5vw; display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 1rem; }
-.footer-min .logo { font-family: var(--font-display); color: var(--white); font-size: 1rem; }
-.footer-min .logo span { color: var(--gold); }
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .nav-links { display: none; }
-  .avantages-grid { grid-template-columns: 1fr 1fr; }
-  .lexique-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 520px) {
-  .avantages-grid { grid-template-columns: 1fr; }
-}
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-}
-</style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Business<span>Partners</span></a>
+  <div class="nav-logo">Business<span>Partners</span></div>
   <div class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="#">Nos Solutions</a>
-    <a href="leasing.html" class="active">Le Leasing</a>
-    <a href="#">Partenaires</a>
-    <a href="#">Contact</a>
-    <a href="index.html#contact" class="nav-cta">Financer mon projet</a>
+    <a href="leasing.html">Vos Besoins</a>
+    <a href="./informatique.html">Nos Solutions</a>
+    <a href="./home.html">Home</a>
+    <a href="./connect copy.html" class="nav-cta">Financer mon projet</a>
   </div>
-  <button class="nav-a11y" onclick="document.body.classList.toggle('hc')">👁 Contraste</button>
+  <button class="nav-a11y" onclick="document.body.classList.toggle('hc')" title="Contraste élevé">👁 Contraste</button>
+
+
 </nav>
+
 
 <!-- HERO -->
 <div class="hero-leasing">
@@ -319,6 +88,8 @@ section { padding: 80px 5vw; }
     </div>
   </div>
 </section>
+
+
 
 <!-- AVANTAGES -->
 <section class="s-avantages">
