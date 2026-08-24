@@ -1,152 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leasing Automobile & Flottes | Business Partners</title>
-<meta name="description" content="Business Partners finance vos véhicules et flottes utilitaires en leasing : véhicules légers, poids lourds, mobilité électrique. Réponse en moins de 24h, en France, en Europe et au Royaume-Uni.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --navy:#0B1F3A; --ink:#1B2733; --muted:#5B6675; --bg:#F3F5F8; --white:#FFFFFF; --border:#E2E6EC;
-  --accent:#D6293C; --accent-soft:#FBE7E9; --accent-ink:#FFFFFF;
-}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{margin:0;font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;}
-h1,h2,h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);margin:0;}
-.mono{font-family:'IBM Plex Mono',monospace;}
-a{color:inherit;text-decoration:none;}
-.container{max-width:1140px;margin:0 auto;padding:0 24px;}
-img{max-width:100%;display:block;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leasing Médical & Santé | Business Partners</title>
+    <meta name="description" content="Business Partners finance vos équipements médicaux en leasing : imagerie, bloc opératoire, EHPAD, cabinets de ville. Réponse en moins de 24h, en France, en Europe et au Royaume-Uni.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <!-- CSS Implementing Plugins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-/* header */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
-.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1140px;margin:0 auto;}
-.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem;color:var(--navy);display:flex;align-items:center;gap:8px;}
-.logo::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block;}
-nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0;align-items:center;flex-wrap:wrap;}
-nav a{font-size:.92rem;font-weight:500;color:var(--muted);}
-nav a:hover, nav a.active{color:var(--navy);}
-nav a.active{color:var(--accent);}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:999px;font-weight:600;font-size:.88rem;white-space:nowrap;}
-.btn-primary{background:var(--accent);color:var(--accent-ink);}
-.btn-primary:hover{opacity:.9;}
-.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff;}
-.btn-ghost:hover{border-color:#fff;}
-.btn-ghost-light{border:1px solid var(--border);color:var(--navy);}
-
-/* hero */
-.hero{background:var(--navy);padding:76px 0 0;color:#fff;position:relative;overflow:hidden;}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.35;}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--accent);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
-.hero h1{color:#fff;font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.08;max-width:16ch;position:relative;}
-.hero p.lead{color:#C9D3E0;max-width:56ch;margin-top:18px;font-size:1.08rem;position:relative;}
-.hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;position:relative;}
-.ledger{margin-top:56px;border-top:1px solid rgba(255,255,255,.15);display:grid;grid-template-columns:repeat(4,1fr);position:relative;}
-.ledger div{padding:22px 20px;border-left:1px solid rgba(255,255,255,.12);}
-.ledger div:first-child{border-left:none;}
-.ledger .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--accent);}
-.ledger .label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-top:4px;}
-
-/* sections */
-section{padding:78px 0;}
-.alt{background:var(--bg);}
-.section-head{max-width:680px;margin-bottom:44px;}
-.kicker{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.kicker::before{content:"";width:22px;height:1px;background:var(--accent);}
-.section-head h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:12px;}
-.section-head p{color:var(--muted);font-size:1.02rem;}
-
-.grid{display:grid;gap:20px;}
-.grid-4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
-.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:26px;}
-.card .ic{font-size:1.6rem;margin-bottom:14px;display:inline-block;}
-.card h3{font-size:1.02rem;margin-bottom:8px;font-weight:600;}
-.card p{color:var(--muted);font-size:.92rem;margin:0;}
-
-.equip-cat{margin-bottom:30px;}
-.equip-cat h4{font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
-.equip-cat h4::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--accent);display:inline-block;}
-.chips{display:flex;flex-wrap:wrap;gap:10px;}
-.chip{border:1px solid var(--border);border-radius:999px;padding:7px 16px;font-size:.85rem;background:#fff;transition:.15s;}
-.chip:hover{border-color:var(--accent);color:var(--accent);}
-
-.process{display:flex;flex-direction:column;gap:0;}
-.step{display:grid;grid-template-columns:70px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--border);}
-.step:last-child{border-bottom:1px solid var(--border);}
-.step .n{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--accent);}
-.step h3{font-size:1.08rem;margin-bottom:8px;}
-.step p{color:var(--muted);margin:0 0 10px;}
-.tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:6px;letter-spacing:.03em;}
-
-table{width:100%;border-collapse:collapse;margin-top:10px;background:#fff;}
-th,td{padding:14px 16px;text-align:left;font-size:.92rem;border-bottom:1px solid var(--border);}
-thead th{background:var(--navy);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;}
-tbody tr:nth-child(even){background:var(--bg);}
-td.win{color:var(--accent);font-weight:600;}
-th.bp{background:var(--accent);}
-
-details{border-bottom:1px solid var(--border);padding:18px 0;}
-summary{cursor:pointer;font-weight:600;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:1rem;}
-summary::-webkit-details-marker{display:none;}
-summary::after{content:"+";font-family:'IBM Plex Mono',monospace;color:var(--accent);font-size:1.2rem;}
-details[open] summary::after{content:"–";}
-details p{color:var(--muted);margin-top:12px;}
-
-.cross{border-top:1px solid var(--border);}
-.cross-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
-.cross-card{border:1px solid var(--border);border-radius:12px;padding:20px;transition:.15s;}
-.cross-card:hover{border-color:var(--accent);transform:translateY(-2px);}
-.cross-card .ic{font-size:1.4rem;}
-.cross-card h4{font-size:.95rem;margin:10px 0 4px;font-weight:600;}
-.cross-card span{color:var(--muted);font-size:.82rem;}
-
-.cta-banner{background:var(--navy);color:#fff;text-align:center;padding:70px 0;}
-.cta-banner h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:10px;}
-.cta-banner p{color:#C9D3E0;margin-bottom:28px;}
-.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-
-footer{background:var(--navy);color:#C9D3E0;padding:56px 0 28px;font-size:.9rem;}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;}
-.foot-grid h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
-.foot-grid a{display:block;color:#C9D3E0;margin-bottom:8px;}
-.foot-grid a:hover{color:var(--accent);}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:20px;font-size:.8rem;color:#8291A6;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-
-@media(max-width:760px){
-  .ledger{grid-template-columns:repeat(2,1fr);}
-  .ledger div:nth-child(3){border-left:none;}
-  .foot-grid{grid-template-columns:1fr;}
-  .step{grid-template-columns:1fr;}
-}
-</style>
 </head>
 <body>
 
-<header>
-  <div class="nav-wrap">
-    <a href="index.html" class="logo">BusinessPartners</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="informatique.html">Informatique</a></li>
-        <li><a href="medical.html">Médical</a></li>
-        <li><a href="industrie.html">Industrie</a></li>
-        <li><a href="automobile.html" class="active">Automobile</a></li>
-        <li><a href="leasing.html">Le Leasing</a></li>
-        <li><a href="index.html#contact" class="btn btn-primary">Financer mon projet</a></li>
+<!-- NAV -->
+<header id="header">
+  
+  <nav class="navbar navbar-expand-md effet-0 navbar-dark">
+    <div class="container-fluid">
+      <div class="nav-logo navbar-nav"><a href="index.html" class="logo">BusinessPartners</a></div>
+    
+            <div class="navbar-toggler mr-2">
+              
+                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                
+           
+          </div>
+    <div class="collapse navbar-collapse " id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="informatique.html">Informatique</a></li>
+        <li class="nav-item"><a class="nav-link" href="medical.html">Médical</a></li>
+        <li class="nav-item"><a class="nav-link" href="industrie.html">Industrie</a></li>
+        <li class="nav-item"><a class="nav-link active" href="automobile.html">Automobile</a></li>
+        <li class="nav-item"><a class="nav-link" href="leasing.html">Le Leasing</a></li>
+        <li class="nav-item"><a href="connect.html" class="btn btn-primary">Financer mon projet</a></li>
       </ul>
+    </div>
+    </div>
+    
     </nav>
   </div>
 </header>
 
+
 <main>
-  <section class="hero">
+  <section class="hero-automobile">
     <div class="container">
-      <span class="eyebrow">Leasing Automobile &amp; Flottes</span>
+      <span class="eyebrow-automobile">Leasing Automobile &amp; Flottes</span>
       <h1>Une flotte toujours à jour. Sans immobiliser un centime.</h1>
       <p class="lead">Véhicules utilitaires, poids lourds, flottes commerciales, bornes de recharge : Business Partners finance et gère votre mobilité professionnelle, avec une réponse en moins de 24h.</p>
       <div class="hero-ctas">
@@ -154,10 +61,10 @@ footer{background:var(--navy);color:#C9D3E0;padding:56px 0 28px;font-size:.9rem;
         <a href="leasing.html" class="btn btn-ghost">Comprendre le leasing</a>
       </div>
       <div class="ledger">
-        <div><div class="num">24-48</div><div class="label">Mois, durée type véhicule</div></div>
-        <div><div class="num">&lt;24h</div><div class="label">Réponse de financement</div></div>
-        <div><div class="num">100%</div><div class="label">Loyers déductibles</div></div>
-        <div><div class="num">EU+UK</div><div class="label">Couverture géographique</div></div>
+        <div><div class="ledger-num-automobile">24-48</div><div class="label">Mois, durée type véhicule</div></div>
+        <div><div class="ledger-num-automobile">&lt;24h</div><div class="label">Réponse de financement</div></div>
+        <div><div class="ledger-num-automobile">100%</div><div class="label">Loyers déductibles</div></div>
+        <div><div class="ledger-num-automobile">EU+UK</div><div class="label">Couverture géographique</div></div>
       </div>
     </div>
   </section>

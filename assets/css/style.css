@@ -42,35 +42,40 @@
 .bp-informatique{background:var(--informatique);}
 .step .n-informatique{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--informatique);}
 /*medical*/
+.hero-medical{background:var(--medical);padding:76px 0 0;color:#fff;position:relative;overflow:hidden;} 
 .eyebrow-medical{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--medical);color:var(--medical);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
 .btn-medical{background:var(--medical);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;} 
 .kicker-medical{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--medical);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.ledger-num-medical{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--medical);} 
+.ledger-num-medical{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:#b1f1ea;} 
 .equip-cat-medical h4::before{content: ""; width: 7px; height: 7px;border-radius: 2px;background: var(--medical);display: inline-block;}  
 .tag-medical{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--medical-soft);color:var(--medical);padding:4px 10px;border-radius:6px;letter-spacing:.03em;}  
 .bp-medical{background:var(--medical);} 
 .step .n-medical{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--medical);}  
 /*industrie*/
+.hero-industrie{background:var(--industrie);padding:76px 0 0;color:#fff;position:relative;overflow:hidden;}
 .eyebrow-industrie{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--industrie);color:var(--industrie);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
 .btn-industrie{background:var(--industrie);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;} 
 .kicker-industrie{font-family:'IBM Plex Mono',monospace;font-size :.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--industrie);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.ledger-num-industrie{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--industrie);} 
+.ledger-num-industrie{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:#ffd5af;} 
 .equip-cat-industrie h4::before{content: ""; width: 7px; height: 7px;border-radius: 2px;background: var(--industrie);display: inline-block;}  
 .tag-industrie{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--industrie-soft);color:var(--industrie);padding:4px 10px;border-radius:6px;letter-spacing:.03em;}  
 .bp-industrie{background:var(--industrie);}
 .step .n-industrie{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--industrie);}  
 /*automobile*/
+.hero-automobile{background:var(--automobile);padding:76px 0 0;color:#fff;position:relative;overflow:hidden;} 
 .eyebrow-automobile{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--automobile);color:var(--automobile);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
 .btn-automobile{background:var(--automobile);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;} 
 .kicker-automobile{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--automobile);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.ledger-num-automobile{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--automobile);} 
+.ledger-num-automobile{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:#ffddbe;} 
 .equip-cat-automobile h4::before{content: ""; width: 7px; height: 7px;border-radius: 2px;background: var(--automobile);display: inline-block;}  
 .tag-automobile{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;background:var(--automobile-soft);color:var(--automobile);padding:4px 10px;border-radius:6px;letter-spacing:.03em;} 
 .bp-automobile{background:var(--automobile);} 
 .step .n-automobile{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.5rem;color:var(--automobile);}  
 
 
+header.header-color .nav-link{color:var(--primary);}
 
+.effet-0{background:transparent;box-shadow:none;transition:all .3s ease-in-out;}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
@@ -86,7 +91,6 @@ header{
   position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
   align-items: center; justify-content: space-between;
   padding: 0 5vw;
-  height: 72px;
   color: var(--white);
 
 }
@@ -647,7 +651,7 @@ section { padding: 96px 5vw; }
 .cta-inner h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.6rem); color: var(--white); margin-bottom: 1rem; }
 .cta-inner p { color: rgba(255,255,255,0.6); font-size: 1rem; margin-bottom: 2rem; line-height: 1.7; }
 .cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary { background: var(--orange); color: var(--white); padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(234,140,58,0.35); display: inline-block; }
+.btn-primary { background: var(--orange); color: var(--white); border: none; border-radius: 8px; font-weight: 700; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(234,140,58,0.35); display: inline-block; }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(234,140,58,0.45); }
 .btn-ghost { border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.8); padding: 14px 32px; border-radius: 8px; font-weight: 500; font-size: 0.88rem; transition: background 0.2s; display: inline-block; }
 .btn-ghost:hover { background: rgba(255,255,255,0.08); }
