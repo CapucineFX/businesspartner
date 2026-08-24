@@ -203,121 +203,127 @@
   </section>
 </main>
 
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <div class="foot-grid">
-      <div>
-        <div class="logo" style="color:#fff;">BusinessPartners</div>
-        <p style="color:#8291A6;margin-top:14px;max-width:34ch;">Expert du leasing B2B depuis plus de 30 ans. France, Europe, Royaume-Uni.</p>
-        <p style="color:#8291A6;margin-top:14px;">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
-      </div>
-      <div>
-        <h4>Solutions</h4>
-        <a href="informatique.html">Leasing Informatique</a>
-        <a href="medical.html">Leasing Médical</a>
-        <a href="industrie.html">Leasing Industriel</a>
-        <a href="automobile.html">Leasing Automobile</a>
-      </div>
-      <div>
-        <h4>Entreprise</h4>
-        <a href="index.html">À propos</a>
-        <a href="leasing.html">Le Leasing</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2025 Business Partners® Leasing B2B — France · Europe · UK</span>
-    </div>
+    <div class="d-lg-flex justify-content-between align-items-center">
+  <div class="footer-brand">
+    <div class="logo">Business<span>Partners</span></div>
+    <p>Expert du leasing B2B depuis plus de 30 ans. Nous accompagnons nos partenaires en France, en Europe et au Royaume-Uni.</p>
+    <p style="margin-top:0.5rem">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
+  </div>
+  <div class="footer-col">
+    <h4>Solutions</h4>
+    <a href="#">Leasing Informatique</a>
+    <a href="#">Leasing Médical</a>
+    <a href="#">Leasing Industriel</a>
+    <a href="#">Leasing Automobile</a>
+  </div>
+  <div class="footer-col">
+    <h4>Entreprise</h4>
+    <a href="#">À propos</a>
+    <a href="leasing.html">Le Leasing</a>
+    <a href="#">Partenaires</a>
+    <a href="#">Contact</a>
+    <a href="#">Mentions légales</a>
+  </div>
+  </div>
+  <div class="footer-bottom d-block text-center">
+  <span>© 2025 Business Partners®</span>
+  <span>Leasing B2B — France · Europe · UK</span>
+</div>
   </div>
 </footer>
-<script>
+      <script src="./assets/js/dropbox.js"></script>
 
-   
-      document.addEventListener('DOMContentLoaded', function() {
-    let header = document.getElementById('header');
-    let timer;
+      <script>
 
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                header.classList.add('header-color');
-            }, 0);
-        } else {
-            clearTimeout(timer);
-            header.classList.remove('header-color');
-        }
-    });
-
-    
-
-});
-
-function toggleNavbar() {
-    var navbarCollapse = document.getElementById('navbarCollapse');
-    navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
-}
+        
+            document.addEventListener('DOMContentLoaded', function() {
+          let header = document.getElementById('header');
+          let timer;
 
 
-// Scroll reveal
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 80);
-      observer.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => observer.observe(el));
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 0) {
+                  clearTimeout(timer);
+                  timer = setTimeout(() => {
+                      header.classList.add('header-color');
+                  }, 0);
+              } else {
+                  clearTimeout(timer);
+                  header.classList.remove('header-color');
+              }
+          });
 
-// Table column hover
-const cmp = document.getElementById('cmp');
-const colMap = [
-  { cells: '.th-achat, .td-achat',     cls: 'hov-achat'   },
-  { cells: '.th-leasing, .td-leasing', cls: 'hov-leasing' },
-  { cells: '.th-bp, .td-bp',           cls: 'hov-bp'      },
-];
-colMap.forEach(({ cells, cls }) => {
-  cmp.querySelectorAll(cells).forEach(el => {
-    el.addEventListener('mouseenter', () => cmp.classList.add(cls));
-    el.addEventListener('mouseleave', () => cmp.classList.remove(cls));
-  });
-});
+          
 
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  });
-});
+      });
 
-// Counter animation
-function animateCount(el, target, suffix='') {
-  let start = 0;
-  const duration = 1800;
-  const step = timestamp => {
-    if (!start) start = timestamp;
-    const progress = Math.min((timestamp - start) / duration, 1);
-    const ease = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.floor(ease * target) + suffix;
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-}
-const statsObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      // hero stats are decorative, not animated counters
-      statsObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
-</script>
+      function toggleNavbar() {
+          var navbarCollapse = document.getElementById('navbarCollapse');
+          navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
+      }
+
+
+      // Scroll reveal
+      const revealEls = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), i * 80);
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+
+      // Table column hover
+      const cmp = document.getElementById('cmp');
+      const colMap = [
+        { cells: '.th-achat, .td-achat',     cls: 'hov-achat'   },
+        { cells: '.th-leasing, .td-leasing', cls: 'hov-leasing' },
+        { cells: '.th-bp, .td-bp',           cls: 'hov-bp'      },
+      ];
+      colMap.forEach(({ cells, cls }) => {
+        cmp.querySelectorAll(cells).forEach(el => {
+          el.addEventListener('mouseenter', () => cmp.classList.add(cls));
+          el.addEventListener('mouseleave', () => cmp.classList.remove(cls));
+        });
+      });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-q').forEach(q => {
+        q.addEventListener('click', () => {
+          const item = q.parentElement;
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
+
+      // Counter animation
+      function animateCount(el, target, suffix='') {
+        let start = 0;
+        const duration = 1800;
+        const step = timestamp => {
+          if (!start) start = timestamp;
+          const progress = Math.min((timestamp - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+      const statsObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            // hero stats are decorative, not animated counters
+            statsObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
+      </script>
 </body>
 </html>

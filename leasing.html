@@ -38,8 +38,8 @@
         <li class="nav-item"><a class="nav-link" href="informatique.html">Informatique</a></li>
         <li class="nav-item"><a class="nav-link" href="medical.html">Médical</a></li>
         <li class="nav-item"><a class="nav-link" href="industrie.html">Industrie</a></li>
-        <li class="nav-item"><a class="nav-link active" href="automobile.html">Automobile</a></li>
-        <li class="nav-item"><a class="nav-link" href="leasing.html">Le Leasing</a></li>
+        <li class="nav-item"><a class="nav-link" href="automobile.html">Automobile</a></li>
+        <li class="nav-item"><a class="nav-link active" href="leasing.html">Le Leasing</a></li>
         <li class="nav-item"><a href="./connect.html" class="btn btn-primary">Financer mon projet</a></li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
 
 <!-- HERO -->
 <section class="hero-home">
-  <div class="container">
+  <div class="container-fluid">
   <div class="hero-inner">
     <div class="eyebrow">Guide complet · Leasing B2B</div>
     <h1 class="section-title">
@@ -66,7 +66,7 @@
 
 <!-- DÉFINITION -->
 <section style="background:var(--white); padding: 64px 5vw 0;">
-  <div class="container">
+  <div class="container-fluid">
     <div class="definition reveal">
       Le leasing (ou <strong>location financière</strong>) est une solution permettant à une entreprise d'<strong>utiliser un équipement sans l'acheter</strong>. Un organisme financier — ici Business Partners — acquiert le bien et le met à votre disposition contre le versement d'un <strong>loyer mensuel fixe</strong>, sur une durée déterminée. À l'échéance, vous choisissez : restituer, renouveler, ou racheter.
     </div>
@@ -75,7 +75,7 @@
 
 <!-- HOW IT WORKS -->
 <section class="s-how">
-  <div class="container">
+  <div class="container-fluid">
     <div class="reveal">
       <span class="section-label">Le fonctionnement</span>
       <h2 class="section-title">Comment ça <span class="hl">marche</span> concrètement ?</h2>
@@ -122,7 +122,7 @@
 
 <!-- AVANTAGES -->
 <section class="s-avantages">
-  <div class="container">
+  <div class="container-fluid">
     <div class="reveal">
       <span class="section-label">Pourquoi choisir le leasing</span>
       <h2 class="section-title">6 avantages <span class="hl">concrets</span></h2>
@@ -165,7 +165,7 @@
 
 <!-- VS ACHAT -->
 <section class="s-vs">
-  <div class="container">
+  <div class="container-fluid">
     <div class="reveal">
       <span class="section-label">Comparaison</span>
       <h2 class="section-title">Leasing vs <span class="hl">Achat classique</span></h2>
@@ -196,7 +196,7 @@
 
 <!-- LEXIQUE -->
 <section class="s-lexique">
-  <div class="container">
+  <div class="container-fluid">
     <div class="reveal">
       <span class="section-label">Lexique</span>
       <h2 class="section-title">Les termes <span class="hl">à connaître</span></h2>
@@ -238,7 +238,7 @@
 
 <!-- FAQ -->
 <section class="s-faq">
-  <div class="container">
+  <div class="container-fluid">
     <div class="reveal">
       <span class="section-label">Questions fréquentes</span>
       <h2 class="section-title">Vos questions, <span class="hl">nos réponses</span></h2>
@@ -270,7 +270,7 @@
 
 <!-- CTA -->
 <section class="s-cta-leasing">
-  <div class="container">
+  <div class="container-fluid">
     <div class="cta-inner reveal">
       <h2>Vous avez un projet à financer ?</h2>
       <p>Nos experts structurent votre solution de leasing en moins de 24h — sans engagement initial. Parlons de votre projet.</p>
@@ -286,28 +286,127 @@
   <div class="logo">Business<span>Partners</span> — Expert Leasing B2B</div>
   <span>© 2025 Business Partners® · Nanterre · France</span>
 </div>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="d-lg-flex justify-content-between align-items-center">
+  <div class="footer-brand">
+    <div class="logo">Business<span>Partners</span></div>
+    <p>Expert du leasing B2B depuis plus de 30 ans. Nous accompagnons nos partenaires en France, en Europe et au Royaume-Uni.</p>
+    <p style="margin-top:0.5rem">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
+  </div>
+  <div class="footer-col">
+    <h4>Solutions</h4>
+    <a href="#">Leasing Informatique</a>
+    <a href="#">Leasing Médical</a>
+    <a href="#">Leasing Industriel</a>
+    <a href="#">Leasing Automobile</a>
+  </div>
+  <div class="footer-col">
+    <h4>Entreprise</h4>
+    <a href="#">À propos</a>
+    <a href="leasing.html">Le Leasing</a>
+    <a href="#">Partenaires</a>
+    <a href="#">Contact</a>
+    <a href="#">Mentions légales</a>
+  </div>
+  </div>
+  <div class="footer-bottom d-block text-center">
+  <span>© 2025 Business Partners®</span>
+  <span>Leasing B2B — France · Europe · UK</span>
+</div>
+  </div>
+</footer>
+      <script src="./assets/js/dropbox.js"></script>
 
-<script>
-// Scroll reveal
-const obs = new IntersectionObserver(entries => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 70);
-      obs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+      <script>
 
-// FAQ
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  });
-});
-</script>
+        
+            document.addEventListener('DOMContentLoaded', function() {
+          let header = document.getElementById('header');
+          let timer;
+
+
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 0) {
+                  clearTimeout(timer);
+                  timer = setTimeout(() => {
+                      header.classList.add('header-color');
+                  }, 0);
+              } else {
+                  clearTimeout(timer);
+                  header.classList.remove('header-color');
+              }
+          });
+
+          
+
+      });
+
+      function toggleNavbar() {
+          var navbarCollapse = document.getElementById('navbarCollapse');
+          navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
+      }
+
+
+      // Scroll reveal
+      const revealEls = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), i * 80);
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+
+      // Table column hover
+      const cmp = document.getElementById('cmp');
+      const colMap = [
+        { cells: '.th-achat, .td-achat',     cls: 'hov-achat'   },
+        { cells: '.th-leasing, .td-leasing', cls: 'hov-leasing' },
+        { cells: '.th-bp, .td-bp',           cls: 'hov-bp'      },
+      ];
+      colMap.forEach(({ cells, cls }) => {
+        cmp.querySelectorAll(cells).forEach(el => {
+          el.addEventListener('mouseenter', () => cmp.classList.add(cls));
+          el.addEventListener('mouseleave', () => cmp.classList.remove(cls));
+        });
+      });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-q').forEach(q => {
+        q.addEventListener('click', () => {
+          const item = q.parentElement;
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
+
+      // Counter animation
+      function animateCount(el, target, suffix='') {
+        let start = 0;
+        const duration = 1800;
+        const step = timestamp => {
+          if (!start) start = timestamp;
+          const progress = Math.min((timestamp - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+      const statsObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            // hero stats are decorative, not animated counters
+            statsObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
+      </script>
 </body>
 </html>

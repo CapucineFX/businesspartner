@@ -1,26 +1,10 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="fr">
-
- <head>
+  <head>
     <!-- Title -->
-   <title>Business Partners – Leasing B2B en France, Europe et Royaume-Uni</title>
-          <meta name="description" content="Business Partners, expert du leasing depuis 30 ans, accompagne ses partenaires en France, en Europe et au Royaume-Uni. Solutions de leasing informatique, médical, industriel et automobile adaptées à votre activité.">
-          <link rel="canonical" href="https://capucinefx.github.io/businesspartner/index.html">
-          <meta name="robots" content="index, follow">
-
-          <!-- Open Graph -->
-          <meta property="og:title" content="Business Partners – Leasing B2B en France, Europe et Royaume-Uni">
-          <meta property="og:description" content="Expert du leasing depuis 30 ans, Business Partners accompagne ses partenaires en France, en Europe et au Royaume-Uni.">
-          <meta property="og:type" content="website">
-          <meta property="og:url" content="https://capucinefx.github.io/businesspartner/index.html">
-          <meta property="og:locale" content="fr_FR">
-          <meta property="og:locale:alternate" content="en_GB">
-
-          <!-- Twitter -->
-          <meta name="twitter:card" content="summary_large_image">
-          <meta name="twitter:title" content="Business Partners – Leasing B2B en France, Europe et Royaume-Uni">
-          <meta name="twitter:description" content="Expert du leasing depuis 30 ans, présent en France, en Europe et au Royaume-Uni.">
+    <title>Business Partners Leasing</title>
+  
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,32 +15,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   
     <!-- CSS Implementing Plugins -->
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
-      <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
 
-
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
 
   </head>
+  <body>
+     <header id="header" class="w-100 header-color-light" style="z-index: 1;">
 
+      <nav class="navbar navbar-expand-md navbar-dark" >
+          <div class="container-fluid ">
+            <a  href="./index.html"><img src="./assets/img/Logo-Business-Partners.svg"></a>
 
-<body>
+            <div class="navbar-toggler mr-2">
+              
+                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
 
-<!-- NAV -->
-<nav>
- 
-  <div class="nav-logo">Business<span>Partners</span></div>
-  <div class="nav-links">
-    <a href="leasing.html">Vos Besoins</a>
-    <a href="./informatique.html">Nos Solutions</a>
-    <a href="./home.html">Home</a>
-    <a href="./connect copy.html" class="nav-cta">Financer mon projet</a>
-  </div>
-  <button class="nav-a11y" onclick="document.body.classList.toggle('hc')" title="Contraste élevé">👁 Contraste</button>
+                
+           
+          </div>
+          
+            <div class="collapse navbar-collapse text-dark" id="navbarCollapse">
+              <div class="col-12 ml-2">
+             
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100 text-primary">
 
+                  <li class="nav-item">
+                   <a class="nav-link text-primary" href="./a-propos-2.html">Découvrir qui nous sommes</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <div class="dropdown">
+                     <a href="./connect.html" class="nav-link btn-secondary btn-sm text-light btn btn-rounded mx-3">Espace Partenaire</a>
 
-</nav>
+                  </div>
+                </li>
+
+                </ul>
+              </div>
+             
+       
+            </div>
+          </div>
+        </nav>
+  </header>
+    
+
+    <main id="content" role="main">
 
 
 <!-- COMPARATIF -->
@@ -118,93 +127,68 @@
 
 
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-brand">
-    <div class="logo">Business<span>Partners</span></div>
-    <p>Expert du leasing B2B depuis plus de 30 ans. Nous accompagnons nos partenaires en France, en Europe et au Royaume-Uni.</p>
-    <p style="margin-top:0.5rem">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
-  </div>
-  <div class="footer-col">
-    <h4>Solutions</h4>
-    <a href="#">Leasing Informatique</a>
-    <a href="#">Leasing Médical</a>
-    <a href="#">Leasing Industriel</a>
-    <a href="#">Leasing Automobile</a>
-  </div>
-  <div class="footer-col">
-    <h4>Entreprise</h4>
-    <a href="#">À propos</a>
-    <a href="leasing.html">Le Leasing</a>
-    <a href="#">Partenaires</a>
-    <a href="#">Contact</a>
-    <a href="#">Mentions légales</a>
-  </div>
-</footer>
-<div class="footer-bottom">
-  <span>© 2025 Business Partners®</span>
-  <span>Leasing B2B — France · Europe · UK</span>
-</div>
 
-<script>
-// Scroll reveal
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 80);
-      observer.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => observer.observe(el));
 
-// Table column hover
-const cmp = document.getElementById('cmp');
-const colMap = [
-  { cells: '.th-achat, .td-achat',     cls: 'hov-achat'   },
-  { cells: '.th-leasing, .td-leasing', cls: 'hov-leasing' },
-  { cells: '.th-bp, .td-bp',           cls: 'hov-bp'      },
-];
-colMap.forEach(({ cells, cls }) => {
-  cmp.querySelectorAll(cells).forEach(el => {
-    el.addEventListener('mouseenter', () => cmp.classList.add(cls));
-    el.addEventListener('mouseleave', () => cmp.classList.remove(cls));
-  });
-});
+    </main>
+ 
+ <footer class="bg-primary footer space-3">
+      <div class="container">
+        <div class="d-md-flex">
+          <div class="col-md-4">
+            <img src="./assets/img/logoBP.svg" class="w-50">
+        
+           
+          </div>
+        
+          <div class="col-md-4 text-light">
+            <h5 class="text-underline">Pages</h5>
+            <ul class="list-unstyled">
+            <li class="list-unstyled-item"> <a class="text-white" href="./a-propos-2.html">Qui sommes-nous ?</a></li>
+            <li class="list-unstyled-item"> <a class="text-white" href="./mentions-legales.html">Mentions légales</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-4 text-light">
+            <h5 class="text-underline">Contactez-nous</h5>
+            <ul class="list-unstyled">
+            <li class="list-unstyled-item"><img src="./assets/img/pin.png"> 11 avenue de l’île St-Martin,
+              92737 Nanterre </li>
+              <li class="list-unstyled-item"><a class="text-white" href="tel:+33 (0)1 56 83 79 50"><img src="./assets/img/smartphone.png"> +33 (0)1 56 83 79 50</a></li>
+              <li class="list-unstyled-item"><a class="text-white" href="mailto:mail@business-partners.fr"><img src="./assets/img/email.png"> mail@business-partners.fr</a></li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
 
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  });
-});
+  <!-- JS Implementing Plugins -->
+     <script src="./assets/js/dot.js"></script>
+    <script src="./assets/js/dropbox.js"></script>
+    <script src="./assets/js/all.js"></script>
+   
+    
+    <script src="./assets/js/script.js"></script>
+    
+    <script>
+     
 
-// Counter animation
-function animateCount(el, target, suffix='') {
-  let start = 0;
-  const duration = 1800;
-  const step = timestamp => {
-    if (!start) start = timestamp;
-    const progress = Math.min((timestamp - start) / duration, 1);
-    const ease = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.floor(ease * target) + suffix;
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-}
-const statsObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      // hero stats are decorative, not animated counters
-      statsObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
-</script>
-</body>
+        let header = document.getElementById('header');
+    let timer;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                header.classList.add('header-color');
+            },5);
+        } else {
+            clearTimeout(timer);
+            header.classList.remove('header-color');
+        }
+    });
+      </script>
+
+  </body>
 </html>
