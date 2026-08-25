@@ -38,52 +38,61 @@
 
   </head>
   <body>
-     <header  class="w-100 header-color-light" style="z-index: 1;">
-      <nav class="navbar navbar-expand-md navbar-dark" >
-          <div class="container-fluid ">
-            <a class="navbar-brand"  href="./index.html"><img alt="logo BP bleu" src="./assets/img/Logo-Business-Partners.svg"></a>
 
-            <div class="navbar-toggler mr-2">
-              
-                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                
-           
-          </div>
-          
-            <div class="collapse navbar-collapse text-dark" id="navbarCollapse">
-              <div class="col-12 ml-2">
-             
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100 text-primary">
-
-                     <li class="nav-item">
-                   <a class="nav-link" href="./index copy.html">Qu'est ce que le leasing ?</a>
-                  </li>
-
-                  <li class="nav-item">
-                   <a class="nav-link text-warning" href="./a-propos-2.html">Découvrir qui nous sommes</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <div class="dropdown">
-                     <a href="./connect.html" class=" btn-secondary btn-rounded  btn-md btn mx-4">Espace Partenaire</a>
-
-                  </div>
-                </li>
-
-                </ul>
-              </div>
-             
-       
-            </div>
-          </div>
-        </nav>
-  </header>
-    
-    
     <main>
+
+
+<header id="header" >
+  <nav class=" navbar navbar-expand-md effet-0 navbar-dark">
+  <a href="index.html" class="nav-logo">Business<span>Partners</span></a>
+
+  <div class="nav-desktop">
+    <!-- Dropdown Nos Solutions -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">Nos Solutions ▾</span>
+      <div class="dropdown">
+        <a href="informatique.html">💻 Informatique & Télécoms</a>
+        <a href="medical.html">🏥 Médical & Santé</a>
+        <a href="industrie.html">⚙️ Industrie & Robotique</a>
+        <a href="automobile.html">🚗 Automobile</a>
+      </div>
+    </div>
+    <a href="leasing.html" class="nl">Le Leasing</a>
+    <a href="partenaires.html" class="nl">Partenaires</a>
+    <!-- Dropdown À propos -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">À propos ▾</span>
+      <div class="dropdown">
+        <a href="a-propos.html">🏢 Qui sommes-nous ?</a>
+        <a href="a-propos.html#rse">🌿 Démarche RSE</a>
+      </div>
+    </div>
+    <a href="contact.html" class="nl">Contact</a>
+    <a href="contact.html" class="nl nav-cta">Financer mon projet</a>
+  </div>
+
+  <!-- Bouton hamburger mobile -->
+  <button class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </button>
+  </nav>
+
+  <!-- Menu mobile -->
+<div class="nav-mobile" id="mob-menu">
+  <a href="informatique.html">💻 Informatique & Télécoms</a>
+  <a href="medical.html">🏥 Médical & Santé</a>
+  <a href="industrie.html">⚙️ Industrie & Robotique</a>
+  <a href="automobile.html">🚗 Automobile</a>
+  <hr style="border-color:rgba(255,255,255,0.1);margin:1rem 0">
+  <a href="leasing.html">📖 Le Leasing</a>
+  <a href="a-propos.html">🏢 À propos</a>
+  <a href="contact.html">📍 Contact</a>
+  <a href="contact.html" class="m-cta">Financer mon projet →</a>
+</div>
+
+</header>
+
+
 
       <div class="position relative bg-light space-top-5 bg-img" style="background: linear-gradient(rgba(0,40,80,0.8), rgba(0,40,80,0.8)), url('./assets/banniere/aboutus.jpg') top/cover;">
 
