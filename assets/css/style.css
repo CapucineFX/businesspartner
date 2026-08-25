@@ -32,7 +32,7 @@
 
 
 /* informatique */
-.eyebrow-informatique{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--informatique);color:var(--informatique);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
+.eyebrow-informatique{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
 .btn-informatique{background:var(--informatique);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;}
 .kicker-informatique{font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--informatique);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
 .ledger-num-informatique{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.7rem;color:var(--informatique);}
@@ -405,11 +405,10 @@ details p{color:var(--muted);margin-top:12px;}
   content:''; position:absolute; top:0; left:0; right:0; height:3px;
   background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.4s;
 }
-.adv-card:hover { background:rgba(255,255,255,0.09); transform:translateY(-4px); border-color:rgba(255,255,255,0.2); }
-.adv-card:hover::before { transform:scaleX(1); }
+
 .adv-icon { font-size:1.8rem; margin-bottom:1rem; display:block; }
-.adv-card h3 { font-size:0.92rem; font-weight:700; color:#fff; margin-bottom:0.5rem; }
-.adv-card p { font-size:0.8rem; color:rgba(255,255,255,0.55); line-height:1.65; }
+.adv-card h3 { font-size:0.92rem; font-weight:700; color:var(--primary); margin-bottom:0.5rem; }
+.adv-card p { font-size:0.8rem; color:var(--primary); line-height:1.65; }
  
 /* ── CTA BAND ── */
 .s-cta-sol {
@@ -575,7 +574,7 @@ section { padding: 96px 5vw; }
 }
 
 /* ─── AVANTAGES ─── */
-.s-avantages { background: var(--off); }
+.s-avantages { background: var(--navy); }
 .avantages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .av-card {
   background: var(--white); border-radius: 14px; padding: 2rem;
