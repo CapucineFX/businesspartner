@@ -16,37 +16,57 @@
 </head>
 <body>
 <!-- NAV -->
-<header id="header">
-  
-  <nav class="navbar navbar-expand-md effet-0 navbar-dark">
-    <div class="container-fluid">
-      <div class="nav-logo navbar-nav"><a href="index.html" class="logo">BusinessPartners</a></div>
-    
-            <div class="navbar-toggler mr-2">
-              
-                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
 
-                
-           
-          </div>
-    <div class="collapse navbar-collapse " id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link active" href="informatique.html">Informatique</a></li>
-        <li class="nav-item"><a class="nav-link" href="medical.html">Médical</a></li>
-        <li class="nav-item"><a class="nav-link" href="industrie.html">Industrie</a></li>
-        <li class="nav-item"><a class="nav-link" href="automobile.html">Automobile</a></li>
-        <li class="nav-item"><a class="nav-link" href="leasing.html">Le Leasing</a></li>
-        <li class="nav-item"><a href="connect.html" class="btn btn-primary">Financer mon projet</a></li>
-      </ul>
+<header id="header" >
+  <nav class=" navbar navbar-expand-md effet-0 navbar-dark">
+  <a href="index.html" class="nav-logo">Business<span>Partners</span></a>
+
+  <div class="nav-desktop">
+    <!-- Dropdown Nos Solutions -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">Nos Solutions ▾</span>
+      <div class="dropdown">
+        <a href="informatique.html">💻 Informatique & Télécoms</a>
+        <a href="medical.html">🏥 Médical & Santé</a>
+        <a href="industrie.html">⚙️ Industrie & Robotique</a>
+        <a href="automobile.html">🚗 Automobile</a>
+      </div>
     </div>
+    <a href="leasing.html" class="nl">Le Leasing</a>
+    <a href="partenaires.html" class="nl">Partenaires</a>
+    <!-- Dropdown À propos -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">À propos ▾</span>
+      <div class="dropdown">
+        <a href="a-propos.html">🏢 Qui sommes-nous ?</a>
+        <a href="a-propos.html#rse">🌿 Démarche RSE</a>
+      </div>
     </div>
-    
-    </nav>
+    <a href="contact.html" class="nl">Contact</a>
+    <a href="contact.html" class="nl nav-cta">Financer mon projet</a>
   </div>
+
+  <!-- Bouton hamburger mobile -->
+  <button class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </button>
+  </nav>
+
+  <!-- Menu mobile -->
+<div class="nav-mobile" id="mob-menu">
+  <a href="informatique.html">💻 Informatique & Télécoms</a>
+  <a href="medical.html">🏥 Médical & Santé</a>
+  <a href="industrie.html">⚙️ Industrie & Robotique</a>
+  <a href="automobile.html">🚗 Automobile</a>
+  <hr style="border-color:rgba(255,255,255,0.1);margin:1rem 0">
+  <a href="leasing.html">📖 Le Leasing</a>
+  <a href="a-propos.html">🏢 À propos</a>
+  <a href="contact.html">📍 Contact</a>
+  <a href="contact.html" class="m-cta">Financer mon projet →</a>
+</div>
+
 </header>
+
 
 
 <main>

@@ -19,59 +19,55 @@
 
 
 
-  
-<!-- NAV -->
-<header id="header">
-  
-  <nav class="navbar navbar-expand-md effet-0 navbar-dark">
-    <div class="container-fluid">
-      <div class="nav-logo navbar-nav"><a href="index.html" class="logo">BusinessPartners</a></div>
-    
-            <div class="navbar-toggler mr-2">
-              
-                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
+<header id="header" >
+  <nav class=" navbar navbar-expand-md effet-0 navbar-dark">
+  <a href="index.html" class="nav-logo">Business<span>Partners</span></a>
 
-                
-           
-          </div>
-    <div class="collapse navbar-collapse " id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-           <!-- Menu Déroulant (Dropdown) -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-       
-          </li>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="informatique.html">Informatique</a></li>
-              <li><a class="dropdown-item" href="medical.html">Médical</a></li>
-                 <li><a class="dropdown-item" href="industrie.html">Industrie</a></li>
-                    <li><a class="dropdown-item"href="automobile.html">Automobile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-
-          </div>
-              
-        <li class="nav-item"><a class="nav-link active" href="informatique.html">Informatique</a></li>
-        <li class="nav-item"><a class="nav-link" href="medical.html">Médical</a></li>
-        <li class="nav-item"><a class="nav-link" href="industrie.html">Industrie</a></li>
-        <li class="nav-item"><a class="nav-link" href="automobile.html">Automobile</a></li>
-        <li class="nav-item"><a class="nav-link" href="leasing.html">Le Leasing</a></li>
-        <li class="nav-item"><a href="connect.html" class="btn btn-primary">Financer mon projet</a></li>
-        </ul>
+  <div class="nav-desktop">
+    <!-- Dropdown Nos Solutions -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">Nos Solutions ▾</span>
+      <div class="dropdown">
+        <a href="informatique.html">💻 Informatique & Télécoms</a>
+        <a href="medical.html">🏥 Médical & Santé</a>
+        <a href="industrie.html">⚙️ Industrie & Robotique</a>
+        <a href="automobile.html">🚗 Automobile</a>
+      </div>
     </div>
+    <a href="leasing.html" class="nl">Le Leasing</a>
+    <a href="partenaires.html" class="nl">Partenaires</a>
+    <!-- Dropdown À propos -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">À propos ▾</span>
+      <div class="dropdown">
+        <a href="a-propos.html">🏢 Qui sommes-nous ?</a>
+        <a href="a-propos.html#rse">🌿 Démarche RSE</a>
+      </div>
     </div>
-    
-    </nav>
+    <a href="contact.html" class="nl">Contact</a>
+    <a href="contact.html" class="nl nav-cta">Financer mon projet</a>
   </div>
-</header>
 
+  <!-- Bouton hamburger mobile -->
+  <button class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </button>
+  </nav>
+
+  <!-- Menu mobile -->
+<div class="nav-mobile" id="mob-menu">
+  <a href="informatique.html">💻 Informatique & Télécoms</a>
+  <a href="medical.html">🏥 Médical & Santé</a>
+  <a href="industrie.html">⚙️ Industrie & Robotique</a>
+  <a href="automobile.html">🚗 Automobile</a>
+  <hr style="border-color:rgba(255,255,255,0.1);margin:1rem 0">
+  <a href="leasing.html">📖 Le Leasing</a>
+  <a href="a-propos.html">🏢 À propos</a>
+  <a href="contact.html">📍 Contact</a>
+  <a href="contact.html" class="m-cta">Financer mon projet →</a>
+</div>
+
+</header>
 
 
 
@@ -93,61 +89,7 @@
 
 
 
-<!-- LEASING INTRO -->
-<section class="s-leasing">
-  <div class="reveal">
-    <div class="section-label">Le leasing en bref</div>
-    <h2 class="section-title">Une alternative <span class="hl">intelligente</span> à l'achat</h2>
-    <p>Accédez aux équipements dont vous avez besoin aujourd'hui, sans immobiliser votre capital. Le leasing, c'est simple.</p>
-  </div>
-  <div class="leasing-grid">
-   
-                    <p class="text-primary">
-                              
-                            Depuis plus de <strong>30 ans</strong>, <strong>Business Partners</strong> accompagne
-                            ses partenaires en <strong>France</strong>, dans toute l'<strong>Union Européenne</strong>,
-                            en <strong>Suisse</strong> et au <strong>Royaume-Uni</strong>.
-                         
-                   
-                <br></br>Nous accompagnons nos Partenaires pour la mise en œuvre de leurs solutions auprès de leurs clients. Certains Partenaires gèrent des « clients interne »
-       
-                 Le premier pas c’est de lier un besoin du matériel à un budget afin de booster la performance du client.
-                 </p>
-
-                         <video width="550" height="450" preload="metadata"  poster autoplay muted>
-              <source src="./assets/mp4/leasing.mp4" loading="lazy" type="video/mp4">
- 
-              </video>
-             
-    <div class="leasing-benefits reveal">
-      <div class="benefit-item">
-        <div class="benefit-icon">💰</div>
-        <div>
-          <h4>Trésorerie préservée</h4>
-          <p>Aucune avance de capital. Vos liquidités restent disponibles pour votre activité principale.</p>
-        </div>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-icon">📊</div>
-        <div>
-          <h4>Fiscalité optimisée</h4>
-          <p>Les loyers sont entièrement déductibles du résultat imposable. La TVA est récupérable.</p>
-        </div>
-      </div>
-     
-      <div class="benefit-item">
-        <div class="benefit-icon">🔄</div>
-        <div>
-          <h4>Matériel toujours à jour</h4>
-          <p>Renouvelez vos équipements à chaque fin de contrat, sans subir l'obsolescence.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-           <div class="position-relative  space-top-5 space-3 ">
+           <section class="position-relative  space-top-5 space-3 ">
 
        
             <div class="container">
@@ -186,7 +128,7 @@
               
           
             </div>
-           </div>
+           </section>
 
       
 
@@ -343,17 +285,14 @@
 </div>
   </div>
 </footer>
-      <script src="./assets/js/dropbox.js"></script>
-      <!-- Fichiers JS locaux -->
-<script src="./assets/js/popper.min.js"></script>
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
+  
 </body>
-
+<script src="nav.js"></script>
       <script>
 
         
             document.addEventListener('DOMContentLoaded', function() {
-          let header = document.getElementById('header');
+          let header = document.getElementById('header', 'ham');
           let timer;
 
 
@@ -496,6 +435,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }, { threshold: 0.5 });
       document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
+      const ham = document.getElementById('ham');
+const mob = document.getElementById('mob-menu');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  mob.classList.toggle('open');
+  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+});
+mob.querySelectorAll('a').forEach(a =>
+  a.addEventListener('click', () => {
+    ham.classList.remove('open');
+    mob.classList.remove('open');
+    document.body.style.overflow = '';
+  })
+);
       </script>
 </body>
 </html>
