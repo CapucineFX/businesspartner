@@ -30,7 +30,99 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+/* SECTION LEASING PARTENAIRE STYLISÉE */
+.s-partner-leasing {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
 
+/* Habillage média (Vidéo / Image) */
+.media-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+  border: 1px solid #f1f5f9;
+}
+
+.custom-media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Badge au-dessus du titre */
+.partner-badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0d6efd;
+  background: #eff6ff;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.partner-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.partner-title .hl {
+  color: #0d6efd;
+}
+
+.partner-lead {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.partner-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+/* Encadré d'action (Notre démarche) */
+.demarche-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #f8fafc;
+  border-left: 4px solid #0d6efd;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.demarche-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.demarche-box strong {
+  display: block;
+  color: #0f172a;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.demarche-box span {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.5;
+}
 /* informatique */
 .eyebrow-informatique{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px;}
 .btn-informatique{background:var(--informatique);color:var(--white);border-radius:999px;padding:10px 20px;font-weight:600;font-size:.88rem;white-space:nowrap;}
@@ -119,7 +211,7 @@ nav a.active{color:var(--orange);}
 .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;position:relative;}
 
 /* hero */
-.hero-informatique{background:var(--navy);padding:76px 0 0;color:#fff;position:relative;overflow:hidden;}
+.hero-informatique{background:var(--navy);padding:75px 0;color:#fff;position:relative;overflow:hidden;}
 .hero-informatique::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.35;}
 
 .hero-informatique h1{color:#fff;font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.08;max-width:16ch;position:relative;}
@@ -339,7 +431,7 @@ footer{background:var(--navy);color:#C9D3E0;padding:56px 0 28px;font-size:.9rem;
   display:flex; align-items:center; justify-content:center; font-size:5rem;
   box-shadow:0 12px 40px rgba(0,32,96,0.15);
 }
-.banner-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.banner-img img { position:absolute; inset:0; width:100%; object-fit:cover; }
 
 .banner-text .section-label { margin-bottom:0.5rem; }
 .banner-text h2 { font-family:var(--font-d); font-size:clamp(1.5rem,2.8vw,2.2rem); color:var(--navy); letter-spacing:-0.02em; line-height:1.1; margin-bottom:1rem; }
@@ -534,7 +626,7 @@ section { padding: 96px 5vw; }
 .section-title .hl { color: var(--blue); }
 .section-sub { font-size: 0.95rem; color: var(--gray); line-height: 1.7; max-width: 580px; margin-bottom: 3rem; }
 
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal { opacity: 1; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* ─── HOW IT WORKS ─── */

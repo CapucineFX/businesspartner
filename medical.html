@@ -34,7 +34,7 @@
       </div>
     </div>
     <a href="leasing.html" class="nl">Le Leasing</a>
-    <a href="partenaires.html" class="nl">Partenaires</a>
+    <a href="a-propos.html" class="nl">Partenaires</a>
     <!-- Dropdown À propos -->
     <div class="has-drop">
       <span class="nl drop-trigger">À propos ▾</span>
@@ -279,11 +279,6 @@
 
       });
 
-      function toggleNavbar() {
-          var navbarCollapse = document.getElementById('navbarCollapse');
-          navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
-      }
-
 
       // Scroll reveal
       const revealEls = document.querySelectorAll('.reveal');
@@ -344,5 +339,6 @@
       }, { threshold: 0.5 });
       document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
       </script>
+<script src="./assets/js/nav.js"></script>
 </body>
 </html>
