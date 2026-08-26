@@ -38,70 +38,62 @@
 
   </head>
   <body>
-     <header id="header" class="w-100 header-color-light" style="z-index: 1;">
-
-      <nav class="navbar navbar-expand-md navbar-dark" >
-          <div class="container-fluid ">
-            <a class="navbar-brand"  href="./index.html"><img alt="logo BP bleu" src="./assets/img/Logo-Business-Partners.svg"></a>
-
-            <div class="navbar-toggler mr-2">
-              
-                  <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                
-           
-          </div>
-          
-            <div class="collapse navbar-collapse text-dark" id="navbarCollapse">
-              <div class="col-12 ml-2">
-             
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-lg-flex justify-content-end w-100 text-primary">
-
-                     <li class="nav-item">
-                   <a class="nav-link" href="./index copy.html">Qu'est ce que le leasing ?</a>
-                  </li>
-
-                  <li class="nav-item">
-                   <a class="nav-link" href="./a-propos-2.html">Découvrir qui nous sommes</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <div class="dropdown">
-                     <a href="./connect.html" class=" btn-secondary btn-rounded  btn-md btn mx-4">Espace Partenaire</a>
-
-                  </div>
-                </li>
-
-                </ul>
-              </div>
-             
-       
-            </div>
-          </div>
-        </nav>
-  </header>
+   
     
     
-    
+<header id="header" >
+  <nav class=" navbar navbar-expand-md effet-0 navbar-dark">
+  <a class="navbar-brand"  href="./index.html"><img alt="logo BP bleu" src="./assets/img/Logo-Business-Partners.svg"></a>
+
+  <div class="nav-desktop">
+    <!-- Dropdown Nos Solutions -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">Nos Solutions ▾</span>
+      <div class="dropdown">
+        <a href="informatique.html">💻 Informatique & Télécoms</a>
+        <a href="medical.html">🏥 Médical & Santé</a>
+        <a href="industrie.html">⚙️ Industrie & Robotique</a>
+        <a href="automobile.html">🚗 Automobile</a>
+      </div>
+    </div>
+    <a href="leasing.html" class="nl">Le Leasing</a>
+    <a href="a-propos.html" class="nl">Partenaires</a>
+    <!-- Dropdown À propos -->
+    <div class="has-drop">
+      <span class="nl drop-trigger">À propos ▾</span>
+      <div class="dropdown">
+        <a href="a-propos.html">🏢 Qui sommes-nous ?</a>
+        <a href="a-propos.html#rse">🌿 Démarche RSE</a>
+      </div>
+    </div>
+    <a href="contact.html" class="nl">Contact</a>
+    <a href="contact.html" class="nl nav-cta">Financer mon projet</a>
+  </div>
+
+  <!-- Bouton hamburger mobile -->
+  <button class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </button>
+  </nav>
+
+  <!-- Menu mobile -->
+<div class="nav-mobile" id="mob-menu">
+  <a href="informatique.html">💻 Informatique & Télécoms</a>
+  <a href="medical.html">🏥 Médical & Santé</a>
+  <a href="industrie.html">⚙️ Industrie & Robotique</a>
+  <a href="automobile.html">🚗 Automobile</a>
+  <hr style="border-color:rgba(255,255,255,0.1);margin:1rem 0">
+  <a href="leasing.html">📖 Le Leasing</a>
+  <a href="a-propos.html">🏢 À propos</a>
+  <a href="contact.html">📍 Contact</a>
+  <a href="contact.html" class="m-cta">Financer mon projet →</a>
+</div>
+
+</header>
+
+
 <main id="content" role="main">
 
-
-<!-- HERO -->
-<section class="hero-home" style="background: linear-gradient(rgb(0 40 80 / 39%), rgba(0, 40, 80, 0.8)), url(./assets/banniere/aboutus.jpg) center / cover">
-  <div class="sol-hero-grid"></div>
-  <div class="sol-hero-text">
-    <div class="eyebrow-informatique">💻 Nos Solutions · Informatique & IT</div>
-    <h1>Leasing <em>Informatique & IT</em> : Financez vos équipements, logiciels et infrastructures</h1>
-    <p>Digitalisez votre entreprise tout en préservant votre trésorerie grâce à un financement global incluant matériel, software et services.</p>
-    <div class="hero-btns">
-      <a href="contact.html" class="btn btn-primary">Obtenir un financement →</a>
-      <a href="leasing.html" class="btn btn-ghost">Comprendre le leasing</a>
-    </div>
-  </div>
-  
-</section>
 
   <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -118,7 +110,7 @@
       
        <div class="container">
      
-          <div class="d-block text-center ">
+          <div class="d-block text-center mx-0 my-0 ">
           
             
         <h1 class="text-light"><span>Boostez</span><br><span class="section-title text-light">vos activités grâce au leasing</span></h1>
@@ -268,55 +260,7 @@
    
        
 
-    <div class="space-3" id="Leasing">
-        <div class="container">
-
-          <div class="text-center mb-4">
-            
-            <h2 class="section-title text-primary ">Pourquoi intégrer le financement locatif dans votre offre ?</h2>
-
-          
-          </div>
-      
-            <div class="how-timeline">
-      <div class="how-step reveal">
-        <div class="step-dot">1</div>
-        <div class="step-body">
-          <h3>Vous identifiez votre besoin</h3>
-          <p>Vous choisissez l'équipement et le fournisseur. Informatique, médical, industriel, automobile — tout actif professionnel est éligible. Vous gardez le libre choix de votre matériel.</p>
-          <span class="step-tag">Libre choix du matériel</span>
-        </div>
-      </div>
-      <div class="how-step reveal">
-        <div class="step-dot">2</div>
-        <div class="step-body">
-          <h3>Business Partners finance et achète le bien</h3>
-          <p>Nous acquérons l'équipement auprès de votre fournisseur. Vous ne déboursez rien. L'analyse de dossier et la réponse de financement interviennent en moins de 24h.</p>
-          <span class="step-tag">Réponse &lt; 24h</span>
-        </div>
-      </div>
-      <div class="how-step reveal">
-        <div class="step-dot">3</div>
-        <div class="step-body">
-          <h3>Vous utilisez et payez un loyer mensuel</h3>
-          <p>Vous disposez de l'équipement immédiatement. Les loyers sont fixes, prévisibles, et entièrement déductibles fiscalement. La TVA est récupérable à chaque échéance.</p>
-          <span class="step-tag">Loyers 100% déductibles</span>
-        </div>
-      </div>
-      <div class="how-step reveal">
-        <div class="step-dot">4</div>
-        <div class="step-body">
-          <h3>À la fin du contrat, vous décidez</h3>
-          <p>Trois options s'offrent à vous : restituer le bien (zéro risque d'obsolescence), renouveler le contrat avec des équipements plus récents, ou racheter le bien à sa valeur résiduelle.</p>
-          <span class="step-tag">3 options de fin de contrat</span>
-        </div>
-      </div>
-    </div>
-         
-      
-        </div>
-    </div>
-
+   
     
     
 
@@ -509,28 +453,7 @@
   </body>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-brand">
-    <div class="logo">Business<span>Partners</span></div>
-    <p>Expert du leasing B2B depuis plus de 30 ans. Nous accompagnons nos partenaires en France, en Europe et au Royaume-Uni.</p>
-    <p style="margin-top:0.5rem">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
-  </div>
-  <div class="footer-col">
-    <h4>Solutions</h4>
-    <a href="#">Leasing Informatique</a>
-    <a href="#">Leasing Médical</a>
-    <a href="#">Leasing Industriel</a>
-    <a href="#">Leasing Automobile</a>
-  </div>
-  <div class="footer-col">
-    <h4>Entreprise</h4>
-    <a href="#">À propos</a>
-    <a href="leasing.html">Le Leasing</a>
-    <a href="#">Partenaires</a>
-    <a href="#">Contact</a>
-    <a href="#">Mentions légales</a>
-  </div>
-</footer>
+
 <div class="footer-bottom">
   <span>© 2025 Business Partners®</span>
   <span>Leasing B2B — France · Europe · UK</span>
