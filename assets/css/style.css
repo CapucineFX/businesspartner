@@ -843,7 +843,7 @@ section { padding: 96px 5vw; }
 /* ═══════════════════════════════════
    SECTION COMPARATIF
 ═══════════════════════════════════ */
-.s-compare { background: var(--off); }
+
 .compare-wrap { display: grid; grid-template-columns: 3fr 2fr; gap: 3rem; align-items: start; margin-top: 3rem; }
 thead th { padding: 14px 12px; text-align: center; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .th-label { background: #E8EDF5; color: var(--navy); text-align: left; width: 38%; }
