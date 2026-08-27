@@ -35,7 +35,84 @@
     <link rel="stylesheet" href="./assets/css/carousel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+<style>
+  /* SECTION À PROPOS / QUI SOMMES-NOUS */
+.s-about {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
 
+.lead-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.body-text {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* CARTE DE GARANTIE (COLONNE DROITE) */
+.guarantee-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d6efd;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.guarantee-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.guarantee-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.guarantee-card hr {
+  border-color: #cbd5e1;
+  margin: 1.25rem 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.feature-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+</style>
   </head>
   <body>
 
@@ -94,22 +171,87 @@
 
 
 
-      <div class="position relative bg-light space-top-5 bg-img" style="background: linear-gradient(rgba(0,40,80,0.8), rgba(0,40,80,0.8)), url('./assets/banniere/aboutus.jpg') top/cover;">
-
-        <div class="container space-top-5">
-           <div class="col-lg-7 col-12 text-light">
-
- <h1 class="text-light">Votre Partenaire de Confiance pour la Croissance et la Transformation </h1>      
- <br>
-
-
-       </div>
-        </div>
-       
-</div>
 
             <!-- 2. SECTION QUI SOMMES-NOUS ? -->
-     
+     <!-- HERO -->
+<section class="hero-informatique">
+  <div class="sol-hero-grid"></div>
+  <div class="sol-hero-text">
+    <div class="eyebrow-informatique">Leader en leasing B2B depuis plus de 30 ans</div>
+    <h1>Votre Partenaire de<em> Confiance</em> pour la Croissance et la Transformation de vos entreprises.</h1>
+ <p class="text-light">
+        Depuis plus de 30 ans, Business Partners accompagne ses partenaires en France, dans toute l'Union Européenne, en Suisse et au Royaume-Uni. Nous bâtissons des infrastructures fiables, adaptées aux réalités de l'industrie, du médical et du numérique. Chaque partenaire bénéficie d'un interlocuteur dédié et d'un accompagnement sur-mesure.
+      </p>   
+   
+  </div>
+  
+</section>
+
+
+
+<section class="s-about s-pad">
+ 
+    <div class="container">      <div class="reveal" style=" margin-bottom: 50px;">
+           
+
+      <div class="section-label">Qui sommes-nous ?</div>
+      <h2 class="section-title">Business Partners, <span class="hl">leader du leasing B2B</span> depuis 30 ans</h2>
+      <p class="text-me">
+        Business Partners acquiert le bien et le met à votre disposition, sur une durée déterminée. 
+       À l'échéance, vous choisissez : restituer, renouveler, ou racheter.
+      </p>
+    </div>
+    <!-- En-tête -->
+
+    <!-- Présentation principale -->
+    
+    <div class="reveal">
+       <div class="row g-5 align-items-center">
+      <div class="col-lg-7">
+        <p class="lead-text">
+          Basée à Nanterre, Business Partners est une SAS constituée d'experts spécialisés dans l'acquisition d'équipements professionnels.
+        </p>
+        <p class="body-text">
+          Implantés en France, en Europe et au Royaume-Uni, nous nous appuyons sur un réseau étendu de partenaires constructeurs et distributeurs pour couvrir <strong>4 secteurs clés</strong> (Informatique, Médical, Industrie, Automobile).
+        </p>
+        <p class="body-text">
+          Nos ingénieurs financiers accompagnent nos partenaires directement chez leurs clients — des équipes opérationnelles sur le terrain jusqu'à la Direction Générale. Ils disposent d'une expertise éprouvée sur les <strong>marchés publics</strong> et maîtrisent les normes comptables complexes (IAS/IFRS, FAS).
+        </p>
+      </div>
+
+      <!-- Carte d'engagement / Maintien en condition -->
+      <div class="col-lg-5">
+        <div class="guarantee-card">
+          <div class="card-tag">Réactivité &amp; Sérénité</div>
+          <h3>Parlez-nous de votre projet</h3>
+          <p>Un expert vous rappelle en <strong>moins de 24h</strong> pour analyser votre besoin.</p>
+          <hr>
+          <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <div>
+              <strong>Zéro pénalité en cas de panne</strong>
+              <p>Une solution de remplacement ou d'intervention est déployée sous 48h maximum.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💳</span>
+            <div>
+              <strong>Maîtrise budgétaire</strong>
+              <p>Accord financier dès le départ et loyers échelonnés sur la durée réelle d'utilisation.</p>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary w-100 mt-3">Démarrer une étude →</a>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+
+
+  
+
+  </div>
+</section>
 
 <!-- SECTION 1 : NOTRE PROMESSE -->
 <section class=" s-pad">
@@ -128,28 +270,35 @@
   </div>
 
   <div class="d-lg-flex justify-content-between align-items-center">
-    <div class="reveal">
+    <div class="reveal px-1 py-1">
           <div class="step-body">
-          <h3>La liberté au bout du contrat</h3>
-      <p> Contrairement aux structures rigides, nous offrons trois options claires à l'échéance : restituer le matériel pour annuler le risque de vétusté, le racheter à valeur résiduelle, ou renouveler le parc.
-     </p>
-          <span class="step-tag">Transparence & Adaptabilité</span>
+            <div class="bp-icon">👤</div>
+          <h3>Accompagnement sur-mesure</h3>
+          <p>Un interlocuteur dédié et expert de votre secteur pour concevoir la solution idéale, loin des réponses automatisées des banques.</p>
         </div>
     </div>
 
-    <div class="reveal mx-2">
+    <div class="reveal px-1 py-1">
         <div class="step-body">
-          <h3>Une solution 100% tout inclus</h3>
-          <p> Nous ne finançons pas seulement le matériel nu. Nos solutions intègrent les licences de logiciels métiers (SaaS), l'installation et la maintenance dans une unique mensualité fixe..</p>
-          <span class="step-tag">Offres sur-mesure</span>
+          <div class="bp-icon">📦</div>
+          <h3>Solution 100% tout inclus</h3>
+          <p>Une mensualité fixe unique regroupant votre matériel, vos licences logiciels (SaaS), l'installation et la maintenance.</p>
         </div>
     </div>
 
-    <div class="reveal mx-2">
+    <div class="reveal px-1 py-1">
     <div class="step-body">
+    <div class="bp-icon">⚡</div>
           <h3>Maîtrise de l'obsolescence</h3>
-          <p> Ne subissez plus la dépréciation de vos actifs. Vos collaborateurs profitent constamment des outils technologiques les plus récents grâce à nos options de mise à niveau en cours de contrat.</p>
-          <span class="step-tag">Performance & Innovation</span>
+          <p>Vos équipes profitent en permanence des dernières technologies grâce à nos options de mise à niveau en cours de contrat.</p>
+        </div>
+    </div>
+
+     <div class="reveal px-1 py-1">
+    <div class="step-body">
+      <div class="bp-icon">🔄</div>
+          <h3>Liberté en fin de contrat</h3>
+          <p>À l'échéance, vous gardez la main : restituez le matériel pour annuler le risque de vétusté, rachetez-le ou renouvelez votre parc.</p>
         </div>
     </div>
 
@@ -203,147 +352,7 @@
 
 
 
-              <div class="container">
-
-
-
-                    <div class="d-lg-flex d-block align-items-center justify-content-between">
-                    <div class="col-lg-6 col-12 mx-lg-2 mx-0">
-                        <h2 class="position-relative text-uppercase mb-3">
-                            Qui Sommes-Nous ?
-                        </h2>
-                        <p class="text-muted mb-4 justify-content-center">
-                              
-                            Depuis plus de <strong>30 ans</strong>, <strong>Business Partners</strong> accompagne
-                            ses partenaires en <strong>France</strong>, dans toute l'<strong>Union Européenne</strong>,
-                            en <strong>Suisse</strong> et au <strong>Royaume-Uni</strong>. Notre expertise du
-                            <strong>Business Partner leasing</strong> nous permet de proposer des solutions de financement
-                            adaptées à chaque marché, y compris sur les marchés publics et les normes comptables
-                            internationales (IAS/IFRS).
-                          </p>
-                   
-                        <p class="text-muted mb-4">
-                            Notre objectif fondamental est de maximiser la flexibilité et la réactivité de vos investissements, tout en sécurisant vos relations à long terme. Nous bâtissons des infrastructures fiables, adaptées aux réalités de l'industrie, du médical et du numérique.
-                        </p>
-                   
-                    </div>
-                    
-                    <!-- Image illustration équipe (Format arrondi sur l'image) -->
-                    <div class="col-lg-5 d-lg-block d-none mx-lg-2 mx-0 text-center">
-                           
-              <video width="550" height="450" style="max-width: 90%;" autoplay muted>
-              <source src="./assets/mp4/leasing.mp4" type="video/mp4">
- 
-              </video>
-                    </div>
-                </div>
-              </div>
-            
-  
-              
-
-                 <div class="position-relative space-3 bg-primary">
-            <div class="container text-light" style="font-weight: 100;">
-              <div class="d-md-flex d-block align-items-center justify-content-between">
-                    <div class="col-lg-5 col-12 d-lg-block d-none mx-lg-2 mx-0 text-center">
-                     
-                <img alt="Poignée de main" src="./assets/banniere/about2.jpg" 
-                             alt="Équipe Business Partners" 
-                             class="img-fluid rounded shadow-sm" 
-                             style="max-height: 680px; height: 100%; object-fit: cover;">
-        
-  
-           
-              </div>
-                <section class="valeur-ajoutee col-lg-6   ">
-                  
-                  <div class="card-body ">
-                     <h2 class="text-light ">La valeur ajoutée du Business Partner leasing</h2>
-               
-                   <p class="text-light">Contrairement à un leasing bancaire classique, Business Partners met à disposition
-                  de ses partenaires une équipe d'ingénieurs financiers dédiée. Nous maîtrisons les
-                  spécificités des marchés publics en France et au Royaume-Uni, ainsi que les normes
-                  comptables internationales (IAS/IFRS/FAS), pour structurer des offres de leasing
-                  parfaitement adaptées à votre activité et à celle de vos clients.
-                </p>
-                <br>
-
-                <p class="text-light">En plus des schémas classiques ou sur-mesure selon les normes comptables françaises, nos ingénieurs financiers sont rompus à mener des analyses IAS/IFRS et FAS, à concevoir et à mettre en œuvre des contrats cadres couvrant de multiples livraisons.</p>
-                </div>
-
-               
-                </section>
-          
-           
-            </div>
-          </div>
-    
-          </div>
-
-            <!-- SECTION : POURQUOI NOUS CHOISIR -->
-<div class="space-4 bg-white text-center">
-    <div class="container text-primary">
-        
-        <!-- Titre de la section -->
-        <h2 class="fw-bold section-title mb-5" >
-            Pourquoi Nous Choisir ?
-        </h2>
-
-        <!-- Grille des 3 atouts -->
-        <div class="d-lg-flex d-block justify-content-center mb-5">
-          
-            <!-- Atout 1 : Expertise Sectorielle -->
-           
-            <div class="card col-lg-4 col-12 mx-lg-3 mx-0 text-primary">
-           
-               
-      
-             
-               <div class="card-body">
-                  <div class="mb-3 ">
-                    <!-- Icône Mallette / Business (Dorée) -->
-                    <i class="bi bi-briefcase-fill h1 text-primary"></i>
-                </div>
-         
-                <h4 class="fw-bold fs-5 mb-3">Expertise Sectorielle</h4>
-                <p class="text-primary text-center mx-auto" style="max-width: 300px;">
-                    Une connaissance approfondie de vos marchés pour concevoir des solutions de financement parfaitement adaptées à vos contraintes métiers.
-                </p>
-               </div>
-                
-            </div>
-
-            <!-- Atout 2 : Approche Personnalisée -->
-            <div class="card col-lg-4 col-12 mx-lg-3 mx-0 text-primary">
-                <div class="mb-3">
-                    <!-- Icône Profil / Conseil (Dorée) -->
-                    <i class="bi bi-person-badge-fill h1 text-accent-gold"></i>
-                </div>
-                <h4 class="fw-bold  mb-3">Approche Personnalisée</h4>
-                <p class="text-primary text-center mx-auto" style="max-width: 300px;">
-                    Chaque partenaire bénéficie d'un interlocuteur dédié et d'un accompagnement sur-mesure, loin des réponses automatisées des banques.
-                </p>
-            </div>
-
-            <!-- Atout 3 : Engagement Long Terme -->
-            <div class="card col-lg-4">
-                <div class="mb-3">
-                    <!-- Icône Poignée de main / Confiance (Dorée) -->
-                    <i class="bi bi-stars fa-2xl h1"></i>
-                </div>
-                <h4 class="fw-bold  mb-3">Engagement Long Terme</h4>
-                <p class="text-primary text-center mx-auto" style="max-width: 300px;">
-                    Nous nous inscrivons dans la durée à vos côtés pour soutenir l'évolution constante et la transformation de votre parc technologique.
-                </p>
-            </div>
-
-        </div>
-
-
-    </div>
-  </div>
     </main>
-
     
  <footer class="bg-primary footer space-3">
       <div class="container">
