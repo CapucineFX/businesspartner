@@ -36,6 +36,10 @@
   background-color: #ffffff;
 }
 
+.logo-header{
+  width:8rem;
+  height: auto;
+}
 /* Habillage média (Vidéo / Image) */
 .media-wrapper {
   position: relative;
