@@ -488,8 +488,19 @@ table.hovered-bp .col-bp-cell {
 .bp-nav a.is-active {
     border-bottom-color: #4f8cff;
 }
-
-
+.bp-nav {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    height: 72px;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(14px);
+}
 .bp-nav a {
     display: block;
     font-size: .85rem;

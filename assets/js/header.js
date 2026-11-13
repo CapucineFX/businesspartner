@@ -41,7 +41,7 @@
     .bp-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: transparent; transition: background .25s ease, box-shadow .25s ease; }
     .bp-header.is-scrolled { background: rgba(6, 13, 28, .94); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(255,255,255,.08); }
     .bp-spacer { height: var(--bp-header-h); }
-    .bp-header__inner { max-width: 1200px; height: var(--bp-header-h); margin: 0 auto; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .bp-header__inner { height: var(--bp-header-h); margin: 0 auto; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 
     .bp-logo { font-weight: 800; line-height: .95; font-size: 1.2rem; letter-spacing: .5px;  text-decoration: none; text-transform: uppercase; }
     .bp-logo span { display: block; }
