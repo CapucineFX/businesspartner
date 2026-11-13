@@ -1,370 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leasing Médical & Santé | Business Partners</title>
-    <meta name="description" content="Business Partners finance vos équipements médicaux en leasing : imagerie, bloc opératoire, EHPAD, cabinets de ville. Réponse en moins de 24h, en France, en Europe et au Royaume-Uni.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-    <!-- CSS Implementing Plugins -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Expertises de Business Partners</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/header.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/main.js" defer></script>
+
+      
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./assets/css/landing.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  
+
 
 </head>
 <body>
+  <div id="site-header"></div>
 
-
-<header id="header" >
-  <nav class=" navbar navbar-expand-md effet-0 navbar-dark">
-  <a href="index.html" class="navbar-brand" ><img alt="logo BP bleu" class="img-fluid logo-header" src="./assets/img/Logo-Business-Partners.svg"></a>
-
-
-  <div class="nav-desktop">
-    <!-- Dropdown Nos Solutions -->
-    <div class="has-drop">
-      <span class="nl drop-trigger">Nos Solutions ▾</span>
-      <div class="dropdown">
-        <a href="informatique.html">💻 Informatique & Télécoms</a>
-        <a href="medical.html">🏥 Médical & Santé</a>
-        <a href="industrie.html">⚙️ Industriel</a>
-        <a href="robotique.html">🤖 Robotique</a>
-      </div>
-    </div>
-    <a href="leasing.html" class="nl">Le Leasing</a>
-    <a href="partenaires.html" class="nl">Partenaires</a>
-    <!-- Dropdown À propos -->
-    <div class="has-drop">
-      <span class="nl drop-trigger">À propos ▾</span>
-      <div class="dropdown">
-        <a href="a-propos.html">🏢 Business partners</a>
-        <a href="a-propos.html#contact">🤝 Nous rejoindre</a> 
-
-
-      </div>
-    </div>
-    <a href="contact.html" class="nl btn-xs btn-primary">Financer mon projet</a>
-  </div>
-
-  <!-- Bouton hamburger mobile -->
-  <button class="hamburger" id="ham">
-    <span></span><span></span><span></span>
-  </button>
-  </nav>
-
-  <!-- Menu mobile -->
-<div class="nav-mobile" id="mob-menu">
-  <a href="informatique.html">💻 Informatique & Télécoms</a>
-  <a href="medical.html">🏥 Médical & Santé</a>
-  <a href="industrie.html">⚙️ Industrie & Robotique</a>
-  <a href="automobile.html">🚗 Automobile</a>
-  <hr style="border-color:rgba(255,255,255,0.1);margin:1rem 0">
-  <a href="leasing.html">📖 Le Leasing</a>
-  <a href="a-propos.html">🏢 À propos</a>
-  <a href="contact.html">📍 Contact</a>
-  <a href="contact.html" class="m-cta">Financer mon projet →</a>
-</div>
-
-</header>
-
-
-
-<!-- HERO -->
-<section class="hero" style="background: linear-gradient(rgb(0 40 80 / 39%), rgba(0, 40, 80, 0.8)), url(./assets/banniere/aboutus.jpg) center / cover">
-  <div class="sol-hero-grid"></div>
-  <div class="sol-hero-text">
-    <div class="eyebrow-informatique">Leader en leasing B2B depuis plus de 30 ans</div>
-    <h1>Boostez vos activités<em> sans mobiliser</em> votre trésorerie</h1>
-    <p class="text-light"> Transformez les besoins d'équipement et de logiciels de vos clients en opportunités de croissance, tout en devançant l'imprévu. </p>
-    <div class="hero-btns">
-      <a href="contact.html" class="btn btn-primary">Obtenir un financement →</a>
-      <a href="leasing.html" class="btn btn-ghost">Comprendre le leasing</a>
-    </div>
-  </div>
-  
-</section>
-
-
-
-<!-- LEASING PARTENAIRE -->
-<section class="s-partner-leasing ">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      
-      <!-- Colonne Média (Image / Vidéo) -->
-      <div class="col-lg-6">
-
-        <div class="media-wrapper">
-          <video width="100%" preload="metadata" poster="./assets/img/poster-video.jpg" autoplay muted loop playsinline class="custom-media">
-            <source src="./assets/mp4/leasing.mp4" type="video/mp4">
-          </video>
+  <!-- HERO -->
+  <section class="hero" class="relative py-10 lg:py-18">
+    <div class="hero-visual"><i class="bi bi-box-seam"></i></div>
+    <div class="container">
+      <div class="hero-tags d-none d-xl-block">ÉQUIPER<br>FINANCER<br>ACCOMPAGNER<br>DURABLEMENT</div>
+      <p class="eyebrow mb-2">30 ANS D'EXPERTISE</p>
+      <h1 class="mb-3">Le leasing professionnel,<br>pensé pour vos <span class="text-accent">ambitions.</span></h1>
+      <p class="text-light mb-4" style="max-width: 520px; font-size: .95rem;">
+        Nous accompagnons les entreprises et nos partenaires fournisseurs avec des solutions de location financière adaptées, dans une logique de performance et de développement durable.
+      </p>
+      <div class="row g-3">
+        <div class="col-lg-5">
+          <a href="#" class="cta-card primary">
+            <i class="bi bi-buildings icon"></i>
+            <div><strong>Je suis un client</strong><small>Je finance mes équipements professionnels</small></div>
+            <i class="bi bi-arrow-right arrow"></i>
+          </a>
+        </div>
+        <div class="col-lg-5">
+          <a href="#" class="cta-card secondary">
+            <i class="bi bi-handshake icon"></i>
+            <div><strong>Je suis un partenaire</strong><small>Je propose une solution de financement à mes clients</small></div>
+            <i class="bi bi-arrow-right arrow"></i>
+          </a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Colonne Texte -->
-      <div class="col-lg-6 pt-3 pt-lg-0">
-        <div class="partner-content">
-          <span class="section-label">Accélérateur de ventes</span>
-          <h2 class="section-title">Le leasing orienté <span class="hl">Partenaire</span></h2>
-          
-          <p class="partner-desc">
-            <strong>Si le leasing est un formidable levier financier, notre métier depuis plus de 30 ans, est de maximiser l'impact opérationnel de vos clients.
-          </strong></p>
-          
-          <p class="partner-desc">
-            Spécialistes du leasing, nous aidons vos clients à accéder aux dernières innovations technologiques dans plus de 4 secteurs.
-          </p>
+  <!-- TILES -->
+  <section class="container tiles mt-8" id="expertises">
+    <div class="row g-2" id="tiles">
+      <div class="col-6 col-lg-3">
+        <div class="tile t1 active" data-idx="0"><div class="bg-art"></div>
+          <span class="num">01</span><h3>Logistique</h3><p>Des équipements pour une chaîne logistique performante.</p>
+          <i class="bi bi-truck-flatbed big-icon"></i><span class="plus"><i class="bi bi-plus"></i></span></div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="tile t2" data-idx="1"><div class="bg-art"></div>
+          <span class="num">02</span><h3>Robotique</h3><p>Accompagner vos projets d'automatisation et de robotisation.</p>
+          <i class="bi bi-robot big-icon"></i><span class="plus"><i class="bi bi-plus"></i></span></div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="tile t3" data-idx="2"><div class="bg-art"></div>
+          <span class="num">03</span><h3>Santé &amp;<br>Défibrillateurs</h3><p>Équipez vos espaces pour plus de sécurité.</p>
+          <i class="bi bi-heart-pulse-fill big-icon" style="color: rgba(220,50,50,.7);"></i><span class="plus"><i class="bi bi-plus"></i></span></div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="tile t4" data-idx="3"><div class="bg-art"></div>
+          <span class="num">04</span><h3>Informatique</h3><p>Des équipements adaptés à vos besoins.</p>
+          <i class="bi bi-laptop big-icon"></i><span class="plus"><i class="bi bi-plus"></i></span></div>
+      </div>
+    </div>
+  </section>
 
-          <!-- Bloc Mise en valeur -->
-          <div class="demarche-box">
-            <div class="demarche-icon">🚀</div>
-            <div>
-              <strong>Notre démarche :</strong>
-              <span>Associer votre besoin à une solution de financement adaptée, pour lever les freins budgétaires et accélérer vos ventes.</span>
-            </div>
+  <!-- DETAIL PANEL -->
+  <section class="detail" id="detail">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3 flex-wrap mb-4">
+        <span class="title-num" id="d-num">01</span>
+        <span class="title" id="d-title">Logistique</span>
+        <span class="line d-none d-md-block"></span>
+        <span class="small d-none d-md-block" id="d-sub">Des équipements pour une chaîne logistique performante.</span>
+        <button class="btn-close-panel ms-auto" id="close-panel">Fermer <i class="bi bi-x-lg ms-1"></i></button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="video-box"><button class="play"><i class="bi bi-play-fill"></i></button></div>
+        </div>
+        <div class="col-lg-4">
+          <p class="small" id="d-desc">Nous finançons une large gamme d'équipements logistiques pour accompagner la croissance et la performance de votre activité.</p>
+          <ul class="equip-list" id="d-list"></ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="solution">
+            <h4 class="d-flex align-items-center gap-2"><span class="gear"><i class="bi bi-gear"></i></span> Notre solution</h4>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Des solutions flexibles et sur mesure</li>
+              <li><i class="bi bi-check-circle-fill"></i> Une intégration simple et rapide</li>
+              <li><i class="bi bi-check-circle-fill"></i> Un accompagnement expert</li>
+              <li><i class="bi bi-check-circle-fill"></i> Un suivi sur le long terme</li>
+            </ul>
+            <button class="btn-study">Demander une étude <i class="bi bi-arrow-right"></i></button>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-
-<!-- SECTEURS -->
-<section class="s-secteurs">
-  <div class="reveal">
-    <div class="section-label">Nos domaines d'expertise</div>
-    <h2 class="section-title">Nous finançons <span class="hl">votre secteur</span></h2>
-    <p><strong>Informatique, médical, industriel, robotique</strong> — chaque solution de leasing est structurée selon les spécificités de votre métier.</p>
-  </div>
-  <div class="secteurs-grid">
-    <div class="secteur-card reveal">
-      <div class="secteur-img" >
-        <img src="./assets/img/informatique.png" id="secteur informatique et innovation">
-      </div>
-      <div class="secteur-body">
-        <h3> 💻 Informatique &amp; Télécoms</h3>
-        <p>Des équipements IT (PC,scanner, imprimantes, écrans, et autres équipements bureautiques), avec les logiciels et prestations applicatives.</p>
-      </div>
-    </div>
-    <div class="secteur-card reveal">
-     <div class="secteur-img" >
-        <img src="./assets/img/2-2.png" id="secteur médicale et innovation">
-      </div>      
-      <div class="secteur-body">
-
-        
-        <h3>🏥 Médical &amp; Santé</h3>
-        <p>Outillages médicaux, comme des appareils de diagnostic et d'analyse, du matériel d'imagerie
-        et des équipements de bloc opératoire.</p>          
-      </div>
-    </div>
-    <div class="secteur-card reveal">
-      <div class="secteur-img" >
-        <img class="img-fluid radius-top d-lg-block d-none card-img-top" src="./assets/img/secteur/industrie.png" id="secteur indutrie et innovation">
-      </div>      
-      <div class="secteur-body">
-        <h3>⚙️ Industriel</h3>
-        <p>Dans le secteur industriel, des machines-outils comme des chariots élévateurs, des transpalettes et autres machines de production.</p>                    
-      </div>
-    </div>
-    <div class="secteur-card reveal">
-     <div class="secteur-img" >
-        <img src="./assets/img/4.png" id="secteur automobile et innovation">
-      </div>
-         <div class="secteur-body">
-        <h3>🤖 Robotique & Impression 3D</h3>
-        <p>AMR, AIV et COBOTS</p>
-      </div>
-    </div>
-  </div>
-
-  
-</section>
-
-<!-- COMPARATIF -->
-<section class="s-compare d-md-block d-none" id="comparer">
-  <div class="reveal">
-    <div class="section-label">Pourquoi nous choisir</div>
-    <h2 class="section-title">Leasing Business Partners<br><span class="hl">vs les autres solutions</span></h2>
-  </div>
-  <div class="">
-    <div class="reveal">
-      <table id="cmp">
-        <thead>
-          <tr>
-            <th class="th-label"></th>
-            <th class="th-achat">Achat</th>
-            <th class="th-leasing">Leasing Bancaire</th>
-            <th class="th-bp">Business Partners</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="td-label">Transparence contractuelle</td><td class="td-achat ic-no">✕</td><td class="td-leasing"><span class="ic-ok">✓</span></td><td class="td-bp"><span class="ic-star">✓✓</span></td></tr>
-          <tr><td class="td-label">Gestion de parc simplifiée</td><td class="td-achat ic-no">✕</td><td class="td-leasing ic-no">✕</td><td class="td-bp"><span class="ic-star">✓✓</span></td></tr>
-          <tr><td class="td-label">Audit &amp; Conseil dédié</td><td class="td-achat ic-no">✕</td><td class="td-leasing ic-no">✕</td><td class="td-bp"><span class="ic-star">✓✓</span></td></tr>
-          <tr><td class="td-label">Structuration sur-mesure</td><td class="td-achat ic-no">✕</td><td class="td-leasing ic-no">✕</td><td class="td-bp"><span class="ic-star">✓✓</span></td></tr>
-          <tr><td class="td-label">Expertise France + EU + UK</td><td class="td-achat ic-no">✕</td><td class="td-leasing ic-no">✕</td><td class="td-bp"><span class="ic-star">✓✓</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-  
-  </div>
-</section>
-
-
-<!-- SECTION 1 : NOTRE PROMESSE -->
-<section class="s-promesse s-pad">
-  
-  <div class="container-fluid"></div>
-  <div class="reveal">
-    <div class="section-label">Vos garanties</div>
-    <h2 class="section-title">Notre promesse : <span class="hl">4 engagements forts</span></h2>
-  </div>
-
-  <div class="d-lg-flex justify-content-between align-items-center">
-    <div class="reveal">
-          <div class="step-body">
-          <h3>Conseils optimaux</h3>
-      <p>Une approche axée sur les usages qui valorise et respecte les besoins réels de vos utilisateurs.</p>
-          <span class="step-tag">Analyse des usages</span>
+      <div class="nav-sec">
+        <div class="d-flex align-items-center gap-3">
+          <button class="round" id="prev"><i class="bi bi-arrow-left"></i></button><span>Section précédente</span>
         </div>
-    </div>
-
-    <div class="reveal mx-2">
-        <div class="step-body">
-          <h3>Offres optimisées</h3>
-          <p>Des structures financières adaptées avec des loyers ajustés à vos contraintes budgétaires.</p>
-          <span class="step-tag">Loyers sur-mesure</span>
+        <div class="dots" id="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div>
+        <div class="d-flex align-items-center gap-3">
+          <span>Section suivante</span><button class="round" id="next"><i class="bi bi-arrow-right"></i></button>
         </div>
-    </div>
-
-    <div class="reveal mx-2">
-    <div class="step-body">
-          <h3>Contrats sur-mesure</h3>
-          <p>Une grande flexibilité contractuelle pour répondre aux besoins et projets les plus spécifiques.</p>
-          <span class="step-tag">Flexibilité totale</span>
-        </div>
-    </div>
-
-    <div class="reveal mx-2">
-    <div class="step-body">
-          <h3>Performance &amp; Innovation</h3>
-          <p>Des équipements garantis qui suivent de près les évolutions et innovations du marché.</p>
-          <span class="step-tag">Matériel garanti</span>
-        </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══ ZONES  ══ -->
-<section class="s-zones s-pad">
-  <div class="container-fluid">
-    <div class="reveal mb-4">
-      <span class="section-label">Couverture internationale</span>
-      <h2 class="section-title">Nous intervenons <span class="hl">partout en Europe</span></h2>
-      <p>30 ans d'expertise des cadres réglementaires locaux — en France et au-delà.</p>
-    </div>
-    <div class="d-lg-flex justify-content-between align-items-start">
-      <div class="step-body reveal ">
-        <span class="zone-flag">🇫🇷</span>
-        <h3>France</h3>
-        <p>Siège à Nanterre. Intervention sur l'ensemble du territoire métropolitain. Maîtrise complète du cadre fiscal et réglementaire français.</p>
-      </div>
-      <div class="step-body reveal mx-2">
-        <span class="zone-flag">🇪🇺</span>
-        <h3>Union Européenne</h3>
-        <p>Accompagnement de nos partenaires dans leurs projets transfrontaliers. Connaissance des cadres réglementaires des 27 États membres.</p>
-      </div>
-      <div class="step-body reveal mx-2">
-        <span class="zone-flag">🇬🇧</span>
-        <h3>Royaume-Uni</h3>
-        <p>Expertise post-Brexit. Structuration de contrats de leasing conformes au droit britannique pour vos équipements outre-Manche.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const data = [
+      { num: '01', title: 'Logistique', sub: 'Des équipements pour une chaîne logistique performante.',
+        desc: "Nous finançons une large gamme d'équipements logistiques pour accompagner la croissance et la performance de votre activité.",
+        items: [['bi-truck-flatbed','Chariots élévateurs'],['bi-box-seam','Manutention'],['bi-buildings','Rayonnage'],['bi-signpost-split','Convoyeurs'],['bi-diagram-3',"Équipements d'entrepôt"]] },
+      { num: '02', title: 'Robotique', sub: "Accompagner vos projets d'automatisation et de robotisation.",
+        desc: "Automatisez vos lignes de production avec des solutions de financement adaptées à vos projets de robotisation.",
+        items: [['bi-robot','Bras robotisés'],['bi-cpu','Cobots'],['bi-gear-wide-connected','Lignes automatisées'],['bi-camera','Vision industrielle']] },
+      { num: '03', title: 'Santé & Défibrillateurs', sub: 'Équipez vos espaces pour plus de sécurité.',
+        desc: "Équipez vos locaux et vos collaborateurs avec des solutions de protection cardiaque et de santé au travail.",
+        items: [['bi-heart-pulse','Défibrillateurs (DAE)'],['bi-bandaid','Armoires de secours'],['bi-shield-check','Maintenance & contrôle'],['bi-mortarboard','Formation']] },
+      { num: '04', title: 'Informatique', sub: 'Des équipements adaptés à vos besoins.',
+        desc: "Renouvelez votre parc informatique sans immobiliser de trésorerie, avec des loyers adaptés à vos usages.",
+        items: [['bi-laptop','Postes de travail'],['bi-hdd-network','Serveurs & réseau'],['bi-printer','Impression'],['bi-display','Écrans & périphériques']] }
+    ];
+    let cur = 0;
+    const tiles = document.querySelectorAll('.tile');
+    function show(i) {
+      cur = (i + data.length) % data.length;
+      const d = data[cur];
+      tiles.forEach((t, k) => t.classList.toggle('active', k === cur));
+      document.getElementById('d-num').textContent = d.num;
+      document.getElementById('d-title').textContent = d.title;
+      document.getElementById('d-sub').textContent = d.sub;
+      document.getElementById('d-desc').textContent = d.desc;
+      document.getElementById('d-list').innerHTML = d.items.map(it => `<li><i class="bi ${it[0]}"></i>${it[1]}</li>`).join('');
+      document.querySelectorAll('#dots span').forEach((s, k) => s.classList.toggle('on', k === cur));
+      document.getElementById('detail').style.display = '';
+    }
+    tiles.forEach(t => t.addEventListener('click', () => show(+t.dataset.idx)));
+    document.getElementById('prev').onclick = () => show(cur - 1);
+    document.getElementById('next').onclick = () => show(cur + 1);
+    document.getElementById('close-panel').onclick = () => {
+      document.getElementById('detail').style.display = 'none';
+      tiles.forEach(t => t.classList.remove('active'));
+    };
+    show(0);
 
-<!-- FAQ -->
-<section class="s-faq">
-  <div class="reveal">
-    <div class="section-label">Questions fréquentes</div>
-    <h2 class="section-title">Tout ce que vous voulez <span class="hl">savoir</span></h2>
-  </div>
-  <div class="faq-grid reveal">
-    <div class="faq-item">
-      <div class="faq-q">Qu'est-ce que le leasing B2B ? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Le leasing B2B est une solution de financement locatif qui permet à une entreprise d'utiliser un équipement sans l'acheter. Business Partners acquiert le bien et le met à votre disposition contre un loyer mensuel fixe.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Quels équipements peut-on financer ? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Nous finançons tous types de biens professionnels : informatique, serveurs, imagerie médicale, robots industriels, véhicules utilitaires, et bien plus. Si c'est un actif professionnel, nous pouvons l'étudier.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Quel est l'avantage fiscal du leasing ? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Les loyers de leasing sont 100% déductibles du résultat imposable en tant que charges d'exploitation. La TVA est récupérable sur chaque loyer. C'est un levier fiscal puissant, surtout pour les PME.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Intervenez-vous hors de France ? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Oui. Business Partners opère sur toute l'Union Européenne, en Suisse et au Royaume-Uni, avec une maîtrise des cadres réglementaires locaux.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Comment obtenir un financement ? <span class="faq-arrow">▾</span></div>
-      <div class="faq-a">Remplissez le formulaire ci-dessus ou contactez-nous directement. Nous étudions votre dossier et vous revenons en moins de 24h avec une proposition structurée.</div>
-    </div>
-  </div>
-</section>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Animation d'apparition au défilement
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
 
-<!-- CTA BAND -->
-<section class="s-cta">
-  <h2>Prêt à financer votre prochain projet ?</h2>
-  <p>30 ans d'expertise à votre service. Réponse garantie sous 24h.</p>
-  <a href="./connect copy.html" class="btn-primary">Démarrer maintenant →</a>
-  <a href="leasing.html" class="btn-ghost">En savoir plus sur le leasing</a>
-</section>
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="d-lg-flex justify-content-between align-items-center">
-  <div class="footer-brand">
-    <div class="logo">Business<span>Partners</span></div>
-    <p>Expert du leasing B2B depuis plus de 30 ans. Nous accompagnons nos partenaires en France, en Europe et au Royaume-Uni.</p>
-    <p style="margin-top:0.5rem">📍 11 avenue de l'île St-Martin, 92737 Nanterre<br>📞 +33 (0)1 56 83 79 50</p>
-  </div>
-  <div class="footer-col">
-    <h4>Solutions</h4>
-    <a href="#">Leasing Informatique</a>
-    <a href="#">Leasing Médical</a>
-    <a href="#">Leasing Industriel</a>
-    <a href="#">Leasing Automobile</a>
-  </div>
-  <div class="footer-col">
-    <h4>Entreprise</h4>
-    <a href="#">À propos</a>
-    <a href="leasing.html">Le Leasing</a>
-    <a href="#">Partenaires</a>
-    <a href="#">Contact</a>
-    <a href="#">Mentions légales</a>
-  </div>
-  </div>
-  <div class="footer-bottom d-block text-center">
-  <span>© 2025 Business Partners®</span>
-  <span>Leasing B2B — France · Europe · UK</span>
-</div>
-  </div>
-</footer>
-  
-      <script>
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-        
-            document.addEventListener('DOMContentLoaded', function() {
+      // Gestion interactive du formulaire de contact
+      const form = document.getElementById('bp-contact-form');
+      const errorBox = document.getElementById('form-error');
+      const successBox = document.getElementById('form-success');
+      const resetBtn = document.getElementById('reset-form-btn');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        errorBox.classList.add('hidden');
+
+        if (!form.checkValidity()) {
+          errorBox.classList.remove('hidden');
+          // Met le focus sur le premier champ invalide
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+
+        // Simulation d'envoi réussi
+        form.classList.add('hidden');
+        successBox.classList.remove('hidden');
+      });
+
+      resetBtn.addEventListener('click', () => {
+        form.reset();
+        successBox.classList.add('hidden');
+        form.classList.remove('hidden');
+      });
+    });
+
+</script>
+<script>
+  // ====== INJECTION + COMPORTEMENT ======
+  function mount() {
+    if (document.getElementById('bp-header-root')) return; // évite le double chargement
+ 
+    const style = document.createElement('style');
+    style.id = 'bp-header-style';
+    style.textContent = css;
+    document.head.appendChild(style);
+ 
+    const root = document.createElement('div');
+    root.id = 'bp-header-root';
+    root.innerHTML = html;
+ 
+    const target = document.getElementById('site-header');
+    if (target) target.appendChild(root);
+    else document.body.insertBefore(root, document.body.firstChild);
+ 
+    const burger = root.querySelector('.bp-burger');
+    const drawer = root.querySelector('.bp-drawer');
+ 
+    function setOpen(open) {
+      root.classList.toggle('bp-open', open);
+      document.documentElement.classList.toggle('bp-lock', open);
+      burger.setAttribute('aria-expanded', String(open));
+      drawer.setAttribute('aria-hidden', String(!open));
+      if (open) drawer.querySelector('.bp-close').focus(); else burger.focus({ preventScroll: true });
+    }
+ 
+    burger.addEventListener('click', () => setOpen(true));
+    root.querySelectorAll('[data-bp-close]').forEach(el => el.addEventListener('click', () => setOpen(false)));
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && root.classList.contains('bp-open')) setOpen(false); });
+  }
+ 
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);
+  else mount();
+;
+  document.addEventListener('DOMContentLoaded', function() {
           let header = document.getElementById('header', 'ham');
           let timer;
 
@@ -505,5 +387,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
       </script>
 <script src="./assets/js/nav.js"></script>
+
 </body>
 </html>

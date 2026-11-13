@@ -485,6 +485,19 @@ table.hovered-bp .col-bp-cell {
     color: #fff;
 }
 
+.bp-nav a.is-active {
+    border-bottom-color: #4f8cff;
+}
+
+
+.bp-nav a {
+    display: block;
+    font-size: .85rem;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color .2s;
+}
 
 @media (min-width: 992px) {
 
@@ -2489,12 +2502,7 @@ a .btn-xs {
   left: 15%;
 }
 
-.bp-nav {
-  position: fixed; top: 0; left: 0; width: 100%; z-index: 200;
-  height: 72px; padding: 0 5vw;
-  display: flex; align-items: center; justify-content: space-between;
-  backdrop-filter: blur(14px);
-}
+
 .nav-logo { font-family: 'Syne', sans-serif; font-size: 1.2rem; }
 .nav-logo span { color: #F0A500; }
 .nav-desktop { display: flex; align-items: center; gap: 0.25rem; }
