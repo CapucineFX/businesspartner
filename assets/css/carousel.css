@@ -4,7 +4,6 @@
 #tt {
   display: flex;
   gap: 16px;
-  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;

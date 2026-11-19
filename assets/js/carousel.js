@@ -105,11 +105,20 @@ function tileRender() {
   track.querySelectorAll('.tile-mob').forEach(c =>
     c.addEventListener('click', () => tileGo(+c.dataset.i))
   );
-
-  // Déplace le track
+  // Déplace le track uniquement sur mobile / tablette
   const cardW = track.children[0]?.offsetWidth + 16 || 0;
   track.style.transform = `translateX(-${tileCur * cardW}px)`;
+
+  // Désactive le swipe/déplacement sur desktop (à partir de 992px)
+  if (window.innerWidth >= 992) {
+    track.style.transform = 'none';
+    return;
+  }
+
+
 }
+
+
 
 function tileGo(i) {
   tileCur = (i + TILES_DATA.length) % TILES_DATA.length;
