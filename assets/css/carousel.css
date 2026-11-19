@@ -10,7 +10,67 @@
   color: #fff;
 
 }
+.video-box {
+  position: relative;
+  box-sizing: content-box;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  height:220px;
+  overflow: hidden;
+  background: #09132c;
+  cursor: pointer;
+}
 
+/* Bouton Play centré effet Glassmorphism + halo bleu */
+.bp-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: rgba(13, 23, 48, 0);
+
+  color: #ffffff;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px; /* Recentre visuellement le triangle play */
+  box-shadow: 0 0 0 0 rgba(47, 110, 237, 0), 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, background-color 0.25s ease, opacity 0.25s ease;
+  animation: bpPulse 2.2s infinite;
+  z-index: 2;
+}
+
+.bp-play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #2f6fed;
+  border-color: #4c8bf5;
+}
+
+/* Masquage fluide pendant la lecture */
+.bp-play-btn.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+/* Halo pulsant discret */
+@keyframes bpPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(47, 111, 237, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(47, 111, 237, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(47, 111, 237, 0);
+  }
+}
 .tile-mob {
   flex: 0 0 calc(50% - 8px);
   border-radius: 0.95rem;

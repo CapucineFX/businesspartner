@@ -1,8 +1,11 @@
 // ══ CAROUSEL TILES MOBILE ══
+
 const TILES_DATA = [
   {
     num: '01', title: 'Logistique',
-    img: './assets/img/logistique.jpeg',   // ← ton image
+    img: './assets/img/logistique.jpeg',  
+    video: "./assets/mp4/logistique.mp4",
+ // ← ton image
     desc: "Des équipements pour une chaîne logistique performante.",
     items: ['Chariots élévateurs', 'Manutention et rayonnage', 'Convoyeurs', "Équipements entrepôt"]
   },
@@ -26,6 +29,8 @@ const TILES_DATA = [
   },
 ];
 
+
+
 let tileCur = 0, tileStartX = 0, tileDragging = false;
 
 function tileRender() {
@@ -33,6 +38,8 @@ function tileRender() {
   const dotsEl = document.getElementById('dots');
   const dpEl   = document.getElementById('dp');
   if (!track || !dotsEl || !dpEl) return; // sécurité si éléments absents
+
+
 
   // Tiles
  track.innerHTML = TILES_DATA.map((d, i) => `
@@ -63,16 +70,22 @@ function tileRender() {
         <span class="td-title">${d.title}</span>
       </div>
        <div class="row g-2 mb-3">
-       <div class="col-lg-4 col-sm-12 mt-3">
-     
-        <div class="video-box"><button class="play"><i class="bi bi-play-fill"></i></button></div>
-      </div>
+        <div class="col-lg-4 col-sm-12 mt-3">
+          <div class=" position-relative overflow-hidden">
+            <video id="video_data" class="video-box" src="${d.video}" playsinline class="w-100 h-100 object-fit-cover d-block"></video>
+            <button class="bp-play-btn" id="tile-play-btn" aria-label="Lire la vidéo">
+             
+            </button>
+          </div>
+        </div>
+
       <div class="col-lg-4 col-sm-12 mt-3">
       <p class="td-desc">${d.desc}</p>
       <ul class="td-list">
-    
-        ${d.items.map(it => `<li>${it}</li>`).join('')}
+            ${d.items.map(it => `<li>${it}</li>`).join('')}
+
       </ul>
+      
       </div>
 
       <div class="col-lg-4 col-sm-12 mt-3">
@@ -97,6 +110,44 @@ function tileRender() {
     </div>
   `;
 
+  const vid = document.getElementById('video_data');
+  const VIDEO_DATA = [
+  {
+    num: "01",
+    title: "Logistique",
+    desc: "Des équipements pour une chaîne logistique performante.",
+    items: ["Chariots élévateurs", "Manutention et rayonnage", "Convoyeurs", "Équipements entrepôt"],
+    video: "./assets/mp4/logistique.mp4",
+  },
+  {
+    num: "02",
+    title: "Robotique",
+    desc: "Accompagnez vos projets d'automatisation et de robotisation.",
+    items: ["Cobots (robots collaboratifs)", "AMR & AIV", "Lignes automatisées", "Systèmes de vision"],
+    video: "./assets/mp4/robotique.mp4",
+  },
+  {
+    num: "03",
+    title: "Santé",
+    desc: "Équipez vos espaces pour plus de sécurité et de performance.",
+    items: ["Défibrillateurs (DAE)", "Imagerie médicale", "Équipements de diagnostic", "Mobilier médicalisé"],
+    video: "./assets/mp4/sante.mp4",
+  },
+  {
+    num: "04",
+    title: "Informatique",
+    desc: "Renouvelez votre parc sans immobiliser de trésorerie.",
+    items: ["Postes de travail & Laptops", "Mac & Apple Business", "Serveurs & Réseaux", "Tablettes & Terminaux mobiles"],
+    video: "./assets/mp4/informatique.mp4",
+  }
+];
+const playBtn = document.getElementById('tile-play-btn');
+if (vid && playBtn) {
+  playBtn.addEventListener('click', () => {
+    vid.controls = true;
+    playBtn.style.display = 'none';
+  });
+}
   // Navigation boutons
   document.getElementById('tile-prev').onclick = () => tileGo(tileCur - 1);
   document.getElementById('tile-next').onclick = () => tileGo(tileCur + 1);
@@ -117,7 +168,6 @@ function tileRender() {
 
 
 }
-
 
 
 function tileGo(i) {
@@ -160,3 +210,5 @@ document.addEventListener('DOMContentLoaded', () => {
   tileRender();
   tileInitSwipe();
 });
+
+
