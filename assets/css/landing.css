@@ -20,6 +20,83 @@
     font-family: opensans, sans-serif;
     font-weight: 300;
 }
+.trust-pills{
+  display:flex;gap:16px;justify-content:initial;
+  flex-wrap:wrap;margin-top:20px;
+}
+.pill{
+  font-size:11px;color:rgba(255,255,255,.38);
+  display:flex;align-items:center;gap:5px;
+}
+.pill::before{content:'✓';color:#4a8fff;font-weight:700;}
+.hw{
+  background:#07112b;
+  min-height:480px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  padding:80px 5vw 140px;
+  text-align:center;
+}
+.hw-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at 60% 30%, rgba(26,86,196,0.22) 0%, transparent 65%),
+             radial-gradient(ellipse at 20% 70%, rgba(240,165,0,0.08) 0%, transparent 50%);
+}
+.hw-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(74,143,255,0.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(74,143,255,0.05) 1px,transparent 1px);
+  background-size:52px 52px;
+  animation:grid 18s linear infinite;
+}
+.hw h1{
+  font-size:clamp(2rem,5vw,3.4rem);
+  font-weight:800;color:#fff;
+  line-height:1.06;letter-spacing:-.025em;
+  margin-bottom:14px;
+}
+.hw h1 em{
+  color:#4a8fff;font-style:normal;
+  position:relative;
+}
+.hw p{
+  font-size:1rem;color:rgba(255,255,255,.52);
+  line-height:1.7;margin-bottom:36px;
+}
+
+.callback-form{
+  display:flex;
+  justify-content: flex-start;
+  gap:0;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;
+  padding:6px;
+  max-width:920px;
+  
+  transition:border-color .2s;
+}
+.callback-form:focus-within{border-color:rgba(74,143,255,.5);}
+.callback-form input{
+  flex:1;background:transparent;border:none;
+  color:#fff;font-size:.9rem;padding:10px 14px;
+  outline:none;font-family:inherit;min-width:0;
+}
+.callback-form input::placeholder{color:rgba(255,255,255,.3);}
+.callback-form button{
+  background:#1a56c4;color:#fff;border:none;
+  padding:10px 22px;border-radius:8px;
+  font-size:.85rem;font-weight:700;cursor:pointer;
+  white-space:nowrap;transition: .2s,transform .15s;
+  font-family:inherit;flex-shrink:0;
+}
+.callback-form button:hover{background:#4a8fff;transform:translateY(-1px);}
+
 
 section{
   padding: 33px 0px;

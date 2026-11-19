@@ -36,11 +36,20 @@
       Transformez les besoins d'équipement et de logiciels de vos clients en opportunités de croissance.
     </p>
 
-  
+     <div class="callback-form" id="cf">
+      <input type="tel" id="f-tel" placeholder="Votre numéro de téléphone" oninput="clearE()">
+      <button onclick="submit()">Être rappelé →</button>
+    </div>
+
+
+    <div class="trust-pills">
+      <div class="pill">Zéro impayé</div>
+      <div class="pill">Réponse &lt; 24h</div>
+      <div class="pill">Sans engagement</div>
+      <div class="pill">France · EU · UK</div>
+    </div>
   </div>
-</section>
-
-
+  </section>
 <section class="relative py-10 lg:py-18">
   <div class="sol-hero-grid"></div>
 
@@ -94,7 +103,23 @@
 
 
 
-
+<script>
+function clearE(){
+  document.getElementById('ferr').classList.remove('show');
+}
+function submit(){
+  const tel = document.getElementById('f-tel').value.trim();
+  const ok = /^(\+33|0)[1-9][\s.\-]?(\d{2}[\s.\-]?){4}$/.test(tel.replace(/\s/g,''));
+  if(!ok){
+    document.getElementById('ferr').classList.add('show');
+    document.getElementById('f-tel').focus();
+    return;
+  }
+  document.getElementById('cf').style.display='none';
+  document.getElementById('ferr').classList.remove('show');
+  document.getElementById('succ').classList.add('show');
+}
+</script>
 
 </body>
 </html>
