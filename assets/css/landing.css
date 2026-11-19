@@ -6,6 +6,7 @@
       --bp-blue-dark: #1f4fd8;
       --bp-border: rgba(120, 160, 255, .35);
       --bp-text-muted: #aab4c8;
+      --white: #fff;
     }
     body {
       background: radial-gradient(1200px 600px at 70% -10%, #12254d 0%, var(--bp-bg) 60%) fixed;
@@ -13,12 +14,32 @@
       font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
+    p {
+    font-size: 16px;
+    line-height: 1.4rem;
+    font-family: opensans, sans-serif;
+    font-weight: 300;
+}
+
+section{
+  padding: 33px 0px;
+}
+p.eyebrow {
+    letter-spacing: 2px;
+    color: var(--bp-blue);
+    font-size: .95rem;
+    text-transform: uppercase;
+}
     .sol-hero-grid {
     position: absolute;
     inset: 0;
     background-image: linear-gradient(rgba(138, 137, 137, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(189, 190, 193, 0.06) 1px, transparent 1px);
     background-size: 56px 56px;
     animation: gridDrift 20s linear infinite;
+}
+
+.titles.s-pad {
+  padding: 5.5rem 0;
 }
     .text-muted-bp { color: var(--bp-text-muted); }
     /* EN-TÊTES DE SECTIONS (VERSION ALLÉGÉE) */
@@ -94,7 +115,6 @@
 .titles .bp-title {
   font-size: clamp(1.85rem, 2.8vw, 2.35rem);
   font-weight: 700;
-  color: #0b1e3f; /* Bleu nuit foncé */
   line-height: 1.2;
   margin-bottom: 0;
 }
@@ -107,14 +127,13 @@
 /* Paragraphe d'accroche en gras léger */
 .titles .partner-lead {
   font-size: 1.02rem;
-  font-weight: 600;
-  color: #334155;
+  font-weight: 200;
+  color: #fff;
   line-height: 1.6;
 }
 
 /* Deuxième paragraphe gris doux (neutralise le gris clair du thème sombre) */
 .titles .text-muted-bp {
-  color: #64748b !important;
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -217,7 +236,7 @@
 /* ═══════════════════════════════════
    SECTION UTILITY
 ═══════════════════════════════════ */
-section { padding: 96px 5vw; }
+
 .section-label {
   font-size: 0.7rem; 
   font-weight: 700;
@@ -251,25 +270,43 @@ section { padding: 96px 5vw; }
   content: ''; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px;
   background: linear-gradient(to bottom, var(--gold), var(--blue), var(--orange));
 }
+
 .how-step {
   display: flex; gap: 2rem; margin-bottom: 2.5rem;
   padding-left: 0; position: relative;
 }
 .how-step:last-child { margin-bottom: 0; }
 .step-dot {
-  flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%;
-  background: var(--white); border: 2px solid var(--gold);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display); font-size: 1rem; color: var(--navy); font-weight: 800;
-  position: relative; z-index: 1; transition: background 0.3s, color 0.3s;
-  flex-direction: column;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+}
+.how-timeline {
+    content: '';
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--white));
 }
 .how-step:hover .step-dot { background: var(--gold); }
 .step-body {
   padding: 1.25rem 1.5rem; border-radius: 12px;
   border: 1px solid #E5E9F2; flex: 1;
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-  background: var(--white);
+  
 }
 .how-step:hover .step-body { border-color: var(--blue); box-shadow: 0 6px 24px rgba(26,86,196,0.1); transform: translateX(6px); }
 .step-body h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }

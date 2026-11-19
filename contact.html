@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertises de Business Partners</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/header.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/main.js" defer></script>
+
+      
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./assets/css/landing.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  
+
+
+
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+    <!-- SECTION 06 · FORM CONTACT                                                  -->
+
+    <section id="contact" class="relative border-t border-white/10 py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+          
+          <!-- Colonne Gauche : Titre, Accroche & Réassurance -->
+          <div class="reveal lg:col-span-5">
+         
+            <h2 class="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-[42px]">
+              Un besoin d’équipement ? <span class="text-bp-electric">Échangeons.</span>
+            </h2>
+            <p class="mt-5 text-base leading-relaxed text-slate-300">
+              Présentez-nous votre projet en quelques informations. Notre équipe pourra prendre connaissance de votre demande et revenir vers vous pour en préciser les modalités.
+            </p>
+
+            <!-- Encadré récapitulatif façon "Notre solution" de la Capture 2 -->
+            <div class="mt-10 rounded-[20px] border border-white/10 bg-[#0D1930]/90 p-6 sm:p-7">
+              <div class="flex items-center gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-full bg-bp-blue text-white">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </div>
+                <span class="font-display text-base font-bold text-white">Votre demande en bref</span>
+              </div>
+
+              <ul class="mt-5 space-y-3.5 text-sm text-slate-300">
+                <li class="flex items-center gap-3">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-bp-blue/25 text-xs text-bp-electric">✓</span>
+                  <span>Étude personnalisée selon vos équipements</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-bp-blue/25 text-xs text-bp-electric">✓</span>
+                  <span>Accompagnement administratif et contractuel</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-bp-blue/25 text-xs text-bp-electric">✓</span>
+                  <span>Un interlocuteur dédié à votre dossier</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Colonne Droite : Formulaire de Contact -->
+          <div class="reveal lg:col-span-7">
+            <div class="rounded-[20px] border border-white/10 bg-[#0D1930]/95 p-6 shadow-2xl sm:p-10">
+              
+              <form id="bp-contact-form" class="space-y-5" novalidate>
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <!-- Nom* -->
+                  <div>
+                    <label for="nom" class="mb-2 block text-sm font-medium text-slate-200">
+                      Nom<span class="text-bp-electric">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="nom"
+                      name="nom"
+                      required
+                      placeholder="Votre nom complet"
+                      class="bp-field w-full rounded-xl px-4 py-3 text-sm"
+                    />
+                  </div>
+
+                  <!-- Entreprise* -->
+                  <div>
+                    <label for="entreprise" class="mb-2 block text-sm font-medium text-slate-200">
+                      Entreprise<span class="text-bp-electric">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="entreprise"
+                      name="entreprise"
+                      required
+                      placeholder="Nom de votre société"
+                      class="bp-field w-full rounded-xl px-4 py-3 text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <!-- E-mail professionnel* -->
+                  <div>
+                    <label for="email" class="mb-2 block text-sm font-medium text-slate-200">
+                      E-mail professionnel<span class="text-bp-electric">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="prenom.nom@entreprise.fr"
+                      class="bp-field w-full rounded-xl px-4 py-3 text-sm"
+                    />
+                  </div>
+
+                  <!-- Téléphone (facultatif) -->
+                  <div>
+                    <label for="telephone" class="mb-2 block text-sm font-medium text-slate-200">
+                      Téléphone <span class="text-xs font-normal text-slate-400">(facultatif)</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="telephone"
+                      name="telephone"
+                      placeholder="01 23 45 67 89"
+                      class="bp-field w-full rounded-xl px-4 py-3 text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <!-- Secteur d'activité -->
+                  <div>
+                    <label for="secteur" class="mb-2 block text-sm font-medium text-slate-200">
+                      Secteur d’activité
+                    </label>
+                    <select
+                      id="secteur"
+                      name="secteur"
+                      class="bp-field w-full rounded-xl px-4 py-3 text-sm"
+                    >
+                      <option value="" selected>Sélectionnez un secteur</option>
+                      <option value="Logistique">Logistique</option>
+                      <option value="Robotique">Robotique</option>
+                      <option value="Santé & Défibrillateurs">Santé &amp; Défibrillateurs</option>
+                      <option value="Informatique">Informatique</option>
+                      <option value="Industrie">Industrie</option>
+                      <option value="Autre">Autre</option>
+                    </select>
+                  </div>
+
+                  <!-- Équipement recherché* -->
+                  <div>
+                    <label for="equipement" class="mb-2 block text-sm font-medium text-slate-200">
+                      Équipement recherché<span class="text-bp-electric">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="equipement"
+                      name="equipement"
+                      required
+                      placeholder="Ex : Postes informatiques, robots, matériel médical..."
+                      class="bp-field w-full rounded-xl px-4 py-3 text-sm"
+                    />
+                  </div>
+                </div>
+
+                <!-- Description du projet* -->
+                <div>
+                  <label for="description" class="mb-2 block text-sm font-medium text-slate-200">
+                    Description du projet<span class="text-bp-electric">*</span>
+                  </label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="4"
+                    required
+                    placeholder="Précisez les quantités, la durée souhaitée ou tout élément utile à l'étude de votre dossier..."
+                    class="bp-field w-full resize-y rounded-xl px-4 py-3 text-sm"
+                  ></textarea>
+                </div>
+
+                <!-- Message d'erreur de validation (remplace alert()) -->
+                <div id="form-error" class="hidden rounded-xl border border-red-400/30 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                  Veuillez renseigner tous les champs obligatoires marqués d'un astérisque (*).
+                </div>
+
+                <!-- Bouton CTA -->
+                <div class="pt-2">
+                  <button
+                    type="submit"
+                    class="inline-flex w-full items-center justify-center gap-3 rounded-xl bg-bp-blue px-6 py-4 font-display text-base font-semibold text-white shadow-lg shadow-bp-blue/25 transition hover:bg-bp-electric focus:outline-none focus:ring-2 focus:ring-bp-electric focus:ring-offset-2 focus:ring-offset-[#0D1930]"
+                  >
+                    <span>Envoyer ma demande</span>
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </form>
+
+              <!-- État de confirmation après envoi -->
+              <div id="form-success" class="hidden py-10 text-center">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-bp-electric/40 bg-bp-blue/20 text-bp-electric">
+                  <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <h3 class="mt-5 font-display text-2xl font-bold text-white">Demande transmise</h3>
+                <p class="mx-auto mt-2 max-w-md text-sm leading-relaxed text-slate-300">
+                  Merci. Notre équipe a bien pris connaissance de votre demande et reviendra vers vous rapidement pour en préciser les modalités.
+                </p>
+                <button
+                  type="button"
+                  id="reset-form-btn"
+                  class="mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+                >
+                  Envoyer une autre demande
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      // Animation d'apparition au défilement
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+      // Gestion interactive du formulaire de contact
+      const form = document.getElementById('bp-contact-form');
+      const errorBox = document.getElementById('form-error');
+      const successBox = document.getElementById('form-success');
+      const resetBtn = document.getElementById('reset-form-btn');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        errorBox.classList.add('hidden');
+
+        if (!form.checkValidity()) {
+          errorBox.classList.remove('hidden');
+          // Met le focus sur le premier champ invalide
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+
+        // Simulation d'envoi réussi
+        form.classList.add('hidden');
+        successBox.classList.remove('hidden');
+      });
+
+      resetBtn.addEventListener('click', () => {
+        form.reset();
+        successBox.classList.add('hidden');
+        form.classList.remove('hidden');
+      });
+    });
+
+
+  // ====== INJECTION + COMPORTEMENT ======
+  function mount() {
+    if (document.getElementById('bp-header-root')) return; // évite le double chargement
+ 
+    const style = document.createElement('style');
+    style.id = 'bp-header-style';
+    style.textContent = css;
+    document.head.appendChild(style);
+ 
+    const root = document.createElement('div');
+    root.id = 'bp-header-root';
+    root.innerHTML = html;
+ 
+    const target = document.getElementById('site-header');
+    if (target) target.appendChild(root);
+    else document.body.insertBefore(root, document.body.firstChild);
+ 
+    const burger = root.querySelector('.bp-burger');
+    const drawer = root.querySelector('.bp-drawer');
+ 
+    function setOpen(open) {
+      root.classList.toggle('bp-open', open);
+      document.documentElement.classList.toggle('bp-lock', open);
+      burger.setAttribute('aria-expanded', String(open));
+      drawer.setAttribute('aria-hidden', String(!open));
+      if (open) drawer.querySelector('.bp-close').focus(); else burger.focus({ preventScroll: true });
+    }
+ 
+    burger.addEventListener('click', () => setOpen(true));
+    root.querySelectorAll('[data-bp-close]').forEach(el => el.addEventListener('click', () => setOpen(false)));
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && root.classList.contains('bp-open')) setOpen(false); });
+  }
+ 
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);
+  else mount();
+;
+  document.addEventListener('DOMContentLoaded', function() {
+          let header = document.getElementById('header', 'ham');
+          let timer;
+
+
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 0) {
+                  clearTimeout(timer);
+                  timer = setTimeout(() => {
+                      header.classList.add('header-color');
+                  }, 0);
+              } else {
+                  clearTimeout(timer);
+                  header.classList.remove('header-color');
+              }
+          });
+
+          
+
+      });
+/**
+ * @popperjs/core v2.11.8 - MIT License
+ */
+(function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t((e="undefined"!=typeof globalThis?globalThis:e||self).Popper={})})(this,(function(e){"use strict";function t(e){if(null==e)return window;if("[object Window]"!==e.toString()){var t=e.ownerDocument;return t&&t.defaultView||window}return e}function n(e){return e instanceof t(e).Element||e instanceof Element}function r(e){return e instanceof t(e).HTMLElement||e instanceof HTMLElement}function o(e){return"undefined"!=typeof ShadowRoot&&(e instanceof t(e).ShadowRoot||e instanceof ShadowRoot)}var i=Math.max,a=Math.min,s=Math.round;function c(e,t){void 0===t&&(t=!1);var n=e.getBoundingClientRect(),o=1,i=1;if(r(e)&&t){var a=e.offsetHeight,c=e.offsetWidth;c>0&&(o=s(n.width)/c||1),a>0&&(i=s(n.height)/a||1)}return{width:n.width/o,height:n.height/i,top:n.top/i,right:n.right/o,bottom:n.bottom/i,left:n.left/o,x:n.left/o,y:n.top/i}}function p(e){var n=t(e);return{scrollLeft:n.pageXOffset,scrollTop:n.pageYOffset}}function f(e){return e? (e.nodeName||"").toLowerCase():""}function u(e){return((n(e)?e.ownerDocument:e.document)||window.document).documentElement}function l(e){return c(u(e)).left+p(e).scrollLeft}function d(e){return t(e).getComputedStyle(e)}function m(e){var t=d(e),n=t.overflow,r=t.overflowX,o=t.overflowY;return/auto|scroll|overlay|hidden/.test(n+o+r)}function h(e,n,o){void 0===o&&(o=!1);var i,a,s=r(n),d=r(n)&&function(e){var t=e.getBoundingClientRect(),n=s(t.width)/e.offsetWidth||1,r=s(t.height)/e.offsetHeight||1;return 1!==n||1!==r}(n),h=u(n),v=c(e,d),y={scrollLeft:0,scrollTop:0},g={x:0,y:0};return(s||!s&&!o)&&(("body"!==f(n)||m(h))&&(y=(i=n)!==t(i)&&r(i)?{scrollLeft:(a=i).scrollLeft,scrollTop:a.scrollTop}:p(i)),r(n)?((g=c(n,!0)).x+=n.clientLeft,g.y+=n.clientTop):h&&(g.x=l(h))),{x:v.left+y.scrollLeft-g.x,y:v.top+y.scrollTop-g.y,width:v.width,height:v.height}}function v(e){var t=c(e),n=e.offsetWidth,r=e.offsetHeight;return Math.abs(t.width-n)<=1&&(n=Math.round(t.width)),Math.abs(t.height-r)<=1&&(r=Math.round(t.height)),{x:e.offsetLeft,y:e.offsetTop,width:n,height:r}}function y(e){return"html"===f(e)?e:e.assignedSlot||e.parentNode||(o(e)?e.host:null)||u(e)}function g(e){return["html","body","#document"].indexOf(f(e))>=0?e.ownerDocument.body:r(e)&&m(e)?e:g(y(e))}function b(e,n){var r;void 0===n&&(n=[]);var o=g(e),i=o===(null==(r=e.ownerDocument)?void 0:r.body),a=t(o),s=i?[a].concat(a.visualViewport||[],m(o)?o:[]):o,c=n.concat(s);return i?c:c.concat(b(y(s)))}function x(e){return Object.assign({},e,{left:e.x,top:e.y,right:e.x+e.width,bottom:e.y+e.height})}function w(e,n,r){return n==="viewport"?x(function(e,n){var r=t(e),o=u(e),i=r.visualViewport,a=o.clientWidth,s=o.clientHeight,c=0,f=0;if(i){a=i.width,s=i.height;var l=i.scale;1!==l&&(c=i.offsetLeft,f=i.offsetTop)}return{width:a,height:s,x:c+p(e).scrollLeft,y:f+p(e).scrollTop}}(e,r)):n==="document"?x(u(e)):r(n)?function(e,t){var n=c(e,!1,!1);return n.top=n.top+e.clientTop,n.left=n.left+e.clientLeft,n.bottom=n.top+e.clientHeight,n.right=n.left+e.clientWidth,n.width=e.clientWidth,n.height=e.clientHeight,n.x=n.left,n.y=n.top,n}(n,r):x(function(e){var t,n=u(e),r=p(e),o=null==(t=e.ownerDocument)?void 0:t.body,a=i(n.scrollWidth,n.clientWidth,o?o.scrollWidth:0,o?o.clientWidth:0),s=i(n.scrollHeight,n.clientHeight,o?o.scrollHeight:0,o?o.clientHeight:0),c=-r.scrollLeft+l(e),f=-r.scrollTop;return"rtl"===d(o||n).direction&&(c+=i(n.clientWidth,o?o.clientWidth:0)-a),{width:a,height:s,x:c,y:f}}(u(e)))}function O(e,t,r,o){var s="clippingParents"===t?function(e){var t=b(y(e)),o=["absolute","fixed"].indexOf(d(e).position)>=0&&r(e)?k(e):e;return n(o)?t.filter((function(e){return n(e)&&function(e,t){var n=t.getRootNode&&t.getRootNode();if(e.contains(t))return!0;if(n&&o(n)){var r=t;do{if(r&&e.isSameNode(r))return!0;r=r.parentNode||r.host}while(r)}return!1}(e,o)&&"body"!==f(e)})):[]}(e):[].concat(t),c=[].concat(s,[r]),p=c[0],u=c.reduce((function(t,n){var r=w(e,n,o);return t.top=i(r.top,t.top),t.right=a(r.right,t.right),t.bottom=a(r.bottom,t.bottom),t.left=i(r.left,t.left),t}),w(e,p,o));return u.width=u.right-u.left,u.height=u.bottom-u.top,u.x=u.left,u.y=u.top,u}function k(e){var t=g(e);return["html","body"].indexOf(f(t))>=0?e.ownerDocument.body:r(t)&&m(t)?t:k(y(t))}
+e.createPopper=function(e,t,n){void 0===n&&(n={});var r={placement:"bottom",modifiers:[],strategy:"absolute"};return{destroy:function(){},update:function(){}}};
+}));
+
+
+/**
+ * Bootstrap 5 Dropdown & Navbar Toggle Native Handler
+ */
+document.addEventListener('DOMContentLoaded', function () {
+  // Gère l'ouverture et la fermeture des Dropdowns (Menu déroulant)
+  var dropdownElementList = document.querySelectorAll('[data-bs-toggle="dropdown"]');
+  
+  dropdownElementList.forEach(function (dropdownToggle) {
+    dropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      var parent = this.closest('.dropdown') || this.parentElement;
+      var menu = parent.querySelector('.dropdown-menu');
+
+      // Ferme tous les autres menus ouverts
+      document.querySelectorAll('.dropdown-menu.show').forEach(function (openMenu) {
+        if (openMenu !== menu) {
+          openMenu.classList.remove('show');
+        }
+      });
+
+      // Bascule l'état affiché / caché
+      if (menu) {
+        menu.classList.toggle('show');
+      }
+    });
+  });
+
+  // Ferme le dropdown au clic n'importe où ailleurs sur la page
+  document.addEventListener('click', function (e) {
+    if (!e.target.matches('[data-bs-toggle="dropdown"]')) {
+      document.querySelectorAll('.dropdown-menu.show').forEach(function (openMenu) {
+        openMenu.classList.remove('show');
+      });
+    }
+  });
+
+  // Gère l'ouverture du menu Burger mobile (Collapse)
+  var togglerList = document.querySelectorAll('[data-bs-toggle="collapse"]');
+  togglerList.forEach(function (toggler) {
+    toggler.addEventListener('click', function (e) {
+      e.preventDefault();
+      var targetId = this.getAttribute('data-bs-target') || this.getAttribute('href');
+      if (targetId) {
+        var targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          targetEl.classList.toggle('show');
+        }
+      }
+    });
+  });
+});
+      // Scroll reveal
+      const revealEls = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), i * 80);
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+
+      // Table column hover
+      const cmp = document.getElementById('cmp');
+      const colMap = [
+        { cells: '.th-achat, .td-achat',     cls: 'hov-achat'   },
+        { cells: '.th-leasing, .td-leasing', cls: 'hov-leasing' },
+        { cells: '.th-bp, .td-bp',           cls: 'hov-bp'      },
+      ];
+      colMap.forEach(({ cells, cls }) => {
+        cmp.querySelectorAll(cells).forEach(el => {
+          el.addEventListener('mouseenter', () => cmp.classList.add(cls));
+          el.addEventListener('mouseleave', () => cmp.classList.remove(cls));
+        });
+      });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-q').forEach(q => {
+        q.addEventListener('click', () => {
+          const item = q.parentElement;
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
+
+      // Counter animation
+      function animateCount(el, target, suffix='') {
+        let start = 0;
+        const duration = 1800;
+        const step = timestamp => {
+          if (!start) start = timestamp;
+          const progress = Math.min((timestamp - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+      const statsObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            // hero stats are decorative, not animated counters
+            statsObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('.chiffre-item').forEach(el => statsObs.observe(el));
+      </script>
+<script src="./assets/js/nav.js"></script>
+</body>
+</html>
